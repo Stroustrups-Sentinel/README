@@ -154,20 +154,20 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="flex">
           <AvatarPortrait
             imageUrl={"https://flowbite.com/docs/images/logo.svg"}
-          ></AvatarPortrait>
-
+          />
           <div>
             <Paragraph text="One should, nevertheless, consider that a
               description of the basic reason of the market
               tendencies can be regarded as decidedly
               insignificant." />
-            <Button text="Download Resume" link={"#resume"}/>
+            <Button text="Download Resume" link={"#resume"} />
 
           </div>
         </div>
 
+        <CenteredTitle title="PROJECTS" topChevron={true} id="projects"></CenteredTitle>
         <div>
-          
+
         </div>
 
       </div>
