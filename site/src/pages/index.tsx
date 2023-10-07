@@ -145,9 +145,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <div>
         <Navbar></Navbar>
 
-        <CenteredTitle
-          title={"hie"}
-        />
+        <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
 
       </div>
       <hr className="divide-x-2 divide-green-400" />
