@@ -7,6 +7,19 @@
 *** OTHER STYLES ***
 */
 
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+.font-sans{
+    font-family: 'Work Sans',sans-serif;
+}
+.font-serif{
+    font-family: 'Roboto Slab',serif;
+}
+.font-mono{
+    font-family: 'Roboto Mono','Courier New', Courier, monospace;
+}
 
 .bg-primary {
     background-color: #357266;
@@ -54,4 +67,9 @@
     height: 128px;
     background: linear-gradient(90deg, #357266 0%, #53dd6c 100%);
     background-blend-mode: normal;
+}
+
+.navbar-logo{
+    width: 96px;
+    height: 96px;
 }
