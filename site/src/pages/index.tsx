@@ -4,6 +4,8 @@ import '../css/global.css'
 import Navbar from "../components/navbar"
 import CenteredTitle from "../components/centeredTitle"
 import AvatarPortrait from "../components/avatarPortrait"
+import Button from "../components/button"
+import Paragraph from "../components/paragraph"
 
 
 const pageStyles = {
@@ -155,11 +157,17 @@ const IndexPage: React.FC<PageProps> = () => {
           ></AvatarPortrait>
 
           <div>
-            <p>One should, nevertheless, consider that a
+            <Paragraph text="One should, nevertheless, consider that a
               description of the basic reason of the market
               tendencies can be regarded as decidedly
-              insignificant.</p>
+              insignificant." />
+            <Button text="Download Resume" link={"#resume"}/>
+
           </div>
+        </div>
+
+        <div>
+          
         </div>
 
       </div>
