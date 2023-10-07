@@ -2,6 +2,7 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import '../css/global.css'
 import Navbar from "../components/navbar"
+import CenteredTitle from "../components/centeredTitle"
 
 const pageStyles = {
   color: "#232129",
@@ -143,7 +144,11 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <div>
         <Navbar></Navbar>
-        
+
+        <CenteredTitle
+          title={"hie"}
+        />
+
       </div>
       <hr className="divide-x-2 divide-green-400" />
       <main style={pageStyles}>
