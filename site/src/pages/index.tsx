@@ -3,6 +3,8 @@ import type { HeadFC, PageProps } from "gatsby"
 import '../css/global.css'
 import Navbar from "../components/navbar"
 import CenteredTitle from "../components/centeredTitle"
+import AvatarPortrait from "../components/avatarPortrait"
+
 
 const pageStyles = {
   color: "#232129",
@@ -148,7 +150,9 @@ const IndexPage: React.FC<PageProps> = () => {
         <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
 
         <div>
-          avata
+          <AvatarPortrait
+            imageUrl={"https://flowbite.com/docs/images/logo.svg"}
+          ></AvatarPortrait>
         </div>
 
       </div>
