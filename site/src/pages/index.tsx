@@ -149,10 +149,17 @@ const IndexPage: React.FC<PageProps> = () => {
 
         <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
 
-        <div>
+        <div className="flex">
           <AvatarPortrait
             imageUrl={"https://flowbite.com/docs/images/logo.svg"}
           ></AvatarPortrait>
+
+          <div>
+            <p>One should, nevertheless, consider that a
+              description of the basic reason of the market
+              tendencies can be regarded as decidedly
+              insignificant.</p>
+          </div>
         </div>
 
       </div>

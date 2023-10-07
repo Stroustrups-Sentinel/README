@@ -8,7 +8,7 @@ interface AvatarPortraitProps{
     altText?:string
 }
 
-const AvatarPortrait = ( {imageUrl, height="480px", width="240px", altText="avatar-image"} : AvatarPortraitProps ) => {
+const AvatarPortrait = ( {imageUrl, height="960px", width="480px", altText="avatar-image"} : AvatarPortraitProps ) => {
     return (
             <>
                 <img className="border border-gray rounded-24" src={imageUrl} alt={altText} height={height} width={width} />
