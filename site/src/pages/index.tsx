@@ -6,6 +6,11 @@ import CenteredTitle from "../components/centeredTitle"
 import AvatarPortrait from "../components/avatarPortrait"
 import Button from "../components/button"
 import Paragraph from "../components/paragraph"
+import ProjectCard from "../components/projectCard"
+import JSON from "json5"
+import parseJson from "parse-json"
+
+
 
 
 const pageStyles = {
@@ -19,6 +24,7 @@ const headingStyles = {
   maxWidth: 320,
 }
 const headingAccentStyles = {
+
   color: "#663399",
 }
 const paragraphStyles = {
@@ -145,6 +151,23 @@ const links = [
 
 // -------------------------------------------------
 
+const projectsData = [
+  {
+    "platform": "web",
+    "type": "fullstack",
+    "name": "Accomo-Venient",
+    "technologies": "php, mysql, css, javascript, jquery",
+    "description": "description here",
+    "experience": "--how was, and how did it go it ?--",
+    "imgUrl": "",
+    "logoUrl": "",
+    "openUrl": "#",
+    "moreUrl": "#",
+    "altText": "",
+    "images": []
+  },
+
+]; //JSON.parse(JSON.stringify(parseJson("../json/projects.json")));
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -169,10 +192,21 @@ const IndexPage: React.FC<PageProps> = () => {
         </div>
 
         <CenteredTitle title="PROJECTS" topChevron={true} id="projects"></CenteredTitle>
+        {/* <pre>{JSON.stringify(projectsData)}</pre> */}
         <div className="flex flex-wrap">
-          
+          {projectsData.map((data) => <ProjectCard platform={data.platform} type={data.type} name={data.name} technologies={data.technologies.split(',')} description={data.description} />)}
+
         </div>
 
+        <CenteredTitle title="SKILLS" topChevron={true} id="skills"></CenteredTitle>
+        <div className="rounded-24 border-grey">
+          <div className="">
+
+          </div>
+          <div className="">
+
+          </div>
+        </div>
       </div>
       <hr className="divide-x-2 divide-green-400" />
       <main style={pageStyles}>
