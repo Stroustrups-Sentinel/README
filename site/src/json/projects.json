@@ -1,0 +1,17 @@
+[
+    {
+        "platform": "web",
+        "type": "fullstack",
+        "name": "Accomo-Venient",
+        "technologies": "php, mysql, css, javascript, jquery",
+        "description": "description here",
+        "experience": "--how was, and how did it go it ?--",
+        "imgUrl": "",
+        "logoUrl": "",
+        "openUrl": "#",
+        "moreUrl": "#",
+        "altText": "",
+        "images": []
+    },
+    {}
+]
