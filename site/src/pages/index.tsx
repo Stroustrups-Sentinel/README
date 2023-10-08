@@ -143,6 +143,9 @@ const links = [
   },
 ]
 
+// -------------------------------------------------
+
+
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
@@ -166,8 +169,8 @@ const IndexPage: React.FC<PageProps> = () => {
         </div>
 
         <CenteredTitle title="PROJECTS" topChevron={true} id="projects"></CenteredTitle>
-        <div>
-
+        <div className="flex flex-wrap">
+          
         </div>
 
       </div>
