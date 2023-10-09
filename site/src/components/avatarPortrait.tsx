@@ -5,13 +5,13 @@ interface AvatarPortraitProps{
     imageUrl : string;
     height?: string;
     width?: string;
-    altText?:string
+    altText?: string;
 }
 
-const AvatarPortrait = ( {imageUrl, height="960px", width="480px", altText="avatar-image"} : AvatarPortraitProps ) => {
+const AvatarPortrait = ( {imageUrl, height="380px", width="380px", altText="avatar-image"} : AvatarPortraitProps ) => {
     return (
             <>
-                <img className="border border-gray rounded-24" src={imageUrl} alt={altText} height={height} width={width} />
+                <img className="border-2 border-gray rounded-24" src={imageUrl} alt={altText} height={height} width={width} />
             </>
     );
 };
