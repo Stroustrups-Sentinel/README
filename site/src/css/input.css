@@ -11,13 +11,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
-.font-sans{
-    font-family: 'Work Sans',sans-serif;
+.font-site-sans {
+    font-family: 'Work Sans', sans-serif;
 }
-.font-serif{
-    font-family: 'Roboto Slab',serif;
+
+.font-site-serif {
+    font-family: 'Roboto Slab', serif;
 }
-.font-mono{
+
+.font-site-mono {
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -69,11 +71,32 @@
     background-blend-mode: normal;
 }
 
-.navbar-logo{
+.navbar-logo {
     width: 96px;
     height: 96px;
 }
 
-.rounded-24{
+.rounded-24 {
     border-radius: 24px;
+}
+
+.lit-on-bubble {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    background: #53dd6c;
+    background-blend-mode: normal;
+}
+
+.lit-off-bubble {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    background: #1e4039;
+    background-blend-mode: normal;
+}
+
+.icon-24{
+    width: 24px;
+    height: 24px;
 }
