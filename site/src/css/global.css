@@ -918,6 +918,11 @@ video {
   height: 24px;
 }
 
+.big-button{
+  width: 83px;
+  height: 40px;
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
