@@ -186,7 +186,7 @@ const IndexPage: React.FC<PageProps> = () => {
               description of the basic reason of the market
               tendencies can be regarded as decidedly
               insignificant." />
-            <Button text="Download Resume" link={"#resume"} />
+            <Button text="Download Resume" link={"#resume"} size={"large"} />
 
           </div>
         </div>
@@ -194,7 +194,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <CenteredTitle title="PROJECTS" topChevron={true} id="projects"></CenteredTitle>
         {/* <pre>{JSON.stringify(projectsData)}</pre> */}
         <div className="flex flex-wrap">
-          {projectsData.map((data) => <ProjectCard platform={data.platform} type={data.type} name={data.name} technologies={data.technologies.split(',')} description={data.description} />)}
+          {projectsData.map((data) => <ProjectCard platform={data.platform} type={data.type} name={data.name} technologies={data.technologies.split(',')} description={data.description} logoUrl="https://flowbite.com/docs/images/logo.svg" imgUrl="https://flowbite.com/docs/images/logo.svg" />)}
 
         </div>
 
