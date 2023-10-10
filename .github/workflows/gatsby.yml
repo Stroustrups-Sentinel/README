@@ -54,7 +54,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2  # Use v2 instead of v3 for now
         with:
-          node-version: "14"
+          node-version: "18"
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
