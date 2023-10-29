@@ -178,7 +178,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <CenteredTitle title={"NOT FINAL PRODUCT <!>"} ></CenteredTitle>
         <CenteredTitle  topChevron={true} title={"disclaimer: logos and resources belong to their owners."} ></CenteredTitle>
 
-        <div className="flex">
+        <div className="flex">.
           <AvatarPortrait
             imageUrl={"https://flowbite.com/docs/images/logo.svg"}
           />
