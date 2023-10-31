@@ -32,7 +32,7 @@ const Navbar = ( /*breadCrumbs? : string */) => {
                                 {/* [ Breadcrumb here ] */}
 
 
-                                <nav className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
+                                <nav className="flex px-5 py-3 text-gray-700 border-2 border-grey rounded-24 bg-gray-50 dark:bg-gray-800 " aria-label="Breadcrumb">
                                     <ol className="inline-flex items-center space-x-1 md:space-x-3">
                                         <li className="inline-flex items-center">
                                             <a href="#" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
