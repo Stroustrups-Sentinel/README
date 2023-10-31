@@ -38,8 +38,8 @@ const IndexPage: React.FC<PageProps> = () => {
       <div>
         <Navbar></Navbar>
 
-        <CenteredTitle title={"NOT FINAL PRODUCT <!>"} ></CenteredTitle>
-        <CenteredTitle  topChevron={true} title={"disclaimer: logos and resources belong to their owners."} ></CenteredTitle>
+        <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
+        
 
         <div className="flex">.
           <AvatarPortrait
