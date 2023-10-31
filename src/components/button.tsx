@@ -11,7 +11,7 @@ interface ButtonProps {
 }
 
 const Button = ({ text, link, size="regular", background="default" }: ButtonProps) => {
-    let classNames = "rounded-24 p-2 px-4 primary-text bg-accent font-bold font-sans ";
+    let classNames = "rounded-24 p-2 px-4 primary-text bg-accent font-bold font-site-sans ";
 
     // if (background == "black") {
     //     classNames.concat(" bg-accent ")

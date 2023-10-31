@@ -27,7 +27,7 @@ const Navbar = ( /*breadCrumbs? : string */) => {
                         </button>
                     </div>
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-                        <ul className="font-sans flex flex-col font-bold text-lg p-4 md:p-0 mt-4  md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                        <ul className="font-site-sans flex flex-col font-bold text-lg p-4 md:p-0 mt-4  md:flex-row md:space-x-8 md:mt-0 md:border-0">
                             <li>
                                 [ Breadcrumb here ]
                             </li>
