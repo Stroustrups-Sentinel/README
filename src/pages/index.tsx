@@ -43,7 +43,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
         <div className="flex">.
           <AvatarPortrait
-            imageUrl={"https://flowbite.com/docs/images/logo.svg"}
+            imageUrl={"https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
           />
           <div>
             <Paragraph text="One should, nevertheless, consider that a

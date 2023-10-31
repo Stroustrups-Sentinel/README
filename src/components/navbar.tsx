@@ -8,8 +8,8 @@ const Navbar = ( /*breadCrumbs? : string */) => {
 
             <nav className="navbar-gradient border-gray-200 dark:bg-gray-900">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="https://flowbite.com/" className="flex items-center">
-                        <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" />
+                    <a href="/" className="flex items-center">
+                        <img src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" className="h-8 mr-3" alt="Flowbite Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
                     </a>
                     <div className="flex md:order-2">
@@ -29,7 +29,38 @@ const Navbar = ( /*breadCrumbs? : string */) => {
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                         <ul className="font-site-sans flex flex-col font-bold text-lg p-4 md:p-0 mt-4  md:flex-row md:space-x-8 md:mt-0 md:border-0">
                             <li>
-                                [ Breadcrumb here ]
+                                {/* [ Breadcrumb here ] */}
+
+
+                                <nav className="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700" aria-label="Breadcrumb">
+                                    <ol className="inline-flex items-center space-x-1 md:space-x-3">
+                                        <li className="inline-flex items-center">
+                                            <a href="#" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+                                                <svg className="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                                                </svg>
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div className="flex items-center">
+                                                <svg className="w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                                                </svg>
+                                                <a href="#" className="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Templates</a>
+                                            </div>
+                                        </li>
+                                        <li aria-current="page">
+                                            <div className="flex items-center">
+                                                <svg className="w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                                                </svg>
+                                                <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Flowbite</span>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </nav>
+
                             </li>
                             <li>
                                 <a href="#projects" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Projects</a>
