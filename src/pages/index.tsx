@@ -97,5 +97,5 @@ export const Head: HeadFC = () => <> <title>Portfolio</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"/>
-<link rel="icon" href="https://www.w3schools.com/favicon.ico"/>
+<link rel="icon" href="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/main/design/favicon.ico"/>
 </>
