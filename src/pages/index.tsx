@@ -37,13 +37,14 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <div>
         <Navbar></Navbar>
-
-        <CenteredTitle title={"NOT FINAL PRODUCT <!>"} ></CenteredTitle>
-        <CenteredTitle  topChevron={true} title={"disclaimer: logos and resources belong to their owners."} ></CenteredTitle>
+        <CenteredTitle title="NOT FINAL PRODUCT <!>"></CenteredTitle>
+        <hr />
+        <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
+        
 
         <div className="flex">.
           <AvatarPortrait
-            imageUrl={"https://flowbite.com/docs/images/logo.svg"}
+            imageUrl={"https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
           />
           <div>
             <Paragraph text="One should, nevertheless, consider that a
@@ -93,4 +94,9 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <> <title>Mc Samuel Shoko</title> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"/>
+<link rel="icon" href="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/main/design/favicon.ico"/>
+</>

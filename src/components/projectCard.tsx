@@ -38,16 +38,16 @@ const ProjectCard = ({ platform,
             <div className="flex mb-1">
                 <img src={logoUrl} alt={"logo"} width={"5rem"} height={"5rem"} className="mr-2" />
                 <div className="flex grid-rows-2">
-                    <span className="text-lg font-sans">{type}</span>
-                    <span className="text-md font-sans">{platform}</span>
+                    <span className="text-lg font-site-sans">{type}</span>
+                    <span className="text-md font-site-sans">{platform}</span>
                 </div>
             </div>
             <div className="mb-1">
                 <img src={imgUrl} alt={alt} width={"5rem"} height={"5rem"} className="mr-2" />
             </div>
             <div className="mb-2">
-                <span className="text-lg font-bold font-serif">{name}</span>
-                <span className="text-md font-serif">{technologies}</span>
+                <span className="text-lg font-bold font-site-serif">{name}</span>
+                <span className="text-md font-site-serif">{technologies}</span>
             </div>
             <div className="mb-2">
                 <Paragraph text={description} />
