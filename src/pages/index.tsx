@@ -37,7 +37,8 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <div>
         <Navbar></Navbar>
-
+        <CenteredTitle title="NOT FINAL PRODUCT <!>"></CenteredTitle>
+        <hr />
         <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
         
 
@@ -93,7 +94,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <> <title>Portfolio</title> 
+export const Head: HeadFC = () => <> <title>Mc Samuel Shoko</title> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"/>
