@@ -39,6 +39,10 @@
     background-color: #53dd6c;
 }
 
+.black-bg {
+    background-color: #040f0f;
+}
+
 .primary-text {
     color: #040f0f;
 }
@@ -49,6 +53,9 @@
 
 .cloud-white {
     background-color: #f4f4f9;
+}
+.lime-text{
+    color: #53dd6c;
 }
 
 .border-grey {

@@ -55,7 +55,7 @@ const ProjectCard = ({ platform,
 
             <div className="flex justify-end">
                 <Button text="open" link={openUrl}/>
-                <Button text="more" link={moreUrl}/>
+                <Button text="more"  background="black" link={moreUrl}/>
             </div>
         </div>
     );
