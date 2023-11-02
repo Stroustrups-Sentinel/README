@@ -34,7 +34,7 @@ const ProjectCard = ({ platform,
     alt = "project-image" }: ProjectCardProps) => {
 
     return (
-        <div className="m-3 rounded-24 border border-grey p-1">
+        <div className="m-3 rounded-24 border border-grey py-4">
             <div className="flex mb-1">
                 <img src={logoUrl} alt={"logo"} width={"5rem"} height={"5rem"} className="mr-2" />
                 <div className="flex grid-rows-2">
@@ -55,6 +55,7 @@ const ProjectCard = ({ platform,
 
             <div className="flex justify-end">
                 <Button text="open" link={openUrl}/>
+                <div className="mx-2"></div>
                 <Button text="more"  background="black" link={moreUrl}/>
             </div>
         </div>

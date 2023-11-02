@@ -61,7 +61,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
         <CenteredTitle title="PROJECTS" topChevron={true} id="projects"></CenteredTitle>
         {/* <pre>{JSON.stringify(projectsData)}</pre> */}
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-evenly">
           {projectsData.map((data) => <ProjectCard platform={data.platform} type={data.type} name={data.name} technologies={data.technologies.split(',')} description={"Furthermore, one should not forget that some part of the mechanism steadily complete failure of the supposed theory the specific decisions and"} logoUrl="https://flowbite.com/docs/images/logo.svg" imgUrl="https://scontent.fcpt9-1.fna.fbcdn.net/v/t39.30808-6/359749123_3389565701303522_5159761682622525303_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGCykiaP6yidBW0uyeGzG1B3QuHUFF-Td_dC4dQUX5N32jJ9Xil08TcjP0uULlVw3-xPw1S_xgrjiC1SRJoII7l&_nc_ohc=dzj-pQ234xUAX_uU5C-&_nc_zt=23&_nc_ht=scontent.fcpt9-1.fna&cb_e2o_trans=q&oh=00_AfBeWdpNpZaT6y0pAFMgsCdfFgTUo8ghYNaZ_RyEtnS2SQ&oe=65486563" />)}
 
         </div>
