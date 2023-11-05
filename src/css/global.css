@@ -669,6 +669,10 @@ video {
   margin-top: 1rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -747,6 +751,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .items-center {
@@ -1097,6 +1105,10 @@ video {
   height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.job-xp-card{
+  min-height: 380px;
 }
 
 .after\:absolute::after {

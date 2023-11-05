@@ -137,3 +137,7 @@
     object-fit: cover;
 
 }
+
+.job-xp-card{
+    min-height: 380px;
+}
