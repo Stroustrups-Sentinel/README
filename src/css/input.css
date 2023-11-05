@@ -110,8 +110,8 @@
 }
 
 .big-button {
-    width: 83px;
-    height: 40px;
+    min-width: 83px;
+    min-height: 40px;
 }
 
 .square-avatar {

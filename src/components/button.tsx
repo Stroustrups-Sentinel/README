@@ -11,7 +11,7 @@ interface ButtonProps {
 }
 
 const Button = ({ text, link, size="regular", background="default" }: ButtonProps) => {
-    let classNames : string = "rounded-24 p-2 px-4 primary-text bg-blue-400 font-bold font-site-sans ";
+    let classNames : string = "rounded-24 p-2 px-4 primary-text bg-blue-400 font-bold font-site-sans big-button";
 
     if (background == "black") {
         classNames = classNames + " black-bg lime-text";
