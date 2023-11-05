@@ -11,6 +11,7 @@ import Footer from "../components/footer"
 import JSON from "json5"
 import parseJson from "parse-json"
 import TechnologyIcon from "../components/technologyIcon"
+import SkillCard from "../components/skillCard"
 
 
 // -------------------------------------------------
@@ -69,8 +70,9 @@ const IndexPage: React.FC<PageProps> = () => {
 
           <CenteredTitle title="SKILLS" topChevron={true} id="skills"></CenteredTitle>
           <div className="flex flex-wrap justify-evenly">
-            <div className="cloud-white border-2 border-grey rounded-24">
-              MAIN CARD
+            <div className="cloud-white border-2 border-grey rounded-24 py-2 px-4">
+              MAIN CARDS
+              <SkillCard title="Yeeting" skillScore={85} skillTotal={100} ></SkillCard>
             </div>
             <div className="">
               <div className="cloud-white border-2 border-grey rounded-24 py-4">
