@@ -42,6 +42,9 @@ const IndexPage: React.FC<PageProps> = () => {
         <Navbar></Navbar>
         <div className="container mx-auto p-2 bg-slate-600">
           {/* <CenteredTitle title="NOT FINAL PRODUCT <!>"></CenteredTitle> */}
+          <div className="bg-red-500">
+          <CenteredTitle title={"NOT FINAL PRODUCT <!>"} ></CenteredTitle>
+          </div>
           <hr />
           <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
 
@@ -57,7 +60,7 @@ const IndexPage: React.FC<PageProps> = () => {
               tendencies can be regarded as decidedly
               insignificant." />
               <div className="mt-10"></div>
-              <Button text="Download Resume" link={"#resume"} size={"large"} />
+              <Button text="Download Resume" link={"https://app.enhancv.com/resume/652c04424fe2836983cc4666"} size={"large"} />
 
             </div>
           </div>
@@ -173,7 +176,7 @@ the operational system"></Paragraph>
               </ul>
               </div>
               <div className="m-2">
-              <Button text="Download Resume" link=""></Button>
+              <Button text="Download Resume" link="https://app.enhancv.com/resume/652c04424fe2836983cc4666"></Button>
               </div>
             </div>
 
