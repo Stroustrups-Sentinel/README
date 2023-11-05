@@ -154,8 +154,9 @@ the operational system"></Paragraph>
 
           <CenteredTitle title="RESUME" topChevron={true} id="resume"></CenteredTitle>
           <div className="flex flex-wrap justify-evenly">
-            <div className="cloud-white border-2 border-grey rounded-24 p-4 mb-6 job-xp-card flex flex-wrap-reverse" >
-              <ul>
+            <div className="cloud-white border-2 border-grey rounded-24 p-4 mb-6 job-xp-card" >
+              <div className="flex flex-wrap-reverse">
+                <ul>
                 <li>
                   <ListItem company="Oh My Gaawd" position="Senior Chad" jobBrief="too cool for school i cringed."></ListItem>
                   <ListItem company="Oh My Gaawd" position="Senior Chad" jobBrief="too cool for school i cringed."></ListItem>
@@ -170,6 +171,10 @@ the operational system"></Paragraph>
                   <ListItem company="Oh My Gaawd" position="Senior Chad" jobBrief="too cool for school i cringed."></ListItem>
                 </li>
               </ul>
+              </div>
+              <div className="m-2">
+              <Button text="Download Resume" link=""></Button>
+              </div>
             </div>
 
             <div>
