@@ -35,25 +35,27 @@ const ProjectCard = ({ platform,
 
     return (
         <div className="m-3 rounded-24 border border-grey py-4">
-            <div className="flex mb-1">
-                <img src={logoUrl} alt={"logo"} width={"5rem"} height={"5rem"} className="mr-2" />
-                <div className="flex grid-rows-2">
-                    <span className="text-lg font-site-sans">{type}</span>
+            <div className="flex flex-wrap mb-4 px-4">
+                <img src={logoUrl} alt={"logo"} width={"48"} height={"48"} className="mr-4" />
+                <div className="">
+                    <span className="text-lg capitalize font-site-sans">{type}</span>
+                    <br />
                     <span className="text-md font-site-sans">{platform}</span>
                 </div>
             </div>
             <div className="mb-1">
-                <img src={imgUrl} alt={alt} width={"5rem"} height={"5rem"} className="mr-2" />
+                <img src={imgUrl} alt={alt} className="mr-2 card-image" />
             </div>
-            <div className="mb-2">
-                <span className="text-lg font-bold font-site-serif">{name}</span>
+            <div className="mb-2 px-4">
+                <span className="text-lg capitalize font-bold font-site-serif">{name}</span>
+                <br />
                 <span className="text-md font-site-serif">{technologies}</span>
             </div>
-            <div className="mb-2">
+            <div className="mb-2 px-4">
                 <Paragraph text={description} />
             </div>
 
-            <div className="flex justify-end">
+            <div className="px-4 flex justify-end">
                 <Button text="open" link={openUrl}/>
                 <div className="mx-2"></div>
                 <Button text="more"  background="black" link={moreUrl}/>
