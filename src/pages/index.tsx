@@ -70,9 +70,14 @@ const IndexPage: React.FC<PageProps> = () => {
 
           <CenteredTitle title="SKILLS" topChevron={true} id="skills"></CenteredTitle>
           <div className="flex flex-wrap justify-evenly">
-            <div className="cloud-white border-2 border-grey rounded-24 py-2 px-4">
+            <div className="cloud-white border-2 border-grey rounded-24 py-2 px-4 ">
               MAIN CARDS
               <SkillCard title="Yeeting" skillScore={85} skillTotal={100} ></SkillCard>
+              <SkillCard title="Yeeting" skillScore={43} skillTotal={100} ></SkillCard>
+              <SkillCard title="Yeeting" skillScore={85} skillTotal={100} ></SkillCard>
+              <SkillCard title="Yeeting" skillScore={4} skillTotal={5} ></SkillCard>
+              <SkillCard title="Yeeting" skillScore={5} skillTotal={5} ></SkillCard>
+              <SkillCard title="Yeeting" skillScore={10} skillTotal={50} ></SkillCard>
             </div>
             <div className="">
               <div className="cloud-white border-2 border-grey rounded-24 py-4">
@@ -147,7 +152,15 @@ the operational system"></Paragraph>
           </div>
 
           <CenteredTitle title="RESUME" topChevron={true} id="resume"></CenteredTitle>
-          <div></div>
+          <div className="flex flex-wrap justify-evenly">
+            <div className="cloud-white border-2 border-grey rounded-24 p-4" ></div>
+            <div>
+            <AvatarPortrait
+              imageUrl={"https://scontent.fcpt9-1.fna.fbcdn.net/v/t39.30808-6/359749123_3389565701303522_5159761682622525303_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGCykiaP6yidBW0uyeGzG1B3QuHUFF-Td_dC4dQUX5N32jJ9Xil08TcjP0uULlVw3-xPw1S_xgrjiC1SRJoII7l&_nc_ohc=dzj-pQ234xUAX_uU5C-&_nc_zt=23&_nc_ht=scontent.fcpt9-1.fna&cb_e2o_trans=q&oh=00_AfBeWdpNpZaT6y0pAFMgsCdfFgTUo8ghYNaZ_RyEtnS2SQ&oe=65486563"}
+              height="469px"
+            />
+            </div>
+          </div>
 
           <CenteredTitle title="CONTACT" topChevron={true} id="contact"></CenteredTitle>
           <div></div>

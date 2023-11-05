@@ -592,10 +592,6 @@ video {
   margin: 0.75rem;
 }
 
-.m-1 {
-  margin: 0.25rem;
-}
-
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -665,16 +661,12 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .block {
@@ -1089,11 +1081,15 @@ video {
 .square-avatar {
   width: 380px;
   height: 380px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .avatar {
   width: 380px;
   height: 469px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-image {

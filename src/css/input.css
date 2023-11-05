@@ -121,11 +121,14 @@
 .square-avatar {
     width: 380px;
     height: 380px;
+    object-fit: cover;
 }
 
 .avatar {
     width: 380px;
     height: 469px;
+    object-fit: cover;
+
 }
 
 .card-image {
