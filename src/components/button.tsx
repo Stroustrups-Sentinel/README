@@ -11,15 +11,15 @@ interface ButtonProps {
 }
 
 const Button = ({ text, link, size="regular", background="default" }: ButtonProps) => {
-    let classNames = "rounded-24 p-2 px-4 primary-text bg-accent font-bold font-site-sans ";
+    let classNames : string = "rounded-24 p-2 px-4 primary-text bg-blue-400 font-bold font-site-sans big-button";
 
-    // if (background == "black") {
-    //     classNames.concat(" bg-accent ")
-    // }
-    // else{
-    // classNames.concat(" bg-accent ");}
+    if (background == "black") {
+        classNames = classNames + " black-bg lime-text";
+    }
+    else{
+    classNames = classNames + " bg-accent ";}
 
-    // size === "large" ? classNames=classNames.concat("big-button"): "";
+    // if (size == "large"){ classNames = classNames +" big-button"; }
 
     return (
         <a href={link}>
