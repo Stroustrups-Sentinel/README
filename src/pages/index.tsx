@@ -78,11 +78,54 @@ const IndexPage: React.FC<PageProps> = () => {
                 </span>
                 <hr className="border-grey" />
                 <div className="flex px-4">
+                  L A N G U A G E S
+                  <br />
+                  Frontend: HTML/CSS, JavaScript, TypeScript
+                  Backend: Python, Java, C#, C++
+                  Mobile: Swift, Kotlin, React Native
 
                 </div>
                 <hr className="border-grey" />
                 <div className="flex px-4">
-                  
+                  F R A M E W O R K S
+                  <br />
+                  Frontend: React, Angular, Vue
+                  Backend: Django, Spring, .NET
+                  Mobile: Flutter, React Native
+                </div>
+                <hr className="border-grey" />
+                <div className="flex px-4">
+                  D A T A B A S E S
+                  <br />
+                  SQL: MySQL, PostgreSQL, SQL Server
+                  NoSQL: MongoDB, Redis
+
+                </div>
+                <hr className="border-grey" />
+                <div className="flex px-4">
+                  I N F R A S T R U C T U R E
+                  <br />
+                  DevOps: Docker, Kubernetes, AWS, Azure
+                  Version Control: Git
+                </div>
+                <hr className="border-grey" />
+                <div className="flex px-4">
+                  D E S I G N / P R O T O T Y P I N G
+                  <br />
+                  Sketch, Figma, Adobe XD, InVision
+
+                </div>
+                <hr className="border-grey" />
+                <div className="flex px-4">
+                  T E S T I N G
+                  <br />
+                  Jest, Mocha, Selenium
+                </div>
+                <hr className="border-grey" />
+                <div className="flex px-4">
+                  O T H E R &nbsp; T O O L S
+                  <br />
+                  GitHub, Jira, Confluence, Travis CI
                 </div>
               </div>
               <div className="mb-6"></div>
