@@ -173,7 +173,7 @@ the operational system"></Paragraph>
               </ul>
               </div>
               <div className="m-2">
-              <Button text="Download Resume" link=""></Button>
+              <Button text="Download Resume" link="https://app.enhancv.com/resume/652c04424fe2836983cc4666"></Button>
               </div>
             </div>
 
