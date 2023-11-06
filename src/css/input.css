@@ -141,3 +141,11 @@
 .job-xp-card{
     min-height: 380px;
 }
+
+.rounded-48{
+    border-radius: 48px;
+}
+.hw-48{
+    height: 48px;
+    width: 48px;
+}

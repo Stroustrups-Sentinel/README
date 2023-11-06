@@ -13,6 +13,7 @@ import parseJson from "parse-json"
 import TechnologyIcon from "../components/technologyIcon"
 import SkillCard from "../components/skillCard"
 import ListItem from "../components/listItem"
+import ContactCard from "../components/contactCard"
 
 
 // -------------------------------------------------
@@ -189,7 +190,13 @@ the operational system"></Paragraph>
           </div>
 
           <CenteredTitle title="CONTACT" topChevron={true} id="contact"></CenteredTitle>
-          <div></div>
+          <div className="cloud-white border-2 border-grey rounded-24 p-4 m-6 flex flex-wrap">
+            <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
+            <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
+            <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
+            <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
+            <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
+          </div>
 
           <CenteredTitle title="ABOUT" topChevron={true} id="about"></CenteredTitle>
           <div></div>
