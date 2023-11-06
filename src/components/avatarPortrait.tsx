@@ -6,12 +6,16 @@ interface AvatarPortraitProps{
     height?: string;
     width?: string;
     altText?: string;
+    orientation?: string;
 }
 
-const AvatarPortrait = ( {imageUrl, height="380px", width="380px", altText="avatar-image"} : AvatarPortraitProps ) => {
+const AvatarPortrait = ( {imageUrl, height="469px", width="380px", altText="avatar-image", orientation="portrait"} : AvatarPortraitProps ) => {
+let newHeight:string = height;
+    if(orientation == "square")
+        newHeight=width;
     return (
             <>
-                <img className="border-2 border-gray rounded-24" src={imageUrl} alt={altText} height={height} width={width} />
+                <img className="border-2 border-gray rounded-24" src={imageUrl} alt={altText} height={newHeight} width={width} />
             </>
     );
 };

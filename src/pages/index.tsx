@@ -190,7 +190,7 @@ the operational system"></Paragraph>
           </div>
 
           <CenteredTitle title="CONTACT" topChevron={true} id="contact"></CenteredTitle>
-          <div className="cloud-white border-2 border-grey rounded-24 p-4 m-6 flex flex-wrap">
+          <div className="cloud-white border-2 border-grey rounded-24 p-4 m-6 flex flex-wrap justify-evenly">
             <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
             <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
             <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>

@@ -592,6 +592,10 @@ video {
   margin: 0.75rem;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .m-6 {
   margin: 1.5rem;
 }
@@ -621,6 +625,11 @@ video {
   margin-bottom: 5rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -647,6 +656,10 @@ video {
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .mr-2 {
@@ -1088,6 +1101,11 @@ video {
 .icon-24 {
   width: 24px;
   height: 24px;
+}
+
+.icon-80 {
+  width: 80px;
+  height: 80px;
 }
 
 .big-button {

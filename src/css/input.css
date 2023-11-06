@@ -113,6 +113,11 @@
     height: 24px;
 }
 
+.icon-80 {
+    width: 80px;
+    height: 80px;
+}
+
 .big-button {
     min-width: 83px;
     min-height: 40px;
