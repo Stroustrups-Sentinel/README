@@ -113,6 +113,11 @@
     height: 24px;
 }
 
+.icon-80 {
+    width: 80px;
+    height: 80px;
+}
+
 .big-button {
     min-width: 83px;
     min-height: 40px;
@@ -139,5 +144,13 @@
 }
 
 .job-xp-card{
-    min-height: 380px;
+    min-height: 469px;
+}
+
+.rounded-48{
+    border-radius: 48px;
+}
+.hw-48{
+    height: 48px;
+    width: 48px;
 }
