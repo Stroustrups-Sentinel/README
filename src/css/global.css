@@ -874,11 +874,6 @@ video {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -1140,7 +1135,7 @@ video {
 }
 
 .job-xp-card{
-  min-height: 380px;
+  min-height: 469px;
 }
 
 .rounded-48{
