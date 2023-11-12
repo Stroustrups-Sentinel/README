@@ -12,7 +12,12 @@ const currentPageElementHtml = (pageTitle: string) => (<li aria-current="page">
         <svg className="w-4 h-4 mx-1 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" d="m10.18 8.05l-5.66 5.56l.87.89l5.71-5.59a1.18 1.18 0 0 0 .39-.86a1.13 1.13 0 0 0-.39-.85L5.4 1.5l-.89.88z" /></svg>
         <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400 capitalize">{pageTitle}</span>
     </div>
-</li>)
+</li>);
+
+//TODO: generate the breadcrumb , and select a good data structure for this
+const crumbsTrail = (links: [string[]]) => {
+    
+    return ;};
 
 const Breadcrumb = ({ links = [[]], currentPage = "", homeUrl = "/" }: BreadcrumbProps) => {
 
