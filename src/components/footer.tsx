@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="bg-black text-white flex flex-wrap justify-evenly py-6 items-center">
             <div>
-                <TechnologyIcon src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" alt="site logo" link="/"></TechnologyIcon>
+                <TechnologyIcon src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" alt="site logo" link="/readme"></TechnologyIcon>
             </div>
             <div className="flex justify-center">
                 <span>copyright © 2023 All rights reserved</span>
