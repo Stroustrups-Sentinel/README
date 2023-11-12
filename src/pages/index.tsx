@@ -159,7 +159,7 @@ the operational system"></Paragraph>
 
           <CenteredTitle title="RESUME" topChevron={true} id="resume"></CenteredTitle>
           <div className="flex flex-wrap justify-evenly">
-            <div className="cloud-white border-2 border-grey rounded-24 p-4 mb-6 job-xp-card" >
+            <div className="cloud-white border-2 border-grey rounded-24 p-4 mb-6 job-xp-card flex flex-col flex-wrap justify-between" >
               <div className="flex flex-wrap-reverse">
                 <ul>
                 <li>
