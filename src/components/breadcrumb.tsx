@@ -7,15 +7,20 @@ interface BreadcrumbProps {
 
 }
 
-const Breadcrumb = ({links=[[]],currentPage="",homeUrl="/"}: BreadcrumbProps) => {
+const Breadcrumb = ({ links = [[]], currentPage = "", homeUrl = "/" }: BreadcrumbProps) => {
 
     let currentPageElementHtml = "";
-    currentPageElementHtml = `<li aria-current="page">
+
+
+    if (currentPage != "") {
+        currentPageElementHtml = `<li aria-current="page">
     <div className="flex items-center">
         <svg className="w-4 h-4 mx-1 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" d="m10.18 8.05l-5.66 5.56l.87.89l5.71-5.59a1.18 1.18 0 0 0 .39-.86a1.13 1.13 0 0 0-.39-.85L5.4 1.5l-.89.88z" /></svg>
-        <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Flowbite</span>
+        <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400 capitalize">${currentPage}</span>
     </div>
 </li>`;
+    }
+
     return (
         <div>
 
@@ -40,7 +45,7 @@ const Breadcrumb = ({links=[[]],currentPage="",homeUrl="/"}: BreadcrumbProps) =>
                             <a href="#" className="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white">Templates</a>
                         </div>
                     </li>
-                    {currentPage}
+                    {currentPageElementHtml}
                 </ol>
             </nav>
 
