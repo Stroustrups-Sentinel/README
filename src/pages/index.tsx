@@ -41,18 +41,18 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <div>
         <Navbar></Navbar>
-        <div className="container mx-auto p-2 bg-slate-600">
-          {/* <CenteredTitle title="NOT FINAL PRODUCT <!>"></CenteredTitle> */}
-          <div className="bg-red-500">
+        <div className="p-2 bg-pattern m-4 rounded-24 shadow-lg">
+          
+          {/* <div className="bg-red-500">
           <CenteredTitle title={"NOT FINAL PRODUCT <!>"} ></CenteredTitle>
           </div>
-          <hr />
+          <hr /> */}
           <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
 
 
           <div className="flex flex-wrap justify-evenly">
             <AvatarPortrait
-              imageUrl={"https://scontent.fcpt9-1.fna.fbcdn.net/v/t39.30808-6/359749123_3389565701303522_5159761682622525303_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGCykiaP6yidBW0uyeGzG1B3QuHUFF-Td_dC4dQUX5N32jJ9Xil08TcjP0uULlVw3-xPw1S_xgrjiC1SRJoII7l&_nc_ohc=dzj-pQ234xUAX_uU5C-&_nc_zt=23&_nc_ht=scontent.fcpt9-1.fna&cb_e2o_trans=q&oh=00_AfBeWdpNpZaT6y0pAFMgsCdfFgTUo8ghYNaZ_RyEtnS2SQ&oe=65486563"}
+              imageUrl={"https://github.com/Stroustrups-Sentinel/readme/blob/develop/src/images/my-avatar.png?raw=true"}
               orientation="square"
             />
             <div>
@@ -184,7 +184,7 @@ the operational system"></Paragraph>
 
             <div>
               <AvatarPortrait
-                imageUrl={"https://scontent.fcpt9-1.fna.fbcdn.net/v/t39.30808-6/359749123_3389565701303522_5159761682622525303_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGCykiaP6yidBW0uyeGzG1B3QuHUFF-Td_dC4dQUX5N32jJ9Xil08TcjP0uULlVw3-xPw1S_xgrjiC1SRJoII7l&_nc_ohc=dzj-pQ234xUAX_uU5C-&_nc_zt=23&_nc_ht=scontent.fcpt9-1.fna&cb_e2o_trans=q&oh=00_AfBeWdpNpZaT6y0pAFMgsCdfFgTUo8ghYNaZ_RyEtnS2SQ&oe=65486563"}
+                imageUrl={"https://github.com/Stroustrups-Sentinel/readme/blob/develop/src/images/graduation.jpg?raw=true"}
                 height="469px"
               />
             </div>
@@ -203,7 +203,7 @@ the operational system"></Paragraph>
           <div className="flex flex-wrap justify-evenly mb-6">
             <div className="mb-6">
             <AvatarPortrait
-                imageUrl={"https://scontent.fcpt9-1.fna.fbcdn.net/v/t39.30808-6/359749123_3389565701303522_5159761682622525303_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGCykiaP6yidBW0uyeGzG1B3QuHUFF-Td_dC4dQUX5N32jJ9Xil08TcjP0uULlVw3-xPw1S_xgrjiC1SRJoII7l&_nc_ohc=dzj-pQ234xUAX_uU5C-&_nc_zt=23&_nc_ht=scontent.fcpt9-1.fna&cb_e2o_trans=q&oh=00_AfBeWdpNpZaT6y0pAFMgsCdfFgTUo8ghYNaZ_RyEtnS2SQ&oe=65486563"}
+                imageUrl={"https://github.com/Stroustrups-Sentinel/readme/blob/develop/src/images/my-avatar-wearing-cap.png?raw=true"}
                 height="469px"
               />
             </div>
