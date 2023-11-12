@@ -34,7 +34,7 @@ const ProjectCard = ({ platform,
     alt = "project-image" }: ProjectCardProps) => {
 
     return (
-        <div className="m-3 rounded-24 border border-grey py-4">
+        <div className="m-3 rounded-24 border border-grey py-4 cloud-white">
             <div className="flex flex-wrap mb-4 px-4">
                 <img src={logoUrl} alt={"logo"} width={"48"} height={"48"} className="mr-4" />
                 <div className="">
