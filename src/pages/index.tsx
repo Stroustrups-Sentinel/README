@@ -159,7 +159,7 @@ the operational system"></Paragraph>
 
           <CenteredTitle title="RESUME" topChevron={true} id="resume"></CenteredTitle>
           <div className="flex flex-wrap justify-evenly">
-            <div className="cloud-white border-2 border-grey rounded-24 p-4 mb-6 job-xp-card" >
+            <div className="cloud-white border-2 border-grey rounded-24 p-4 mb-6 job-xp-card flex flex-col flex-wrap justify-between" >
               <div className="flex flex-wrap-reverse">
                 <ul>
                 <li>
@@ -200,7 +200,41 @@ the operational system"></Paragraph>
           </div>
 
           <CenteredTitle title="ABOUT" topChevron={true} id="about"></CenteredTitle>
-          <div></div>
+          <div className="flex flex-wrap justify-evenly mb-6">
+            <div className="mb-6">
+            <AvatarPortrait
+                imageUrl={"https://scontent.fcpt9-1.fna.fbcdn.net/v/t39.30808-6/359749123_3389565701303522_5159761682622525303_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGCykiaP6yidBW0uyeGzG1B3QuHUFF-Td_dC4dQUX5N32jJ9Xil08TcjP0uULlVw3-xPw1S_xgrjiC1SRJoII7l&_nc_ohc=dzj-pQ234xUAX_uU5C-&_nc_zt=23&_nc_ht=scontent.fcpt9-1.fna&cb_e2o_trans=q&oh=00_AfBeWdpNpZaT6y0pAFMgsCdfFgTUo8ghYNaZ_RyEtnS2SQ&oe=65486563"}
+                height="469px"
+              />
+            </div>
+            <div className="cloud-white border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6">
+              <div className="flex flex-wrap justify-evenly">
+                <Paragraph text="Let it not be said that the arrangement of the mechanism
+would facilitate the development of The Modification of
+Chief Effectiveness (Abel Agnew in The Book of the
+Feedback System)
+By the way, the point of the comprehensive methods has
+common features with the more individual elements of
+the operational system."></Paragraph>
+                <Paragraph text="Let it not be said that the arrangement of the
+mechanism would facilitate the development of
+The Modification of Chief Effectiveness (Abel
+Agnew in The Book of the Feedback System)
+By the way, the point of the comprehensive
+methods has common features with the more
+individual elements of the operational system."></Paragraph>
+              </div>
+              <div className="mb-16"></div>
+              <div className="flex flex-wrap">
+              <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+              <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+              <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+<TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+<TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+
+              </div>
+            </div>
+          </div>
 
         </div>
         <Footer></Footer>

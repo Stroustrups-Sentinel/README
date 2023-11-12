@@ -1,12 +1,18 @@
 import * as React from "react"
+import TechnologyIcon from "./technologyIcon";
+import Button from "./button";
 
 const Footer = () => {
     return (
-        <div className="bg-black text-white">
-            <div>logo here</div>
-            <div>copyright © 2023 All rights reserved</div>
+        <div className="bg-black text-white flex flex-wrap justify-evenly py-6 items-center">
             <div>
-                <button>Back to top</button>
+                <TechnologyIcon src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" alt="site logo" link="/"></TechnologyIcon>
+            </div>
+            <div className="flex justify-center">
+                <span>copyright © 2023 All rights reserved</span>
+            </div>
+            <div className="">
+                <Button text="Back to Top" link="#"></Button>
             </div>
         </div>
     );
