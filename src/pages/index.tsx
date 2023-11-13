@@ -42,11 +42,11 @@ const IndexPage: React.FC<PageProps> = () => {
       <div>
         <Navbar></Navbar>
         <div className="p-2 bg-pattern m-4 rounded-24 shadow-lg">
-          
-          {/* <div className="bg-red-500">
+
+          <div className="bg-red-500">
           <CenteredTitle title={"NOT FINAL PRODUCT <!>"} ></CenteredTitle>
           </div>
-          <hr /> */}
+          <hr />
           <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
 
 
@@ -58,7 +58,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <div className="">
               <div className="mt-4"></div>
               <div className="text-xl">
-              <Paragraph text="Junior software engineer eager to learn and grow. Fascinated by backend and full-stack development, seeking opportunities to expand my skills and knowledge." />
+                <Paragraph text="Junior software engineer eager to learn and grow. Fascinated by backend and full-stack development, seeking opportunities to expand my skills and knowledge." />
               </div>
               <div className="mt-10"></div>
               <Button text="Download Resume" link={"https://app.enhancv.com/resume/652c04424fe2836983cc4666"} size={"large"} />
@@ -161,23 +161,20 @@ the operational system"></Paragraph>
             <div className="cloud-white border-2 border-grey rounded-24 p-4 mb-6 job-xp-card flex flex-col flex-wrap justify-between" >
               <div className="flex flex-wrap-reverse">
                 <ul>
-                <li>
-                  <ListItem company="Oh My Gaawd" position="Senior Chad" jobBrief="too cool for school i cringed."></ListItem>
-                  <ListItem company="Oh My Gaawd" position="Senior Chad" jobBrief="too cool for school i cringed."></ListItem>
-                  <ListItem company="Oh My Gaawd" position="Senior Chad" jobBrief="too cool for school i cringed."></ListItem>
-                </li>
-              </ul>
+                  <li>
+                    <ListItem company="Indonesian Standard" position="Freelance Developer" jobBrief="Co-engineered and developed web-app according to client's requirements."></ListItem>
+                    <ListItem company="Telecontract (telco)" position="Customer Service Representative" jobBrief="assisted clients with their technical issues and monitored thousands of equipment"></ListItem>
+                  </li>
+                </ul>
 
-              <ul>
-                <li>
-                  <ListItem company="Global Solar Energy Group" position="Senior Chad" jobBrief="The Implementation of Secondary Evaluation"></ListItem>
-                  <ListItem company="Oh My Gaawd" position="Senior Chad" jobBrief="too cool for school i cringed."></ListItem>
-                  <ListItem company="Oh My Gaawd" position="Senior Chad" jobBrief="too cool for school i cringed."></ListItem>
-                </li>
-              </ul>
+                <ul>
+                  <li>
+                    <ListItem company="University of Zimbabwe" position="Second Class Upper (2.1)" jobBrief="Bsc. Honors Computer Science"></ListItem>
+                  </li>
+                </ul>
               </div>
               <div className="m-2">
-              <Button text="Download Resume" link="https://app.enhancv.com/resume/652c04424fe2836983cc4666"></Button>
+                <Button text="Download Resume" link="https://app.enhancv.com/resume/652c04424fe2836983cc4666"></Button>
               </div>
             </div>
 
@@ -201,7 +198,7 @@ the operational system"></Paragraph>
           <CenteredTitle title="ABOUT" topChevron={true} id="about"></CenteredTitle>
           <div className="flex flex-wrap justify-evenly mb-6">
             <div className="mb-6">
-            <AvatarPortrait
+              <AvatarPortrait
                 imageUrl={"https://github.com/Stroustrups-Sentinel/readme/blob/develop/src/images/my-avatar-wearing-cap.png?raw=true"}
                 height="469px"
               />
@@ -225,11 +222,11 @@ individual elements of the operational system."></Paragraph>
               </div>
               <div className="mb-16"></div>
               <div className="flex flex-wrap">
-              <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
-              <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
-              <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
-<TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
-<TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
 
               </div>
             </div>
@@ -246,7 +243,7 @@ individual elements of the operational system."></Paragraph>
 
 export default IndexPage
 
-export const Head: HeadFC = () => <> <title>Mc Samuel Shoko</title>
+export const Head: HeadFC = () => <> <title>Home | Mc Samuel Shoko</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" />
