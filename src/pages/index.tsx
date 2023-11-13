@@ -43,10 +43,10 @@ const IndexPage: React.FC<PageProps> = () => {
         <Navbar></Navbar>
         <div className="p-2 bg-pattern m-4 rounded-24 shadow-lg">
           
-          <div className="bg-red-500">
+          {/* <div className="bg-red-500">
           <CenteredTitle title={"NOT FINAL PRODUCT <!>"} ></CenteredTitle>
           </div>
-          <hr />
+          <hr /> */}
           <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
 
 
@@ -55,12 +55,11 @@ const IndexPage: React.FC<PageProps> = () => {
               imageUrl={"https://github.com/Stroustrups-Sentinel/readme/blob/develop/src/images/my-avatar.png?raw=true"}
               orientation="square"
             />
-            <div>
+            <div className="">
               <div className="mt-4"></div>
-              <Paragraph text="One should, nevertheless, consider that a
-              description of the basic reason of the market
-              tendencies can be regarded as decidedly
-              insignificant." />
+              <div className="text-xl">
+              <Paragraph text="Junior software engineer eager to learn and grow. Fascinated by backend and full-stack development, seeking opportunities to expand my skills and knowledge." />
+              </div>
               <div className="mt-10"></div>
               <Button text="Download Resume" link={"https://app.enhancv.com/resume/652c04424fe2836983cc4666"} size={"large"} />
 
