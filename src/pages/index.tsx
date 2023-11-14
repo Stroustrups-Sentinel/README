@@ -80,19 +80,19 @@ const IndexPage: React.FC<PageProps> = () => {
 
 
 
-              <SkillCard title="Adaptability" skillScore={5} skillTotal={5} ></SkillCard>
-              <SkillCard title="Algorithms" skillScore={2} skillTotal={5} ></SkillCard>
-              <SkillCard title="Automation" skillScore={2} skillTotal={5} ></SkillCard>
-              <SkillCard title="Coding best practices" skillScore={3} skillTotal={5} ></SkillCard>
-              <SkillCard title="Collaboration" skillScore={4} skillTotal={5} ></SkillCard>
-              <SkillCard title="Communication" skillScore={48} skillTotal={50} ></SkillCard>
-              <SkillCard title="Databases" skillScore={4} skillTotal={5} ></SkillCard>
-              <SkillCard title="Documentation" skillScore={3} skillTotal={5} ></SkillCard>
-              <SkillCard title="Initiative" skillScore={4} skillTotal={5} ></SkillCard>
-              <SkillCard title="Problem solving" skillScore={95} skillTotal={100} ></SkillCard>
-              <SkillCard title="Programming languages" skillScore={97} skillTotal={100} ></SkillCard>
+              <SkillCard title="Adaptability" skillScore={5} skillTotal={5} logo="https://api.iconify.design/nimbus:apps.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Algorithms" skillScore={2} skillTotal={5} logo="https://api.iconify.design/nimbus:pyramid.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Automation" skillScore={2} skillTotal={5} logo="https://api.iconify.design/nimbus:share.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Coding best practices" skillScore={3} skillTotal={5} logo="https://api.iconify.design/nimbus:check-circle.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Collaboration" skillScore={4} skillTotal={5} logo="https://api.iconify.design/nimbus:user-group.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Communication" skillScore={48} skillTotal={50} logo="https://api.iconify.design/nimbus:chat-dots.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Databases" skillScore={4} skillTotal={5} logo="https://api.iconify.design/nimbus:vertical-stacks.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Documentation" skillScore={3} skillTotal={5} logo="https://api.iconify.design/nimbus:file-alt.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Initiative" skillScore={4} skillTotal={5} logo="https://api.iconify.design/nimbus:rocket.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Problem solving" skillScore={95} skillTotal={100} logo="https://api.iconify.design/nimbus:lightbulb.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Programming languages" skillScore={87} skillTotal={100} logo="https://api.iconify.design/nimbus:code.svg?color=%23f4f4f9" ></SkillCard>
               <SkillCard title="Testing/debugging" skillScore={2} skillTotal={5} ></SkillCard>
-              <SkillCard title="Version Control" skillScore={75} skillTotal={100} ></SkillCard>
+              <SkillCard title="Version Control" skillScore={65} skillTotal={100} logo="https://api.iconify.design/nimbus:history.svg?color=%23f4f4f9" ></SkillCard>
 
 
 
