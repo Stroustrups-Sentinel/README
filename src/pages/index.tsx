@@ -236,11 +236,12 @@ const IndexPage: React.FC<PageProps> = () => {
 
           <CenteredTitle title="CONTACT" topChevron={true} id="contact"></CenteredTitle>
           <div className="cloud-white border-2 border-grey rounded-24 p-4 m-6 flex flex-wrap justify-evenly">
-            <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
-            <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
-            <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
-            <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
-            <ContactCard name="facebook" tag="lets meet on facebook"></ContactCard>
+            //TODO: add links to the onclick effect of the component
+            <ContactCard name="LinkedIn" tag="lets connect on"  logoUrl="https://api.iconify.design/logos:linkedin-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Discord" tag="find me on discord" logoUrl="https://api.iconify.design/logos:discord-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Slack" tag="lets meet on slack" logoUrl="https://api.iconify.design/logos:slack-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Gmail" tag="send me an email" logoUrl="https://api.iconify.design/logos:google-gmail.svg" iconUrl="https://api.iconify.design/nimbus:mail.svg"></ContactCard>
+            <ContactCard name="PhoneNumber" tag="contact me on" iconUrl="https://api.iconify.design/nimbus:mobile.svg"></ContactCard>
           </div>
 
           <CenteredTitle title="ABOUT" topChevron={true} id="about"></CenteredTitle>
