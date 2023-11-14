@@ -44,7 +44,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="p-2 bg-pattern m-4 rounded-24 shadow-lg">
 
           <div className="bg-red-500">
-          <CenteredTitle title={"NOT FINAL PRODUCT <!>"} ></CenteredTitle>
+            <CenteredTitle title={"NOT FINAL ARTIFACT <!>"} ></CenteredTitle>
           </div>
           <hr />
           <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
@@ -77,81 +77,129 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className="flex flex-wrap justify-evenly">
             <div className="cloud-white border-2 border-grey rounded-24 py-2 px-4 mb-6">
               {/* MAIN CARDS */}
-              <SkillCard title="Yeeting" skillScore={85} skillTotal={100} ></SkillCard>
-              <SkillCard title="Yeeting" skillScore={43} skillTotal={100} ></SkillCard>
-              <SkillCard title="Yeeting" skillScore={85} skillTotal={100} ></SkillCard>
-              <SkillCard title="Yeeting" skillScore={4} skillTotal={5} ></SkillCard>
-              <SkillCard title="Yeeting" skillScore={5} skillTotal={5} ></SkillCard>
-              <SkillCard title="Yeeting" skillScore={10} skillTotal={50} ></SkillCard>
+
+
+
+              <SkillCard title="Adaptability" skillScore={5} skillTotal={5} ></SkillCard>
+              <SkillCard title="Algorithms" skillScore={2} skillTotal={5} ></SkillCard>
+              <SkillCard title="Automation" skillScore={2} skillTotal={5} ></SkillCard>
+              <SkillCard title="Coding best practices" skillScore={3} skillTotal={5} ></SkillCard>
+              <SkillCard title="Collaboration" skillScore={4} skillTotal={5} ></SkillCard>
+              <SkillCard title="Communication" skillScore={48} skillTotal={50} ></SkillCard>
+              <SkillCard title="Databases" skillScore={4} skillTotal={5} ></SkillCard>
+              <SkillCard title="Documentation" skillScore={3} skillTotal={5} ></SkillCard>
+              <SkillCard title="Initiative" skillScore={4} skillTotal={5} ></SkillCard>
+              <SkillCard title="Problem solving" skillScore={95} skillTotal={100} ></SkillCard>
+              <SkillCard title="Programming languages" skillScore={97} skillTotal={100} ></SkillCard>
+              <SkillCard title="Testing/debugging" skillScore={2} skillTotal={5} ></SkillCard>
+              <SkillCard title="Version Control" skillScore={75} skillTotal={100} ></SkillCard>
+
+
+
+
+
+
             </div>
             <div className="">
-              <div className="cloud-white border-2 border-grey rounded-24 py-4">
+              <div className="cloud-white border-2 border-grey rounded-24 py-4 max-w-800">
                 <span className="px-4">
                   Technologies
                 </span>
                 <hr className="border-grey" />
-                <div className="flex px-4">
-                  L A N G U A G E S
-                  <br />
-                  Frontend: HTML/CSS, JavaScript, TypeScript
-                  Backend: Python, Java, C#, C++
-                  Mobile: Swift, Kotlin, React Native
+                <div className="flex flex-wrap px-4 shadow">
+                  {/* L A N G U A G E S
+                  <br /> */}
+                  {/* Frontend: HTML/CSS,Sass, JavaScript, TypeScript */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:html-5.svg" link="https://html.com" alt="Html"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:css-3.svg" link="https://www.w3.org/Style/CSS/Overview.en.html" alt="CSS"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:sass.svg" link="https://sass-lang.com/" alt="Sass"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:javascript.svg" link="https://www.javascript.com/" alt="JavaScript"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:typescript-icon.svg" link="https://www.typescriptlang.org/" alt="TypeScript"></TechnologyIcon>
+                  {/* Backend: Python, Java, C#, C++, Php, Go */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="https://python.org" alt="Python"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:java.svg" link="https://www.java.com/en/" alt="Java"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/devicon:csharp.svg" link="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" alt="csharp"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:c-plusplus.svg" link="https://cplusplus.com/" alt="c++"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:php.svg" link="https://www.php.net/" alt="Php"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/devicon:go.svg" link="https://go.dev/" alt="Golang"></TechnologyIcon>
+                  {/* Mobile: Dart */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:dart.svg" link="https://dart.dev/" alt="dart"></TechnologyIcon>
 
-                  <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
 
-                </div>
-                <hr className="border-grey" />
-                <div className="flex flex-wrap px-4">
-                  F R A M E W O R K S
-                  <br />
-                  Frontend: React, Angular, Vue
-                  Backend: Django, Spring, .NET
-                  Mobile: Flutter, React Native
-                </div>
-                <hr className="border-grey" />
-                <div className="flex flex-wrap px-4">
-                  D A T A B A S E S
-                  <br />
-                  SQL: MySQL, PostgreSQL, SQL Server
-                  NoSQL: MongoDB, Redis
 
                 </div>
-                <hr className="border-grey" />
-                <div className="flex flex-wrap px-4">
-                  I N F R A S T R U C T U R E
+                {/* <hr className="border-grey" /> */}
+                <div className="flex flex-wrap px-4 shadow">
+                  {/* F R A M E W O R K S
                   <br />
-                  DevOps: Docker, Kubernetes, AWS, Azure
-                  Version Control: Git
+                  Frontend: React,Gatsby, Bootstrap, Materialize,Tailwindcss */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:react.svg" link="https://react.dev" alt="React"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:gatsby.svg" link="https://www.gatsbyjs.com/" alt="Gatsby"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:bootstrap.svg" link="https://getbootstrap.com/" alt="Bootstrap"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:materializecss.svg" link="https://materializecss.com/" alt="MaterializeCss"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:tailwindcss-icon.svg" link="https://tailwindcss.com/" alt="TailwindCss"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:thymeleaf-icon.svg" link="https://www.thymeleaf.org/" alt="Thymeleaf"></TechnologyIcon>
+                  {/* Backend: Django, Spring, Laravel, .NET */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:django-icon.svg" link="https://www.djangoproject.com/" alt="Django"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:spring-icon.svg" link="https://spring.io/" alt="Spring"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:laravel.svg" link="https://laravel.com/" alt="Laravel"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:dotnet.svg" link="https://dotnet.microsoft.com/" alt="DotNet"></TechnologyIcon>
+                  {/* Mobile: Flutter */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:flutter.svg" link="https://flutter.dev/" alt="Flutter"></TechnologyIcon>
                 </div>
-                <hr className="border-grey" />
-                <div className="flex flex-wrap px-4">
-                  D E S I G N / P R O T O T Y P I N G
+                {/* <hr className="border-grey" /> */}
+                <div className="flex flex-wrap px-4 shadow">
+                  {/* D A T A B A S E S
                   <br />
-                  Sketch, Figma, Adobe XD, InVision
+                  SQL: MySQL, PostgreSQL, SQL Server */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:mysql-icon.svg" link="https://www.mysql.com/" alt="MySql"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:postgresql.svg" link="https://www.postgresql.org/" alt="PostgreSql"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/devicon:azuresqldatabase.svg" link="https://www.microsoft.com/en-za/sql-server/sql-server-downloads" alt="SQL Server"></TechnologyIcon>
+                  {/* NoSQL: MongoDB */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:mongodb-icon.svg" link="https://www.mongodb.com/" alt="MongoDB"></TechnologyIcon>
 
                 </div>
-                <hr className="border-grey" />
-                <div className="flex flex-wrap px-4">
-                  T E S T I N G
+                {/* <hr className="border-grey" /> */}
+                <div className="flex flex-wrap px-4 shadow">
+                  {/* I N F R A S T R U C T U R E
                   <br />
-                  Jest, Mocha, Selenium
+                  DevOps: Docker, Kubernetes, Azure */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:docker-icon.svg" link="https://www.docker.com/" alt="Docker"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:kubernetes.svg" link="https://kubernetes.io/" alt="Kubernetes"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:microsoft-azure.svg" link="https://azure.microsoft.com/" alt="Azure"></TechnologyIcon>
+                  {/* Version Control: Git */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:git-icon.svg" link="https://git-scm.com/" alt="Git"></TechnologyIcon>
                 </div>
-                <hr className="border-grey" />
-                <div className="flex flex-wrap px-4">
-                  O T H E R &nbsp; T O O L S
+                {/* <hr className="border-grey" /> */}
+                <div className="flex flex-wrap px-4 shadow">
+                  {/* D E S I G N / P R O T O T Y P I N G
                   <br />
-                  GitHub, Jira, Confluence, Travis CI
+                  Lunacy, Figma, Inkscape */}
+                  <TechnologyIcon src="https://raw.githubusercontent.com/maki-studio/.github/b974af72f4208daf7678d1cf772096e55bcc7aa0/profile/lunacy-logo.svg" link="https://icons8.com/lunacy" alt="Lunacy"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:figma.svg" link="https://www.figma.com/" alt="Figma"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/devicon:inkscape.svg" link="https://inkscape.org/" alt="Inkscape"></TechnologyIcon>
+
+                </div>
+                {/* <hr className="border-grey" /> */}
+                <div className="flex flex-wrap px-4 shadow">
+                  {/* T E S T I N G
+                  <br />
+                  Jest */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:jest.svg" link="https://jestjs.io/" alt="jest"></TechnologyIcon>
+                </div>
+                {/* <hr className="border-grey" /> */}
+                <div className="flex flex-wrap px-4">
+                  {/* O T H E R &nbsp; T O O L S
+                  <br />
+                  GitHub, Jira, Confluence */}
+                  <TechnologyIcon src="https://api.iconify.design/logos:github-icon.svg" link="https://github.com" alt="Github"></TechnologyIcon>
+                  {/* <TechnologyIcon src="" link="" alt=""></TechnologyIcon> */}
                 </div>
               </div>
               <div className="mb-6"></div>
-              <div className="cloud-white border-2 border-grey rounded-24 font-site-sans p-4 py-12">
-                <Paragraph text="Let it not be said that the arrangement of the mechanism
-would facilitate the development of The Modification of
-Chief Effectiveness (Abel Agnew in The Book of the
-Feedback System)
-By the way, the point of the comprehensive methods has
-common features with the more individual elements of
-the operational system"></Paragraph>
+              <div className="cloud-white border-2 border-grey rounded-24 font-site-sans p-4 py-12 flex flex-wrap ">
+                <Paragraph text="As a passionate junior software engineer, I'm always seeking new challenges to strengthen my abilities. Fascinated by backend and full-stack work, I find motivation in breaking down complicated issues and working on tasks outside my current scope. Currently, I'm focused on skills like DevOps, testing and anything pushing my progress further."></Paragraph>
+                <Paragraph text="Whether through code projects or other experiences, I believe adventures inspire continual learning. As I build my portfolio, I welcome opportunities within the tech community to aid my development. My goal is ongoing self-improvement through diverse work, network growth, and perpetually pursuing greater technical hurdles."></Paragraph>
               </div>
             </div>
           </div>
