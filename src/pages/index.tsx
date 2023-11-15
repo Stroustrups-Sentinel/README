@@ -271,11 +271,11 @@ individual elements of the operational system."></Paragraph>
               </div>
               <div className="mb-16"></div>
               <div className="flex flex-wrap">
-                <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
-                <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
-                <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
-                <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
-                <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="python.org" alt="python"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/logos:github-icon.svg" link="https://github.com/Stroustrups-Sentinel" alt="Github profile"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/logos:wakatime.svg" link="https://wakatime.com/@ef9df9b6-cb1a-4e73-9d42-35b93e0014d0" alt="Wakatime profile"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/logos:dribbble-icon.svg" link="https://dribbble.com/McSamuel" alt="Dribble profile"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/logos:figma.svg" link="https://www.figma.com/" alt="Figma profile"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/devicon:behance.svg" link="https://www.behance.net/mcsamuelshoko" alt="Behance profile"></TechnologyIcon>
 
               </div>
             </div>
