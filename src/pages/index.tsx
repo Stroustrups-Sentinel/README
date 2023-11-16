@@ -1,6 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import '../css/global.css'
+import projects from '../json/projects.json'
 import Navbar from "../components/navbar"
 import CenteredTitle from "../components/centeredTitle"
 import AvatarPortrait from "../components/avatarPortrait"
@@ -8,8 +9,6 @@ import Button from "../components/button"
 import Paragraph from "../components/paragraph"
 import ProjectCard from "../components/projectCard"
 import Footer from "../components/footer"
-import JSON from "json5"
-import parseJson from "parse-json"
 import TechnologyIcon from "../components/technologyIcon"
 import SkillCard from "../components/skillCard"
 import ListItem from "../components/listItem"
@@ -18,23 +17,7 @@ import ContactCard from "../components/contactCard"
 
 // -------------------------------------------------
 
-const projectsData = [
-  {
-    "platform": "web",
-    "type": "fullstack",
-    "name": "Accomo-Venient",
-    "technologies": "php, mysql, css, javascript, jquery",
-    "description": "description here",
-    "experience": "--how was, and how did it go it ?--",
-    "imgUrl": "",
-    "logoUrl": "",
-    "openUrl": "#",
-    "moreUrl": "#",
-    "altText": "",
-    "images": []
-  },
-
-]; //JSON.parse(JSON.stringify(parseJson("../json/projects.json")));
+const projectsData = projects;
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -43,8 +26,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <Navbar></Navbar>
         <div className="p-2 bg-pattern m-4 rounded-24 shadow-lg">
 
-          <div className="bg-red-500">
-            <CenteredTitle title={"NOT FINAL ARTIFACT <!>"} ></CenteredTitle>
+          <div className="bg-red-500 rounded-24 ">
+            <CenteredTitle title={"THIS IS A WORK IN PROGRESS <!>"} ></CenteredTitle>
           </div>
           <hr />
           <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
@@ -71,7 +54,12 @@ const IndexPage: React.FC<PageProps> = () => {
           <CenteredTitle title="PROJECTS" topChevron={true} id="projects"></CenteredTitle>
           {/* <pre>{JSON.stringify(projectsData)}</pre> */}
           <div className="flex flex-wrap justify-evenly">
-            {projectsData.map((data) => <ProjectCard platform={data.platform} type={data.type} name={data.name} technologies={data.technologies.split(',')} description={"Furthermore, one should not forget that some part of the mechanism steadily complete failure of the supposed theory the specific decisions and"} logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" imgUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" />)}
+            {projectsData.map((data) => <ProjectCard 
+            platform={data.platform ? data.platform : "--"} 
+            type={data.type ? data.type : "--"} 
+            name={data.name ? data.name: "--"} 
+            technologies={data.technologies ? data.technologies : []} 
+            description={data.description ? data.description : ""} logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" imgUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" />)}
 
           </div>
 
@@ -130,7 +118,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4 shadow">
                   {/* F R A M E W O R K S
                   <br />
@@ -149,7 +137,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   {/* Mobile: Flutter */}
                   <TechnologyIcon src="https://api.iconify.design/logos:flutter.svg" link="https://flutter.dev/" alt="Flutter"></TechnologyIcon>
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4 shadow">
                   {/* D A T A B A S E S
                   <br />
@@ -161,7 +149,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   <TechnologyIcon src="https://api.iconify.design/logos:mongodb-icon.svg" link="https://www.mongodb.com/" alt="MongoDB"></TechnologyIcon>
 
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4 shadow">
                   {/* I N F R A S T R U C T U R E
                   <br />
@@ -172,7 +160,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   {/* Version Control: Git */}
                   <TechnologyIcon src="https://api.iconify.design/logos:git-icon.svg" link="https://git-scm.com/" alt="Git"></TechnologyIcon>
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4 shadow">
                   {/* D E S I G N / P R O T O T Y P I N G
                   <br />
@@ -182,14 +170,14 @@ const IndexPage: React.FC<PageProps> = () => {
                   <TechnologyIcon src="https://api.iconify.design/devicon:inkscape.svg" link="https://inkscape.org/" alt="Inkscape"></TechnologyIcon>
 
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4 shadow">
                   {/* T E S T I N G
                   <br />
                   Jest */}
                   <TechnologyIcon src="https://api.iconify.design/logos:jest.svg" link="https://jestjs.io/" alt="jest"></TechnologyIcon>
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4">
                   {/* O T H E R &nbsp; T O O L S
                   <br />
@@ -219,7 +207,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
                 <ul>
                   <li>
-                    <ListItem company="University of Zimbabwe" position="Second Class Upper (2.1)" jobBrief="Bsc. Honors Computer Science"></ListItem>
+                    <ListItem company="University of Zimbabwe" position="Bsc. Honors Computer Science" jobBrief="Upper Second Class Honours | Weighted GPA of 3.00 - 3.59"></ListItem>
                   </li>
                 </ul>
               </div>
@@ -239,11 +227,11 @@ const IndexPage: React.FC<PageProps> = () => {
           <CenteredTitle title="CONTACT" topChevron={true} id="contact"></CenteredTitle>
           <div className="cloud-white border-2 border-grey rounded-24 p-4 m-6 flex flex-wrap justify-evenly">
             {/* //TODO: add links to the onclick effect of the component */}
-            <ContactCard name="LinkedIn" tag="lets connect on"  logoUrl="https://api.iconify.design/logos:linkedin-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
-            <ContactCard name="Discord" tag="find me on discord" logoUrl="https://api.iconify.design/logos:discord-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
-            <ContactCard name="Slack" tag="lets meet on slack" logoUrl="https://api.iconify.design/logos:slack-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
-            <ContactCard name="Gmail" tag="send me an email" logoUrl="https://api.iconify.design/logos:google-gmail.svg" iconUrl="https://api.iconify.design/nimbus:mail.svg"></ContactCard>
-            <ContactCard name="PhoneNumber" tag="contact me on" iconUrl="https://api.iconify.design/nimbus:mobile.svg"></ContactCard>
+            <ContactCard name="LinkedIn" contactUrl="https://www.linkedin.com/in/mc-samuel-shoko-2483731b5" tag="lets connect on"  logoUrl="https://api.iconify.design/logos:linkedin-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Discord" contactUrl="https://discord.gg/GeneralSeven#6092" tag="find me on discord" logoUrl="https://api.iconify.design/logos:discord-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Twitter" contactUrl="https://twitter.com/shokosamuel" tag="send a tweet" logoUrl="https://api.iconify.design/logos:twitter.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Gmail" contactUrl="mailto:mcsamuelshoko558@gmail.com" tag="send me an email" logoUrl="https://api.iconify.design/logos:google-gmail.svg" iconUrl="https://api.iconify.design/nimbus:mail.svg"></ContactCard>
+            {/* <ContactCard name="PhoneNumber" contactUrl="" tag="contact me on" iconUrl="https://api.iconify.design/nimbus:mobile.svg"></ContactCard> */}
           </div>
 
           <CenteredTitle title="ABOUT" topChevron={true} id="about"></CenteredTitle>
