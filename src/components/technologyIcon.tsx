@@ -9,7 +9,7 @@ interface TechnologyIconProps{
 
 const TechnologyIcon = ({ src, alt, link}:TechnologyIconProps) => {
     return (
-        <a className="m-2" href={link}><img className="tech-icon" src={src} alt={alt} /></a>
+        <a className="m-2" href={link} target="_blank" title="click to view"><img className="tech-icon" src={src} alt={alt} /></a>
     );
 };
 

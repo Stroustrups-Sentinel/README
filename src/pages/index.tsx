@@ -207,7 +207,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
                 <ul>
                   <li>
-                    <ListItem company="University of Zimbabwe" position="Upper Second Class Honours | Weighted GPA of 3.00 - 3.59" jobBrief="Bsc. Honors Computer Science"></ListItem>
+                    <ListItem company="University of Zimbabwe" position="Bsc. Honors Computer Science" jobBrief="Upper Second Class Honours | Weighted GPA of 3.00 - 3.59"></ListItem>
                   </li>
                 </ul>
               </div>
@@ -227,11 +227,11 @@ const IndexPage: React.FC<PageProps> = () => {
           <CenteredTitle title="CONTACT" topChevron={true} id="contact"></CenteredTitle>
           <div className="cloud-white border-2 border-grey rounded-24 p-4 m-6 flex flex-wrap justify-evenly">
             {/* //TODO: add links to the onclick effect of the component */}
-            <ContactCard name="LinkedIn" tag="lets connect on"  logoUrl="https://api.iconify.design/logos:linkedin-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
-            <ContactCard name="Discord" tag="find me on discord" logoUrl="https://api.iconify.design/logos:discord-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
-            <ContactCard name="Twitter" tag="send a tweet" logoUrl="https://api.iconify.design/logos:twitter.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
-            <ContactCard name="Gmail" tag="send me an email" logoUrl="https://api.iconify.design/logos:google-gmail.svg" iconUrl="https://api.iconify.design/nimbus:mail.svg"></ContactCard>
-            <ContactCard name="PhoneNumber" tag="contact me on" iconUrl="https://api.iconify.design/nimbus:mobile.svg"></ContactCard>
+            <ContactCard name="LinkedIn" contactUrl="https://www.linkedin.com/in/mc-samuel-shoko-2483731b5" tag="lets connect on"  logoUrl="https://api.iconify.design/logos:linkedin-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Discord" contactUrl="https://discord.gg/GeneralSeven#6092" tag="find me on discord" logoUrl="https://api.iconify.design/logos:discord-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Twitter" contactUrl="https://twitter.com/shokosamuel" tag="send a tweet" logoUrl="https://api.iconify.design/logos:twitter.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Gmail" contactUrl="mailto:mcsamuelshoko558@gmail.com" tag="send me an email" logoUrl="https://api.iconify.design/logos:google-gmail.svg" iconUrl="https://api.iconify.design/nimbus:mail.svg"></ContactCard>
+            {/* <ContactCard name="PhoneNumber" contactUrl="" tag="contact me on" iconUrl="https://api.iconify.design/nimbus:mobile.svg"></ContactCard> */}
           </div>
 
           <CenteredTitle title="ABOUT" topChevron={true} id="about"></CenteredTitle>
