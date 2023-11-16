@@ -21,9 +21,9 @@ import ContactCard from "../components/contactCard"
 const projectsData = [
   {
     "platform": "web",
-    "type": "fullstack",
-    "name": "Accomo-Venient",
-    "technologies": "php, mysql, css, javascript, jquery",
+    "type": "Frontend",
+    "name": "My SWE Portfolio",
+    "technologies": "typescript, react, gatsby, css, tailwindCss",
     "description": "description here",
     "experience": "--how was, and how did it go it ?--",
     "imgUrl": "",
@@ -43,8 +43,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <Navbar></Navbar>
         <div className="p-2 bg-pattern m-4 rounded-24 shadow-lg">
 
-          <div className="bg-red-500">
-            <CenteredTitle title={"NOT FINAL ARTIFACT <!>"} ></CenteredTitle>
+          <div className="bg-red-500 rounded-24 ">
+            <CenteredTitle title={"THIS IS A WORK IN PROGRESS <!>"} ></CenteredTitle>
           </div>
           <hr />
           <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
@@ -130,7 +130,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4 shadow">
                   {/* F R A M E W O R K S
                   <br />
@@ -149,7 +149,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   {/* Mobile: Flutter */}
                   <TechnologyIcon src="https://api.iconify.design/logos:flutter.svg" link="https://flutter.dev/" alt="Flutter"></TechnologyIcon>
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4 shadow">
                   {/* D A T A B A S E S
                   <br />
@@ -161,7 +161,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   <TechnologyIcon src="https://api.iconify.design/logos:mongodb-icon.svg" link="https://www.mongodb.com/" alt="MongoDB"></TechnologyIcon>
 
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4 shadow">
                   {/* I N F R A S T R U C T U R E
                   <br />
@@ -172,7 +172,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   {/* Version Control: Git */}
                   <TechnologyIcon src="https://api.iconify.design/logos:git-icon.svg" link="https://git-scm.com/" alt="Git"></TechnologyIcon>
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4 shadow">
                   {/* D E S I G N / P R O T O T Y P I N G
                   <br />
@@ -182,14 +182,14 @@ const IndexPage: React.FC<PageProps> = () => {
                   <TechnologyIcon src="https://api.iconify.design/devicon:inkscape.svg" link="https://inkscape.org/" alt="Inkscape"></TechnologyIcon>
 
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4 shadow">
                   {/* T E S T I N G
                   <br />
                   Jest */}
                   <TechnologyIcon src="https://api.iconify.design/logos:jest.svg" link="https://jestjs.io/" alt="jest"></TechnologyIcon>
                 </div>
-                {/* <hr className="border-grey" /> */}
+                <hr className="border-grey" />
                 <div className="flex flex-wrap px-4">
                   {/* O T H E R &nbsp; T O O L S
                   <br />
@@ -241,7 +241,7 @@ const IndexPage: React.FC<PageProps> = () => {
             {/* //TODO: add links to the onclick effect of the component */}
             <ContactCard name="LinkedIn" tag="lets connect on"  logoUrl="https://api.iconify.design/logos:linkedin-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
             <ContactCard name="Discord" tag="find me on discord" logoUrl="https://api.iconify.design/logos:discord-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
-            <ContactCard name="Slack" tag="lets meet on slack" logoUrl="https://api.iconify.design/logos:slack-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Twitter" tag="send a tweet" logoUrl="https://api.iconify.design/logos:twitter.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
             <ContactCard name="Gmail" tag="send me an email" logoUrl="https://api.iconify.design/logos:google-gmail.svg" iconUrl="https://api.iconify.design/nimbus:mail.svg"></ContactCard>
             <ContactCard name="PhoneNumber" tag="contact me on" iconUrl="https://api.iconify.design/nimbus:mobile.svg"></ContactCard>
           </div>
