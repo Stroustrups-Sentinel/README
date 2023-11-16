@@ -1,6 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import '../css/global.css'
+import projects from '../json/projects.json'
 import Navbar from "../components/navbar"
 import CenteredTitle from "../components/centeredTitle"
 import AvatarPortrait from "../components/avatarPortrait"
@@ -8,8 +9,6 @@ import Button from "../components/button"
 import Paragraph from "../components/paragraph"
 import ProjectCard from "../components/projectCard"
 import Footer from "../components/footer"
-import JSON from "json5"
-import parseJson from "parse-json"
 import TechnologyIcon from "../components/technologyIcon"
 import SkillCard from "../components/skillCard"
 import ListItem from "../components/listItem"
@@ -18,23 +17,7 @@ import ContactCard from "../components/contactCard"
 
 // -------------------------------------------------
 
-const projectsData = [
-  {
-    "platform": "web",
-    "type": "Frontend",
-    "name": "My SWE Portfolio",
-    "technologies": "typescript, react, gatsby, css, tailwindCss",
-    "description": "description here",
-    "experience": "--how was, and how did it go it ?--",
-    "imgUrl": "",
-    "logoUrl": "",
-    "openUrl": "#",
-    "moreUrl": "#",
-    "altText": "",
-    "images": []
-  },
-
-]; //JSON.parse(JSON.stringify(parseJson("../json/projects.json")));
+const projectsData = projects;
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -71,7 +54,12 @@ const IndexPage: React.FC<PageProps> = () => {
           <CenteredTitle title="PROJECTS" topChevron={true} id="projects"></CenteredTitle>
           {/* <pre>{JSON.stringify(projectsData)}</pre> */}
           <div className="flex flex-wrap justify-evenly">
-            {projectsData.map((data) => <ProjectCard platform={data.platform} type={data.type} name={data.name} technologies={data.technologies.split(',')} description={"Furthermore, one should not forget that some part of the mechanism steadily complete failure of the supposed theory the specific decisions and"} logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" imgUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" />)}
+            {projectsData.map((data) => <ProjectCard 
+            platform={data.platform ? data.platform : "--"} 
+            type={data.type ? data.type : "--"} 
+            name={data.name ? data.name: "--"} 
+            technologies={data.technologies ? data.technologies : []} 
+            description={data.description ? data.description : ""} logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" imgUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" />)}
 
           </div>
 
@@ -219,7 +207,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
                 <ul>
                   <li>
-                    <ListItem company="University of Zimbabwe" position="Second Class Upper (2.1)" jobBrief="Bsc. Honors Computer Science"></ListItem>
+                    <ListItem company="University of Zimbabwe" position="Upper Second Class Honours | Weighted GPA of 3.00 - 3.59" jobBrief="Bsc. Honors Computer Science"></ListItem>
                   </li>
                 </ul>
               </div>

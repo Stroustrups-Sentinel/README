@@ -1,10 +1,10 @@
 [
     {
         "platform": "web",
-        "type": "fullstack",
-        "name": "Accomo-Venient",
-        "technologies": ["php", "mysql","css","javascript","jquery"],
-        "description": "description here",
+        "type": "Frontend",
+        "name": "My SWE Portfolio",
+        "technologies": ["Typescript ","Gatsby","React","TailwindCss", "Css"],
+        "description": "My portfolio website showcasing my skills, progress and career as a software engineer.",
         "experience": "--how was, and how did it go it ?--",
         "imgUrl": "",
         "logoUrl": "",
@@ -12,6 +12,5 @@
         "moreUrl": "#",
         "altText": "",
         "images": []
-    },
-    {}
+    }
 ]
