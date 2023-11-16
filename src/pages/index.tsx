@@ -62,6 +62,8 @@ const IndexPage: React.FC<PageProps> = () => {
               </div>
               <div className="mt-10"></div>
               <Button text="Download Resume" link={"https://app.enhancv.com/resume/652c04424fe2836983cc4666"} size={"large"} />
+              <div className="mt-4"></div>
+              <Button text="Github profile" link={"https://github.com/Stroustrups-Sentinel"} size={"large"} background="black"/>
 
             </div>
           </div>
@@ -81,7 +83,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 
               <SkillCard title="Adaptability" skillScore={5} skillTotal={5} logo="https://api.iconify.design/nimbus:apps.svg?color=%23f4f4f9" ></SkillCard>
-              <SkillCard title="Algorithms" skillScore={2} skillTotal={5} logo="https://api.iconify.design/nimbus:pyramid.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Algorithms & Data structures" skillScore={2} skillTotal={5} logo="https://api.iconify.design/nimbus:pyramid.svg?color=%23f4f4f9" ></SkillCard>
               <SkillCard title="Automation" skillScore={2} skillTotal={5} logo="https://api.iconify.design/nimbus:share.svg?color=%23f4f4f9" ></SkillCard>
               <SkillCard title="Coding best practices" skillScore={3} skillTotal={5} logo="https://api.iconify.design/nimbus:check-circle.svg?color=%23f4f4f9" ></SkillCard>
               <SkillCard title="Collaboration" skillScore={4} skillTotal={5} logo="https://api.iconify.design/nimbus:user-group.svg?color=%23f4f4f9" ></SkillCard>
@@ -254,20 +256,8 @@ const IndexPage: React.FC<PageProps> = () => {
             </div>
             <div className="cloud-white border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6">
               <div className="flex flex-wrap justify-evenly">
-                <Paragraph text="Let it not be said that the arrangement of the mechanism
-would facilitate the development of The Modification of
-Chief Effectiveness (Abel Agnew in The Book of the
-Feedback System)
-By the way, the point of the comprehensive methods has
-common features with the more individual elements of
-the operational system."></Paragraph>
-                <Paragraph text="Let it not be said that the arrangement of the
-mechanism would facilitate the development of
-The Modification of Chief Effectiveness (Abel
-Agnew in The Book of the Feedback System)
-By the way, the point of the comprehensive
-methods has common features with the more
-individual elements of the operational system."></Paragraph>
+                <Paragraph text="When I'm not coding, I expand my knowledge and interests in various ways. I listen to podcasts on finance, self-help, graphic design, communication, and other topics that spark my curiosity. I also relax by listening to music, watching humorous videos and memes, or playing games to unwind and manage stress. Additionally, I stay up-to-date with the latest tech industry insights and trends by watching conference talks and listening to developer podcasts, where I can learn from experienced professionals and gain valuable tips and advice."></Paragraph>
+                <Paragraph text="As a junior engineer, sustainability, efficiency, and integrity guide me. I focus on reusable, maintainable code, optimize processes, and prioritize accountability. Learning from seniors, I aim to adopt best practices. Continuous learning strengthens my skills, and I strive for long-term growth. My goal is to deliver quality solutions, and I welcome opportunities to enhance my abilities."></Paragraph>
               </div>
               <div className="mb-16"></div>
               <div className="flex flex-wrap">
@@ -293,8 +283,11 @@ individual elements of the operational system."></Paragraph>
 export default IndexPage
 
 export const Head: HeadFC = () => <> <title>Home | Mc Samuel Shoko</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" />
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />  
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" />
   <link rel="icon" href="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/main/design/favicon.ico" />
 </>
