@@ -44,7 +44,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 <Paragraph text="Junior software engineer eager to learn and grow. Fascinated by backend and full-stack development, seeking opportunities to expand my skills and knowledge." />
               </div>
               <div className="mt-10"></div>
-              <Button text="Download Resume" link={"https://app.enhancv.com/resume/652c04424fe2836983cc4666"} size={"large"} />
+              <Button text="Download Resume" link={"https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"} size={"large"} />
               <div className="mt-4"></div>
               <Button text="Github profile" link={"https://github.com/Stroustrups-Sentinel"} size={"large"} background="black"/>
 
@@ -92,7 +92,7 @@ const IndexPage: React.FC<PageProps> = () => {
             </div>
             <div className="">
               <div className="cloud-white border-2 border-grey rounded-24 py-4 max-w-800">
-                <span className="px-4">
+                <span className="p-2 px-4 font-site-mono text-xl">
                   Technologies
                 </span>
                 <hr className="border-grey" />
@@ -212,7 +212,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 </ul>
               </div>
               <div className="m-2">
-                <Button text="Download Resume" link="https://app.enhancv.com/resume/652c04424fe2836983cc4666"></Button>
+                <Button text="Download Resume" link="https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"></Button>
               </div>
             </div>
 
