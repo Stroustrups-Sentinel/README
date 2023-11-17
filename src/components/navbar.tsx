@@ -5,7 +5,8 @@ import type { Crumb, BreadcrumbProps } from "./breadcrumb";
 
 import GatsbyConfig from "../../gatsby-config"
 
-const siteUrl: string = (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
+let siteUrl: string = (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
+siteUrl = (window.location.hostname == "localhost" ? "/" : siteUrl);
 
 const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
     return (
@@ -35,22 +36,22 @@ const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                         <ul className="font-site-sans flex items-center flex-col font-bold text-lg p-4 md:p-0 mt-4  md:flex-row md:space-x-8 md:mt-0 md:border-0">
                             <li>
-                                <Breadcrumb links={links} currentPage={currentPage} homeUrl={homeUrl}></Breadcrumb>
+                                <Breadcrumb links={links} currentPage={currentPage} homeUrl={homeUrl??siteUrl}></Breadcrumb>
                             </li>
                             <li>
-                                <a href="#projects" className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline" aria-current="page">Projects</a>
+                                <a href={siteUrl+"#projects"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline" aria-current="page">Projects</a>
                             </li>
                             <li>
-                                <a href="#skills" className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Skills</a>
+                                <a href={siteUrl+"#skills"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Skills</a>
                             </li>
                             <li>
-                                <a href="#contact" className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Contact</a>
+                                <a href={siteUrl+"#contact"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Contact</a>
                             </li>
                             <li>
-                                <a href="#resume" className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Resume</a>
+                                <a href={siteUrl+"#resume"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Resume</a>
                             </li>
                             <li>
-                                <a href="#about" className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">About</a>
+                                <a href={siteUrl+"#about"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">About</a>
                             </li>
                         </ul>
                     </div>
