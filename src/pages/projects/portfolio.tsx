@@ -3,17 +3,12 @@ import type { HeadFC, PageProps } from "gatsby"
 import '../../css/global.css'
 import Navbar from "../../components/navbar";
 import CenteredTitle from "../../components/centeredTitle";
+import ProjectPage from "../../components/projectPage";
 
 const PortfolioPage: React.FC<PageProps> = () => {
     return (
         <>
-            <div>
-                <Navbar ></Navbar>
-                <div className="p-2 bg-pattern-te m-4 rounded-24 shadow-lg">
-                <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
-
-                </div>
-            </div>
+            <ProjectPage projectName="the good project"></ProjectPage>
         </>
     );
 }
