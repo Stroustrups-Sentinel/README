@@ -1,6 +1,7 @@
 import * as React from "react"
 import '../css/global.css'
 import Breadcrumb from "./breadcrumb";
+import {Crumb} from "./breadcrumb";
 
 import GatsbyConfig from "../../gatsby-config"
 
@@ -65,3 +66,4 @@ const Navbar = ( /*breadCrumbs? : string */) => {
 
 
 export default Navbar;
+export {Crumb};

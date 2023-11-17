@@ -22,7 +22,7 @@ const currentPageElementHtml = (pageTitle: string) => (<li aria-current="page">
     </div>
 </li>);
 
-//TODO: generate the breadcrumb , and select a good data structure for this
+
 const crumbsTrail = (links: Crumb[]) => {
 
     return links.map((crumb)=>{
@@ -36,7 +36,7 @@ const crumbsTrail = (links: Crumb[]) => {
     });
 };
 
-const Breadcrumb = ({ links = [], currentPage = "", homeUrl = siteUrl }: BreadcrumbProps) => {
+const Breadcrumb = ({ links = [], currentPage = "keep cooking", homeUrl = siteUrl }: BreadcrumbProps) => {
 
 
     return (
