@@ -36,7 +36,7 @@ const crumbsTrail = (links: Crumb[]) => {
     });
 };
 
-const Breadcrumb = ({ links = [], currentPage = "keep cooking", homeUrl = siteUrl }: BreadcrumbProps) => {
+const Breadcrumb = ({ links = [], currentPage = "", homeUrl = siteUrl }: BreadcrumbProps) => {
 
 
     return (

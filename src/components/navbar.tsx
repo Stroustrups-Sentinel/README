@@ -1,7 +1,7 @@
 import * as React from "react"
 import '../css/global.css'
 import Breadcrumb from "./breadcrumb";
-import {Crumb} from "./breadcrumb";
+import type {Crumb} from "./breadcrumb";
 
 import GatsbyConfig from "../../gatsby-config"
 
