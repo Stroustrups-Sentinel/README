@@ -66,4 +66,4 @@ const Breadcrumb = ({ links = [], currentPage = "", homeUrl = siteUrl }: Breadcr
 }
 
 export default Breadcrumb;
-export {Crumb};
+export {Crumb, BreadcrumbProps};
