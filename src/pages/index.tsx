@@ -15,7 +15,7 @@ import ListItem from "../components/listItem"
 import ContactCard from "../components/contactCard"
 
 // -------------------------------------------------
-
+const currentUrlLocation:string = window.location.href.split('#')[0];
 const projectsData = projects;
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -25,10 +25,10 @@ const IndexPage: React.FC<PageProps> = () => {
         <Navbar></Navbar>
         <div className="p-2 bg-pattern m-4 rounded-24 shadow-lg">
 
-          <div className="bg-red-500 rounded-24 ">
+          {/* <div className="bg-red-500 rounded-24 ">
             <CenteredTitle title={"THIS IS A WORK IN PROGRESS <!>"} ></CenteredTitle>
           </div>
-          <hr />
+          <hr /> */}
           <CenteredTitle title={"MC SAMUEL SHOKO"} ></CenteredTitle>
 
 
@@ -58,7 +58,10 @@ const IndexPage: React.FC<PageProps> = () => {
               type={data.type ? data.type : "--"}
               name={data.name ? data.name : "--"}
               technologies={data.technologies ? data.technologies : []}
-              description={data.description ? data.description : ""} logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" imgUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" />)}
+              description={data.description ? data.description : ""} logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" imgUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"
+              moreUrl={currentUrlLocation+data.moreUrl}
+              openUrl={currentUrlLocation+data.openUrl}
+              />)}
 
           </div>
 
