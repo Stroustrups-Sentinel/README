@@ -23,3 +23,4 @@ const CenteredTitle = (
 };
 
 export default CenteredTitle;
+export {CenteredTitleProps};
