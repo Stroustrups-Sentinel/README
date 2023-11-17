@@ -2,6 +2,11 @@ import * as React from "react"
 import '../css/global.css'
 import Breadcrumb from "./breadcrumb";
 
+import GatsbyConfig from "../../gatsby-config"
+
+const siteUrl:string =  (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
+
+
 //TODO: add props to be used by the breadcrumb
 const Navbar = ( /*breadCrumbs? : string */) => {
     return (
@@ -10,7 +15,7 @@ const Navbar = ( /*breadCrumbs? : string */) => {
 
             <nav className="navbar-gradient border-gray-200 dark:bg-gray-900">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="/" className="flex items-center">
+                    <a href={siteUrl} className="flex items-center">
                         <img src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" className="h-8 mr-3 navbar-logo" alt="mcsamuel Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
                     </a>
@@ -34,19 +39,19 @@ const Navbar = ( /*breadCrumbs? : string */) => {
                                 <Breadcrumb></Breadcrumb>
                             </li>
                             <li>
-                                <a href="#projects" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 self-center" aria-current="page">Projects</a>
+                                <a href="#projects" className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline" aria-current="page">Projects</a>
                             </li>
                             <li>
-                                <a href="#skills" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                                <a href="#skills" className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Skills</a>
                             </li>
                             <li>
-                                <a href="#contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                                <a href="#contact" className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Contact</a>
                             </li>
                             <li>
-                                <a href="#resume" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Resume</a>
+                                <a href="#resume" className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Resume</a>
                             </li>
                             <li>
-                                <a href="#about" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                                <a href="#about" className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">About</a>
                             </li>
                         </ul>
                     </div>

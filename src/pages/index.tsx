@@ -14,7 +14,6 @@ import SkillCard from "../components/skillCard"
 import ListItem from "../components/listItem"
 import ContactCard from "../components/contactCard"
 
-
 // -------------------------------------------------
 
 const projectsData = projects;
@@ -46,7 +45,7 @@ const IndexPage: React.FC<PageProps> = () => {
               <div className="mt-10"></div>
               <Button text="Download Resume" link={"https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"} size={"large"} />
               <div className="mt-4"></div>
-              <Button text="Github profile" link={"https://github.com/Stroustrups-Sentinel"} size={"large"} background="black"/>
+              <Button text="Github profile" link={"https://github.com/Stroustrups-Sentinel"} size={"large"} background="black" />
 
             </div>
           </div>
@@ -54,12 +53,12 @@ const IndexPage: React.FC<PageProps> = () => {
           <CenteredTitle title="PROJECTS" topChevron={true} id="projects"></CenteredTitle>
           {/* <pre>{JSON.stringify(projectsData)}</pre> */}
           <div className="flex flex-wrap justify-evenly">
-            {projectsData.map((data) => <ProjectCard 
-            platform={data.platform ? data.platform : "--"} 
-            type={data.type ? data.type : "--"} 
-            name={data.name ? data.name: "--"} 
-            technologies={data.technologies ? data.technologies : []} 
-            description={data.description ? data.description : ""} logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" imgUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" />)}
+            {projectsData.map((data) => <ProjectCard
+              platform={data.platform ? data.platform : "--"}
+              type={data.type ? data.type : "--"}
+              name={data.name ? data.name : "--"}
+              technologies={data.technologies ? data.technologies : []}
+              description={data.description ? data.description : ""} logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" imgUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" />)}
 
           </div>
 
@@ -226,8 +225,8 @@ const IndexPage: React.FC<PageProps> = () => {
 
           <CenteredTitle title="CONTACT" topChevron={true} id="contact"></CenteredTitle>
           <div className="cloud-white border-2 border-grey rounded-24 p-4 m-6 flex flex-wrap justify-evenly">
-            {/* //TODO: add links to the onclick effect of the component */}
-            <ContactCard name="LinkedIn" contactUrl="https://www.linkedin.com/in/mc-samuel-shoko-2483731b5" tag="lets connect on"  logoUrl="https://api.iconify.design/logos:linkedin-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+
+            <ContactCard name="LinkedIn" contactUrl="https://www.linkedin.com/in/mc-samuel-shoko-2483731b5" tag="lets connect on" logoUrl="https://api.iconify.design/logos:linkedin-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
             <ContactCard name="Discord" contactUrl="https://discord.gg/GeneralSeven#6092" tag="find me on discord" logoUrl="https://api.iconify.design/logos:discord-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
             <ContactCard name="Twitter" contactUrl="https://twitter.com/shokosamuel" tag="send a tweet" logoUrl="https://api.iconify.design/logos:twitter.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
             <ContactCard name="Gmail" contactUrl="mailto:mcsamuelshoko558@gmail.com" tag="send me an email" logoUrl="https://api.iconify.design/logos:google-gmail.svg" iconUrl="https://api.iconify.design/nimbus:mail.svg"></ContactCard>
@@ -271,11 +270,11 @@ const IndexPage: React.FC<PageProps> = () => {
 export default IndexPage
 
 export const Head: HeadFC = () => <> <title>Home | Mc Samuel Shoko</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />  
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" />
   <link rel="icon" href="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/main/design/favicon.ico" />
 </>

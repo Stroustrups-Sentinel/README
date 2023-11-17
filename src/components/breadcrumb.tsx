@@ -1,4 +1,8 @@
 import * as React from "react"
+import GatsbyConfig from "../../gatsby-config"
+
+const siteUrl: string = (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack
+
 
 interface BreadcrumbProps {
     links?: [string[]];
@@ -16,10 +20,11 @@ const currentPageElementHtml = (pageTitle: string) => (<li aria-current="page">
 
 //TODO: generate the breadcrumb , and select a good data structure for this
 const crumbsTrail = (links: [string[]]) => {
-    
-    return ;};
 
-const Breadcrumb = ({ links = [[]], currentPage = "", homeUrl = "/" }: BreadcrumbProps) => {
+    return;
+};
+
+const Breadcrumb = ({ links = [[]], currentPage = "", homeUrl = siteUrl }: BreadcrumbProps) => {
 
 
 
@@ -52,6 +57,7 @@ const Breadcrumb = ({ links = [[]], currentPage = "", homeUrl = "/" }: Breadcrum
                                                     <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
                                                 </svg> */}
                             <svg className="w-4 h-4 mr-2.5" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" d="M15.5 14.69h-1.25V7.78a.62.62 0 0 0-.25-.47L8.4 2.7a.65.65 0 0 0-.81 0L2 7.31a.62.62 0 0 0-.22.47v6.91H.5V7.78a1.87 1.87 0 0 1 .68-1.44l5.62-4.6a1.88 1.88 0 0 1 2.39 0l5.63 4.6a1.87 1.87 0 0 1 .68 1.44z" /><path fill="currentColor" d="M11.05 12.11H9.8A1.72 1.72 0 0 0 8 10.49a1.72 1.72 0 0 0-1.8 1.62H5a3 3 0 0 1 3-2.87a3 3 0 0 1 3.05 2.87zm-6.1 0H6.2v2.58H4.95zm4.85 0h1.25v2.58H9.8z" /></svg>
+                            
                             Home
                         </a>
                     </li>
