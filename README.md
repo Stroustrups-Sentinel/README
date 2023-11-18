@@ -1,10 +1,24 @@
+
+[![Deploy Gatsby site to Pages](https://github.com/Stroustrups-Sentinel/readme/actions/workflows/gatsby.yml/badge.svg)](https://github.com/Stroustrups-Sentinel/readme/actions/workflows/gatsby.yml)&nbsp;
+[![Static Badge](https://img.shields.io/badge/visit_website-SWE_Portfolio-blue?logo=gatsby&labelColor=%231e4039&color=%23357266&link=https%3A%2F%2Fstroustrups-sentinel.github.io%2Freadme%2F)](https://stroustrups-sentinel.github.io/readme "my website / SWE portfolio")&nbsp;
+
+
+
+
+<p align="center">
+ <a href="https://stroustrups-sentinel.github.io/readme">
+    <img alt="Gatsby" src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" width="160" />
+  </a>
+</p>
+<hr/>
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal TypeScript Starter
+Gatsby Minimal TypeScript Starter
 </h1>
 
 ## 🚀 Quick start
