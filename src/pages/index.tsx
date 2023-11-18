@@ -17,7 +17,7 @@ import GatsbyConfig from "../../gatsby-config"
 
 // -------------------------------------------------
 const siteUrl: string = (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";
-const currentUrlLocation:string = window ? window.location.href.split('#')[0] : siteUrl;
+const currentUrlLocation:string = window.location.href.split('#')[0]??siteUrl;
 
 const projectsData = projects;
 
