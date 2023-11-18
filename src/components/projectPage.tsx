@@ -22,9 +22,9 @@ const ProjectPage = ({ projectName }: ProjectPageProps) => {
         <Navbar ></Navbar>
         <div className="p-2 bg-pattern-te m-4 rounded-24 shadow-lg">
             <div className="bg-red-500 rounded-24 ">
-            <CenteredTitle title={"THIS IS A WORK IN PROGRESS <!>"} ></CenteredTitle>
-          </div>
-          <hr />
+                <CenteredTitle title={"THIS IS A WORK IN PROGRESS <!>"} ></CenteredTitle>
+            </div>
+            <hr />
             <CenteredProjectTitle title={projectName} ></CenteredProjectTitle>
 
             <div className="flex flex-wrap justify-evenly">
@@ -36,7 +36,7 @@ const ProjectPage = ({ projectName }: ProjectPageProps) => {
                 <div className="">
                     <div className="mt-4"></div>
                     <div className="text-xl">
-                        <Paragraph text="Junior software engineer eager to learn and grow. Fascinated by backend and full-stack development, seeking opportunities to expand my skills and knowledge." />
+                        <Paragraph text="My portfolio website showcasing my skills, progress and career as a software engineer." />
                     </div>
                     <div className="mt-10"></div>
 
@@ -47,7 +47,7 @@ const ProjectPage = ({ projectName }: ProjectPageProps) => {
                 </div>
             </div>
             <div>
-                <img className="shadow m-1 border-2" height={500} src="https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/portfolio/banner.png?raw=true" alt=""  />
+                <img className="shadow m-1 border-2" height={500} src="https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/portfolio/banner.png?raw=true" alt="" />
             </div>
             <div className="mx-4 my-16 flex flex-wrap px-4"><TechnologyIcon src="https://api.iconify.design/logos:react.svg" link="https://react.dev" alt="React"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:gatsby.svg" link="https://www.gatsbyjs.com/" alt="Gatsby"></TechnologyIcon>
@@ -58,8 +58,8 @@ const ProjectPage = ({ projectName }: ProjectPageProps) => {
             </div>
             <div className="cloud-white border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6 w-fit mx-4">
                 <div className="flex flex-wrap justify-evenly">
-                    <Paragraph text="When I'm not coding, I expand my knowledge and interests in various ways. I listen to podcasts on finance, self-help, graphic design, communication, and other topics that spark my curiosity. I also relax by listening to music, watching humorous videos and memes, or playing games to unwind and manage stress. Additionally, I stay up-to-date with the latest tech industry insights and trends by watching conference talks and listening to developer podcasts, where I can learn from experienced professionals and gain valuable tips and advice."></Paragraph>
-                    <Paragraph text="As a junior engineer, sustainability, efficiency, and integrity guide me. I focus on reusable, maintainable code, optimize processes, and prioritize accountability. Learning from seniors, I aim to adopt best practices. Continuous learning strengthens my skills, and I strive for long-term growth. My goal is to deliver quality solutions, and I welcome opportunities to enhance my abilities."></Paragraph>
+                    <Paragraph text="Ipsum eiusmod laboris deserunt dolor incididunt eiusmod aute. Proident culpa qui eiusmod qui laboris sint eu fugiat cillum fugiat. Non culpa sit eu adipisicing ullamco. Mollit duis magna consectetur reprehenderit ea laboris magna aliqua id sunt commodo nostrud. Occaecat cupidatat duis cupidatat culpa.Esse consequat ea ad incididunt. Irure nisi sit mollit in magna qui magna. Reprehenderit aliqua mollit pariatur duis enim adipisicing eiusmod ea veniam elit eiusmod exercitation et consequat. Velit excepteur sit commodo proident. Officia anim id labore deserunt magna et aliquip."></Paragraph>
+                    <Paragraph text="Veniam tempor sit aliqua exercitation quis adipisicing Lorem aute consectetur velit. Laborum ad velit do commodo. Est velit consequat ullamco sunt tempor velit. Sint nulla velit laborum dolor qui consequat eu exercitation eiusmod enim ut dolor elit. Eiusmod incididunt do aute ullamco fugiat deserunt amet esse. Sint proident dolor anim mollit est aliqua occaecat minim fugiat cillum fugiat enim aute. Ut dolor nisi commodo exercitation ut cupidatat."></Paragraph>
                 </div>
                 <div className="mb-16"></div>
             </div>
