@@ -1,7 +1,7 @@
 import * as React from "react"
-import GatsbyConfig from "../../gatsby-config"
+// import GatsbyConfig from "../../gatsby-config"
 
-const siteUrl: string = (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack
+const siteUrl: string = "https://stroustrups-sentinel.github.io/readme/";//(GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack
 
 interface Crumb {
     title: string;

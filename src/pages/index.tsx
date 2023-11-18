@@ -13,10 +13,10 @@ import TechnologyIcon from "../components/technologyIcon"
 import SkillCard from "../components/skillCard"
 import ListItem from "../components/listItem"
 import ContactCard from "../components/contactCard"
-import GatsbyConfig from "../../gatsby-config"
+// import GatsbyConfig from "../../gatsby-config"
 
 // -------------------------------------------------
-const siteUrl: string = (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";
+const siteUrl: string = "https://stroustrups-sentinel.github.io/readme/";//(GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";
 let currentUrlLocation: string = siteUrl;
 
 // Check if window is defined (so if in the browser or in node.js).
