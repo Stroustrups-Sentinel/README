@@ -17,7 +17,15 @@ import GatsbyConfig from "../../gatsby-config"
 
 // -------------------------------------------------
 const siteUrl: string = (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";
-const currentUrlLocation:string = window.location.href.split('#')[0]??siteUrl;
+let currentUrlLocation: string = siteUrl;
+
+// Check if window is defined (so if in the browser or in node.js).
+const isBrowser = typeof window !== "undefined"
+
+if (isBrowser) {
+  currentUrlLocation = window.location.href.split('#')[0];
+}
+
 
 const projectsData = projects;
 
@@ -57,16 +65,16 @@ const IndexPage: React.FC<PageProps> = () => {
           {/* <pre>{JSON.stringify(projectsData)}</pre> */}
           <div className="flex flex-wrap justify-evenly">
             {projectsData.map((data) => <ProjectCard
-              platform={data.platform ??"--"}
-              type={data.type ??"--"}
-              name={data.name ??"--"}
-              technologies={data.technologies ??[]}
-              description={data.description ??""} 
-              logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" 
-              imgUrl={data.imgUrl??"https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
-              moreUrl={currentUrlLocation+data.moreUrl}
-              openUrl={currentUrlLocation+data.openUrl}
-              />)}
+              platform={data.platform ?? "--"}
+              type={data.type ?? "--"}
+              name={data.name ?? "--"}
+              technologies={data.technologies ?? []}
+              description={data.description ?? ""}
+              logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"
+              imgUrl={data.imgUrl ?? "https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
+              moreUrl={currentUrlLocation + data.moreUrl}
+              openUrl={currentUrlLocation + data.openUrl}
+            />)}
 
           </div>
 
