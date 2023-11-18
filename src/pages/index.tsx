@@ -13,9 +13,12 @@ import TechnologyIcon from "../components/technologyIcon"
 import SkillCard from "../components/skillCard"
 import ListItem from "../components/listItem"
 import ContactCard from "../components/contactCard"
+import GatsbyConfig from "../../gatsby-config"
 
 // -------------------------------------------------
-const currentUrlLocation:string = window.location.href.split('#')[0];
+const siteUrl: string = (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";
+const currentUrlLocation:string = window ? window.location.href.split('#')[0] : siteUrl;
+
 const projectsData = projects;
 
 const IndexPage: React.FC<PageProps> = () => {
