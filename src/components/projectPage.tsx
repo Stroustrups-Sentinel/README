@@ -2,6 +2,7 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import '../css/global.css'
 import Navbar from "./navbar";
+import type { Crumb } from "./navbar";
 import CenteredProjectTitle from "./centredProjectTitle";
 import AvatarPortrait from "./avatarPortrait";
 import Button from "./button";
@@ -16,6 +17,8 @@ interface ProjectPageProps {
 const generateTechnologies = () => {
 
 }
+
+
 
 const ProjectPage = ({ projectName }: ProjectPageProps) => {
     return (<div>
@@ -40,9 +43,9 @@ const ProjectPage = ({ projectName }: ProjectPageProps) => {
                     </div>
                     <div className="mt-10"></div>
 
-                    <Button text="Github repository" link={"https://github.com/Stroustrups-Sentinel"} size={"large"} background="black" />
+                    <Button text="Github repository" link={"https://github.com/Stroustrups-Sentinel/readme"} size={"large"} background="black" />
                     <div className="mt-4"></div>
-                    <Button text="open" link={"https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"} size={"large"} />
+                    <Button text="open" link={"https://github.com/Stroustrups-Sentinel/readme"} size={"large"} />
 
                 </div>
             </div>
@@ -71,3 +74,4 @@ const ProjectPage = ({ projectName }: ProjectPageProps) => {
 };
 
 export default ProjectPage;
+export {Crumb};
