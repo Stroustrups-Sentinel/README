@@ -6,7 +6,7 @@ import type { Crumb, BreadcrumbProps } from "./breadcrumb";
 import GatsbyConfig from "../../gatsby-config"
 
 let siteUrl: string = (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
-siteUrl = (window.location.hostname == "localhost" ? "/" : siteUrl);
+siteUrl = ((window.location.hostname??"") == "localhost" ? "/" : siteUrl) ; //* The null check is to differentiate between dev mode and building mode where there is no window object
 
 const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
     return (
