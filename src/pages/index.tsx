@@ -54,11 +54,13 @@ const IndexPage: React.FC<PageProps> = () => {
           {/* <pre>{JSON.stringify(projectsData)}</pre> */}
           <div className="flex flex-wrap justify-evenly">
             {projectsData.map((data) => <ProjectCard
-              platform={data.platform ? data.platform : "--"}
-              type={data.type ? data.type : "--"}
-              name={data.name ? data.name : "--"}
-              technologies={data.technologies ? data.technologies : []}
-              description={data.description ? data.description : ""} logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" imgUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"
+              platform={data.platform ??"--"}
+              type={data.type ??"--"}
+              name={data.name ??"--"}
+              technologies={data.technologies ??[]}
+              description={data.description ??""} 
+              logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" 
+              imgUrl={data.imgUrl??"https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
               moreUrl={currentUrlLocation+data.moreUrl}
               openUrl={currentUrlLocation+data.openUrl}
               />)}
