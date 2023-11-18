@@ -1,16 +1,21 @@
 import * as React from "react"
 import '../css/global.css'
 import Breadcrumb from "./breadcrumb";
+import type { Crumb, BreadcrumbProps } from "./breadcrumb";
 
-//TODO: add props to be used by the breadcrumb
-const Navbar = ( /*breadCrumbs? : string */) => {
+import GatsbyConfig from "../../gatsby-config"
+
+let siteUrl: string = (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
+siteUrl = (window.location.hostname == "localhost" ? "/" : siteUrl);
+
+const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
     return (
         <>
 
 
             <nav className="navbar-gradient border-gray-200 dark:bg-gray-900">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href="/" className="flex items-center">
+                    <a href={siteUrl} className="flex items-center">
                         <img src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" className="h-8 mr-3 navbar-logo" alt="mcsamuel Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
                     </a>
@@ -31,22 +36,22 @@ const Navbar = ( /*breadCrumbs? : string */) => {
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                         <ul className="font-site-sans flex items-center flex-col font-bold text-lg p-4 md:p-0 mt-4  md:flex-row md:space-x-8 md:mt-0 md:border-0">
                             <li>
-                                <Breadcrumb></Breadcrumb>
+                                <Breadcrumb links={links} currentPage={currentPage} homeUrl={homeUrl??siteUrl}></Breadcrumb>
                             </li>
                             <li>
-                                <a href="#projects" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 self-center" aria-current="page">Projects</a>
+                                <a href={siteUrl+"#projects"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline" aria-current="page">Projects</a>
                             </li>
                             <li>
-                                <a href="#skills" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                                <a href={siteUrl+"#skills"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Skills</a>
                             </li>
                             <li>
-                                <a href="#contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                                <a href={siteUrl+"#contact"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Contact</a>
                             </li>
                             <li>
-                                <a href="#resume" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Resume</a>
+                                <a href={siteUrl+"#resume"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">Resume</a>
                             </li>
                             <li>
-                                <a href="#about" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                                <a href={siteUrl+"#about"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline">About</a>
                             </li>
                         </ul>
                     </div>
@@ -60,3 +65,4 @@ const Navbar = ( /*breadCrumbs? : string */) => {
 
 
 export default Navbar;
+export { Crumb };

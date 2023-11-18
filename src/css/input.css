@@ -83,7 +83,8 @@
     width: 96px;
     height: 96px;
 }
-.tech-icon{
+
+.tech-icon {
     height: 72px;
     min-width: 72px;
 }
@@ -143,26 +144,34 @@
 
 }
 
-.job-xp-card{
+.job-xp-card {
     min-height: 469px;
 }
 
-.rounded-48{
+.rounded-48 {
     border-radius: 48px;
 }
-.hw-48{
+
+.hw-48 {
     height: 48px;
     width: 48px;
 }
 
-.bg-pattern{
+.bg-pattern {
     /* background-color: #53b3a0; */
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231e4039' fill-opacity='0.5' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.max-w-800{
+
+.bg-pattern-te {
+    /* background-color: #53b3a0; */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231e4039' fill-opacity='0.5' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.max-w-800 {
     max-width: 800px;
 }
-.w-24{
+
+.w-24 {
     width: 24rem;
 }
