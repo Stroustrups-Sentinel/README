@@ -37,12 +37,13 @@ interface TechnologyItem {
 }
 
 const generateTechnologies = (techsList: string[], techsJsonObject: TechnologyItem[]) =>
-    techsList.map((techName: string) =>
-        techsJsonObject.filter((techObj) => {
-            if ((techObj.name.toLowerCase()) == (techName.toLowerCase()))
-                return (<TechnologyIcon src={techObj.logoUrl} link={techObj.websiteUrl} alt={techObj.name}></TechnologyIcon>);
+    techsList.map((techName: string) => {
+        const matchedTech = techsJsonObject.filter((techObj) => (techName.toLowerCase() == techObj.name.toLowerCase()));
 
-        })
+        if (matchedTech.length > 0)
+            return (<TechnologyIcon src={matchedTech[0].logoUrl} link={matchedTech[0].websiteUrl} alt={techName}></TechnologyIcon>);
+        return null;
+    }
 
     );
 
@@ -53,10 +54,6 @@ const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, ex
     return (<div>
         <Navbar ></Navbar>
         <div className="p-2 bg-pattern-te m-4 rounded-24 shadow-lg">
-            {/* <div className="bg-red-500 rounded-24 ">
-                <CenteredTitle title={"THIS IS A WORK IN PROGRESS <!>"} ></CenteredTitle>
-            </div>
-            <hr /> */}
             <CenteredProjectTitle title={projectName} ></CenteredProjectTitle>
 
             <div className="flex flex-wrap justify-evenly">
@@ -85,14 +82,7 @@ const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, ex
             </div>
 
             <div className="mx-4 my-16 flex flex-wrap justify-center px-4">
-
-                {/* {generateTechnologies(technologiesUsed, technologies)} */}
-                <TechnologyIcon src="https://api.iconify.design/logos:react.svg" link="https://react.dev" alt="React"></TechnologyIcon>
-                <TechnologyIcon src="https://api.iconify.design/logos:gatsby.svg" link="https://www.gatsbyjs.com/" alt="Gatsby"></TechnologyIcon>
-                <TechnologyIcon src="https://api.iconify.design/logos:bootstrap.svg" link="https://getbootstrap.com/" alt="Bootstrap"></TechnologyIcon>
-                <TechnologyIcon src="https://api.iconify.design/logos:materializecss.svg" link="https://materializecss.com/" alt="MaterializeCss"></TechnologyIcon>
-                <TechnologyIcon src="https://api.iconify.design/logos:tailwindcss-icon.svg" link="https://tailwindcss.com/" alt="TailwindCss"></TechnologyIcon>
-                <TechnologyIcon src="https://api.iconify.design/logos:thymeleaf-icon.svg" link="https://www.thymeleaf.org/" alt="Thymeleaf"></TechnologyIcon>
+                {generateTechnologies(technologiesUsed, technologies)}
             </div>
             <div className="cloud-white border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6 w-fit mx-auto">
                 <div className="flex flex-wrap justify-evenly">
