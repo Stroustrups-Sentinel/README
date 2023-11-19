@@ -4,11 +4,28 @@ import '../../css/global.css'
 import Navbar from "../../components/navbar";
 import CenteredTitle from "../../components/centeredTitle";
 import ProjectPage from "../../components/projectPage";
+import projects from "../../json/projects.json"
+
+const project = projects[0];
+
+const allImageUrls:string[] = [project.bannerUrl,...project.imageUrls,];
 
 const PortfolioPage: React.FC<PageProps> = () => {
     return (
         <>
-            <ProjectPage projectName="the good project"></ProjectPage>
+            <ProjectPage 
+            projectName={project.name}
+            technologiesUsed={project.technologies}
+            description={project.description}
+            caseStudy={project.caseStudy}
+            experience={project.experience}
+            galleryImages={allImageUrls}
+            logoUrl={project.logoUrl}
+            moreUrl={project.moreUrl}
+            openUrl={project.openUrl}
+            repositoryUrl={project.repositoryUrl}
+            
+            ></ProjectPage>
         </>
     );
 }
