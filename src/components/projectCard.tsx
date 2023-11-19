@@ -49,7 +49,7 @@ const ProjectCard = ({ platform,
             <div className="mb-2 px-4">
                 <span className="text-lg capitalize font-bold font-site-serif">{name}</span>
                 <br />
-                <span className="text-md font-site-serif">{technologies.join(", ")}</span>
+                <span className="text-md font-site-serif text-sm">{technologies.join(", ")}</span>
 
             </div>
             <div className="mb-2 px-4">
