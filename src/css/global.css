@@ -1218,6 +1218,10 @@ video {
   max-width: 800px;
 }
 
+.max-w-360{
+  max-width: 360px;
+}
+
 .w-24 {
   width: 24rem;
 }

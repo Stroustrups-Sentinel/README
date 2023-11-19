@@ -34,7 +34,7 @@ const ProjectCard = ({ platform,
         alt = "project-image" }: ProjectCardProps) => {
 
     return (
-        <div className="m-3 rounded-24 border border-grey py-4 cloud-white shadow-md">
+        <div className="m-3 rounded-24 border border-grey py-4 cloud-white shadow-md max-w-360">
             <div className="flex flex-wrap mb-4 px-4">
                 <img src={logoUrl} alt={"logo"} width={"48"} height={"48"} className="mr-4" />
                 <div className="">
@@ -50,6 +50,7 @@ const ProjectCard = ({ platform,
                 <span className="text-lg capitalize font-bold font-site-serif">{name}</span>
                 <br />
                 <span className="text-md font-site-serif">{technologies.join(", ")}</span>
+
             </div>
             <div className="mb-2 px-4">
                 <Paragraph text={description} />
