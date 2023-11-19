@@ -56,7 +56,10 @@ const ProjectPage = ({ projectName }: ProjectPageProps) => {
                 <hr className="border-grey my-4" />
             </div>
 
-            <div className="mx-4 my-16 flex flex-wrap justify-center px-4"><TechnologyIcon src="https://api.iconify.design/logos:react.svg" link="https://react.dev" alt="React"></TechnologyIcon>
+            <div className="mx-4 my-16 flex flex-wrap justify-center px-4">
+
+                
+                <TechnologyIcon src="https://api.iconify.design/logos:react.svg" link="https://react.dev" alt="React"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:gatsby.svg" link="https://www.gatsbyjs.com/" alt="Gatsby"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:bootstrap.svg" link="https://getbootstrap.com/" alt="Bootstrap"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:materializecss.svg" link="https://materializecss.com/" alt="MaterializeCss"></TechnologyIcon>
