@@ -10,10 +10,10 @@ interface CenteredProjectTitleProps extends CenteredTitleProps {
     previousPage?: Crumb;
 }
 const CenteredProjectTitle = ({ title, nextPage, previousPage, }: CenteredProjectTitleProps) => {
-    return (<div className="flex justify-between items-center mx-4">
-        <Button text="🢀" background="black" link={previousPage?.url ?? ""}></Button>
+    return (<div className="flex justify-between items-center mx-4 font-bold text-2xl">
+        <Button text="<|-" background="black" link={previousPage?.url ?? ""}></Button>
         <CenteredTitle title={title.toUpperCase()}></CenteredTitle>
-        <Button text="🢂" background="black" link={nextPage?.url ?? ""}></Button>
+        <Button text="-|>" background="black" link={nextPage?.url ?? ""}></Button>
     </div>);
 };
 

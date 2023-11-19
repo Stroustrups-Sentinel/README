@@ -1,5 +1,192 @@
 [
     {
-        
+        "name": "azure",
+        "logoUrl": "https://api.iconify.design/logos:microsoft-azure.svg",
+        "websiteUrl": "https://azure.microsoft.com/"
+    },
+    {
+        "name": "bootstrap",
+        "logoUrl": "https://api.iconify.design/logos:bootstrap.svg",
+        "websiteUrl": "https://getbootstrap.com/"
+    },
+    {
+        "name": "css",
+        "logoUrl": "https://api.iconify.design/logos:css-3.svg",
+        "websiteUrl": "https://www.w3.org/Style/CSS/Overview.en.html"
+    },
+    {
+        "name": "c++",
+        "logoUrl": "https://api.iconify.design/logos:c-plusplus.svg",
+        "websiteUrl": "https://cplusplus.com/"
+    },
+    {
+        "name": "csharp",
+        "logoUrl": "https://api.iconify.design/devicon:csharp.svg",
+        "websiteUrl": "https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/"
+    },
+    {
+        "name": "dart",
+        "logoUrl": "https://api.iconify.design/logos:dart.svg",
+        "websiteUrl": "https://dart.dev/"
+    },
+    {
+        "name": "django",
+        "logoUrl": "https://api.iconify.design/logos:django-icon.svg",
+        "websiteUrl": "https://www.djangoproject.com/"
+    },
+    {
+        "name": "docker",
+        "logoUrl": "https://api.iconify.design/logos:docker-icon.svg",
+        "websiteUrl": "https://www.docker.com/"
+    },
+    {
+        "name": "dotnet",
+        "logoUrl": "https://api.iconify.design/logos:dotnet.svg",
+        "websiteUrl": "https://dotnet.microsoft.com/"
+    },
+    {
+        "name": "gatsby",
+        "logoUrl": "https://api.iconify.design/logos:gatsby.svg",
+        "websiteUrl": "https://www.gatsbyjs.com/"
+    },
+    {
+        "name": "git",
+        "logoUrl": "https://api.iconify.design/logos:git-icon.svg",
+        "websiteUrl": "https://git-scm.com/"
+    },
+    {
+        "name": "github",
+        "logoUrl": "https://api.iconify.design/logos:github-icon.svg",
+        "websiteUrl": "https://github.com"
+    },
+    {
+        "name": "golang",
+        "logoUrl": "https://api.iconify.design/devicon:go.svg",
+        "websiteUrl": "https://go.dev/"
+    },
+    {
+        "name": "figma",
+        "logoUrl": "https://api.iconify.design/logos:figma.svg",
+        "websiteUrl": "https://www.figma.com/"
+    },
+    {
+        "name": "flutter",
+        "logoUrl": "https://api.iconify.design/logos:flutter.svg",
+        "websiteUrl": "https://flutter.dev/"
+    },
+    {
+        "name": "html",
+        "logoUrl": "https://api.iconify.design/logos:html-5.svg",
+        "websiteUrl": "https://html.com"
+    },
+    {
+        "name": "inkscape",
+        "logoUrl": "https://api.iconify.design/devicon:inkscape.svg",
+        "websiteUrl": "https://inkscape.org/"
+    },
+    {
+        "name": "java",
+        "logoUrl": "https://api.iconify.design/logos:java.svg",
+        "websiteUrl": "https://www.java.com/"
+    },
+    {
+        "name": "javascript",
+        "logoUrl": "https://api.iconify.design/logos:javascript.svg",
+        "websiteUrl": "https://www.javascript.com/"
+    },
+    {
+        "name": "jest",
+        "logoUrl": "https://api.iconify.design/logos:jest.svg",
+        "websiteUrl": "https://jestjs.io/"
+    },
+    {
+        "name": "json",
+        "logoUrl": "https://api.iconify.design/logos:json.svg",
+        "websiteUrl": "https://www.json.org/json-en.html"
+    },
+    {
+        "name": "kubernetes",
+        "logoUrl": "https://api.iconify.design/logos:kubernetes.svg",
+        "websiteUrl": "https://kubernetes.io/"
+    },
+    {
+        "name": "laravel",
+        "logoUrl": "https://api.iconify.design/logos:laravel.svg",
+        "websiteUrl": "https://laravel.com/"
+    },
+    {
+        "name": "lunacy",
+        "logoUrl": "https://raw.githubusercontent.com/maki-studio/.github/b974af72f4208daf7678d1cf772096e55bcc7aa0/profile/lunacy-logo.svg",
+        "websiteUrl": "https://icons8.com/lunacy"
+    },
+    {
+        "name": "materializecss",
+        "logoUrl": "https://api.iconify.design/logos:materializecss.svg",
+        "websiteUrl": "https://materializecss.com/"
+    },
+    {
+        "name": "mongodb",
+        "logoUrl": "https://api.iconify.design/logos:mongodb-icon.svg",
+        "websiteUrl": "https://www.mongodb.com/"
+    },
+    {
+        "name": "mysql",
+        "logoUrl": "https://api.iconify.design/logos:mysql-icon.svg",
+        "websiteUrl": "https://www.mysql.com/"
+    },
+    {
+        "name": "postgresql",
+        "logoUrl": "https://api.iconify.design/logos:postgresql.svg",
+        "websiteUrl": "https://www.postgresql.org/"
+    },
+    {
+        "name": "php",
+        "logoUrl": "https://api.iconify.design/logos:php.svg",
+        "websiteUrl": "https://www.php.net/"
+    },
+    {
+        "name": "python",
+        "logoUrl": "https://api.iconify.design/logos:python.svg",
+        "websiteUrl": "https://python.org"
+    },
+    {
+        "name": "react",
+        "logoUrl": "https://api.iconify.design/logos:react.svg",
+        "websiteUrl": "https://react.dev"
+    },
+    {
+        "name": "sass",
+        "logoUrl": "https://api.iconify.design/logos:sass.svg",
+        "websiteUrl": "https://sass-lang.com/"
+    },
+    {
+        "name": "spring",
+        "logoUrl": "https://api.iconify.design/logos:spring-icon.svg",
+        "websiteUrl": "https://spring.io/"
+    },
+    {
+        "name": "sqlserver",
+        "logoUrl": "https://api.iconify.design/devicon:azuresqldatabase.svg",
+        "websiteUrl": "https://www.microsoft.com/en-za/sql-server/sql-server-downloads"
+    },
+    {
+        "name": "tailwindCss",
+        "logoUrl": "https://api.iconify.design/logos:tailwindcss-icon.svg",
+        "websiteUrl": "https://tailwindcss.com/"
+    },
+    {
+        "name": "thymeleaf",
+        "logoUrl": "https://api.iconify.design/logos:thymeleaf-icon.svg",
+        "websiteUrl": "https://www.thymeleaf.org/"
+    },
+    {
+        "name": "typescript",
+        "logoUrl": "https://api.iconify.design/logos:typescript-icon.svg",
+        "websiteUrl": "https://www.typescriptlang.org/"
+    },
+    {
+        "name": "",
+        "logoUrl": "",
+        "websiteUrl": ""
     }
 ]

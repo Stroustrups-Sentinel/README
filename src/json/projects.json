@@ -3,15 +3,24 @@
         "platform": "web",
         "type": "Frontend",
         "name": "My SWE Portfolio",
-        "title":"Portfolio",
-        "technologies": ["Typescript ","Gatsby","React","TailwindCss", "Css"],
+        "title": "Portfolio",
+        "technologies": [
+            "Typescript ",
+            "Gatsby",
+            "React",
+            "TailwindCss",
+            "Css"
+        ],
         "description": "My portfolio website showcasing my skills, progress and career as a software engineer.",
-        "experience": "--how was, and how did it go it ?--",
+        "caseStudy": "",
+        "experience": "After a long time ",
         "imgUrl": "https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/portfolio/banner.png?raw=true",
         "logoUrl": "",
         "openUrl": "#",
         "moreUrl": "projects/portfolio",
         "altText": "",
-        "images": [""]
+        "images": [
+            ""
+        ]
     }
 ]

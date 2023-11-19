@@ -118,11 +118,12 @@ const IndexPage: React.FC<PageProps> = () => {
                   <TechnologyIcon src="https://api.iconify.design/logos:html-5.svg" link="https://html.com" alt="Html"></TechnologyIcon>
                   <TechnologyIcon src="https://api.iconify.design/logos:css-3.svg" link="https://www.w3.org/Style/CSS/Overview.en.html" alt="CSS"></TechnologyIcon>
                   <TechnologyIcon src="https://api.iconify.design/logos:sass.svg" link="https://sass-lang.com/" alt="Sass"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:json.svg" link="https://www.json.org/json-en.html" alt="Json"></TechnologyIcon>
                   <TechnologyIcon src="https://api.iconify.design/logos:javascript.svg" link="https://www.javascript.com/" alt="JavaScript"></TechnologyIcon>
                   <TechnologyIcon src="https://api.iconify.design/logos:typescript-icon.svg" link="https://www.typescriptlang.org/" alt="TypeScript"></TechnologyIcon>
                   {/* Backend: Python, Java, C#, C++, Php, Go */}
                   <TechnologyIcon src="https://api.iconify.design/logos:python.svg" link="https://python.org" alt="Python"></TechnologyIcon>
-                  <TechnologyIcon src="https://api.iconify.design/logos:java.svg" link="https://www.java.com/en/" alt="Java"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:java.svg" link="https://www.java.com/" alt="Java"></TechnologyIcon>
                   <TechnologyIcon src="https://api.iconify.design/devicon:csharp.svg" link="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" alt="csharp"></TechnologyIcon>
                   <TechnologyIcon src="https://api.iconify.design/logos:c-plusplus.svg" link="https://cplusplus.com/" alt="c++"></TechnologyIcon>
                   <TechnologyIcon src="https://api.iconify.design/logos:php.svg" link="https://www.php.net/" alt="Php"></TechnologyIcon>
