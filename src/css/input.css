@@ -58,6 +58,9 @@
 .lime-text {
     color: #53dd6c;
 }
+.dark-green-text {
+    color: #1e4039;
+}
 
 .border-grey {
     border-color: #cac4d0;
@@ -177,4 +180,5 @@
 }
 .height-480{
     height: 480px;
+    object-fit: cover;
 }
