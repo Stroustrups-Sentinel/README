@@ -49,17 +49,22 @@ const ProjectPage = ({ projectName }: ProjectPageProps) => {
 
                 </div>
             </div>
-            <div>
-                <img className="shadow m-1 border-2" height={500} src="https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/portfolio/banner.png?raw=true" alt="" />
+            <div className="flex overflow-auto place-content-center">
+                <img className="shadow m-2 border-2 height-480"  src="https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/portfolio/banner.png?raw=true" alt="" />
+                <img className="shadow m-2 border-2 height-480"  src="https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/portfolio/banner.png?raw=true" alt="" />
+                <img className="shadow m-2 border-2 height-480"  src="https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/portfolio/banner.png?raw=true" alt="" />
+                <img className="shadow m-2 border-2 height-480"  src="https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/portfolio/banner.png?raw=true" alt="" />
+                <img className="shadow m-2 border-2 height-480"  src="https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/portfolio/banner.png?raw=true" alt="" />
             </div>
-            <div className="mx-4 my-16 flex flex-wrap px-4"><TechnologyIcon src="https://api.iconify.design/logos:react.svg" link="https://react.dev" alt="React"></TechnologyIcon>
+
+            <div className="mx-4 my-16 flex flex-wrap justify-center px-4"><TechnologyIcon src="https://api.iconify.design/logos:react.svg" link="https://react.dev" alt="React"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:gatsby.svg" link="https://www.gatsbyjs.com/" alt="Gatsby"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:bootstrap.svg" link="https://getbootstrap.com/" alt="Bootstrap"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:materializecss.svg" link="https://materializecss.com/" alt="MaterializeCss"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:tailwindcss-icon.svg" link="https://tailwindcss.com/" alt="TailwindCss"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:thymeleaf-icon.svg" link="https://www.thymeleaf.org/" alt="Thymeleaf"></TechnologyIcon>
             </div>
-            <div className="cloud-white border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6 w-fit mx-4">
+            <div className="cloud-white border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6 w-fit mx-auto">
                 <div className="flex flex-wrap justify-evenly">
                     <Paragraph text="Ipsum eiusmod laboris deserunt dolor incididunt eiusmod aute. Proident culpa qui eiusmod qui laboris sint eu fugiat cillum fugiat. Non culpa sit eu adipisicing ullamco. Mollit duis magna consectetur reprehenderit ea laboris magna aliqua id sunt commodo nostrud. Occaecat cupidatat duis cupidatat culpa.Esse consequat ea ad incididunt. Irure nisi sit mollit in magna qui magna. Reprehenderit aliqua mollit pariatur duis enim adipisicing eiusmod ea veniam elit eiusmod exercitation et consequat. Velit excepteur sit commodo proident. Officia anim id labore deserunt magna et aliquip."></Paragraph>
                     <Paragraph text="Veniam tempor sit aliqua exercitation quis adipisicing Lorem aute consectetur velit. Laborum ad velit do commodo. Est velit consequat ullamco sunt tempor velit. Sint nulla velit laborum dolor qui consequat eu exercitation eiusmod enim ut dolor elit. Eiusmod incididunt do aute ullamco fugiat deserunt amet esse. Sint proident dolor anim mollit est aliqua occaecat minim fugiat cillum fugiat enim aute. Ut dolor nisi commodo exercitation ut cupidatat."></Paragraph>
@@ -74,4 +79,4 @@ const ProjectPage = ({ projectName }: ProjectPageProps) => {
 };
 
 export default ProjectPage;
-export {Crumb};
+export { Crumb };
