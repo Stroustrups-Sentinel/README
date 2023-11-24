@@ -68,6 +68,9 @@ Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 ## File Structure
 
     readme/
+    ├── .github/
+    | └── workflows/
+    |    └── gatsby.yaml                  (github actions workflow for gatsby)
     ├── design/                           (design files & resources)
     ├── public/
     ├── src/
@@ -84,14 +87,63 @@ The other files not described are either [**gatsby**](https://www.gatsbyjs.com/)
 
 [<https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/>]
 
+<br/>
+
+## Installing Dependencies
+
+- The project uses **Typescript**, although it needs **Nodejs** since on running **Gatsby** commands it will be of use.
+- For styling there is use of **TailwindCss** which depends on npm & nodejs.
+- luckily for **`npm`** projects you just need :
+  1. installing Nodejs
+  2. opening the terminal in the root folder which resides the `package.json` file
+  3. running `npm install` to get the modules used by the project.
 
 
-<!-- 
----
+<br>
+
+- Here are the links and the install links when using **`npm`** as your package manager, which usually comes along by default with Nodejs.
+
+| Name | Link | Npm global install| Other npm ways |
+|---|---|--|---|
+|Nodejs|<https://nodejs.org/>|--|--
+|Gatsby|<https://www.gatsbyjs.com/>| `npm install -g gatsby-cli` | [[link](https://www.npmjs.com/package/gatsby)], [[link](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/)] |
+|TailwindCss|<https://tailwindcss.com/>|`npm install -g tailwindcss`|[[link](https://www.npmjs.com/package/tailwindcss)], [[link](https://tailwindcss.com/docs/installation)]|
+|Typescript|<https://www.typescriptlang.org/>|`npm install -g typescript` |[[link](https://www.npmjs.com/package/typescript)], [[link](https://www.typescriptlang.org/download)]|
+
+<br/>
+
+## Running the project
+
+To run the project its fairly simple, after installing the required dependencies all that's needed is to run the following in **two** separate terminals .
+
+|||
+|---|---|
+|Gatsby|`gatsby develop`|
+|TailwindCss|`npm run watch`|
+
+<br/>
+
+## Building the project
+
+- Since the main purpose of Gatsby is its awesomeness as a `static site generator`. And wits its pros and cons like every other software out there, it shines brightly as a good option for this project.
+- Building the project means compiling it into its static site form, meaning just the plain usual `html`, `css` and `javascript` into the `├── public/` folder.
+- For more info on building the site you can checkout the official gatsby documentation **[here](https://www.gatsbyjs.com/docs/glossary/build/)**.
+
+[<https://www.gatsbyjs.com/docs/glossary/build/>]
+
+<br/>
+
+<!-- ---
 
 <Details>
   <Summary>Whats with the logo ? </Summary>
 
-  As for the logo
+    - As for the 3As logo its for the triple A 
+      standards in quality, grade and standardization. 
+      or something like that 😅. Still have not decided 
+      but its along the AAA standards for when you know 
+      something really is good.
+    - and the colours represent {thinking:blue}, 
+      {envisioning:orange}, {creating:green}
 
 </Details> -->
