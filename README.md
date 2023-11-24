@@ -96,7 +96,7 @@ The other files not described are either [**gatsby**](https://www.gatsbyjs.com/)
 - luckily for **`npm`** projects you just need :
   1. installing Nodejs
   2. opening the terminal in the root folder which resides the `package.json` file
-  3. running `npm install` to get the modules used by the project.
+  3. running ```npm install``` to get the modules used by the project.
 
 
 <br>
@@ -106,9 +106,9 @@ The other files not described are either [**gatsby**](https://www.gatsbyjs.com/)
 | Name | Link | Npm global install| Other npm ways |
 |---|---|--|---|
 |Nodejs|<https://nodejs.org/>|--|--
-|Gatsby|<https://www.gatsbyjs.com/>| `npm install -g gatsby-cli` | [[link](https://www.npmjs.com/package/gatsby)], [[link](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/)] |
-|TailwindCss|<https://tailwindcss.com/>|`npm install -g tailwindcss`|[[link](https://www.npmjs.com/package/tailwindcss)], [[link](https://tailwindcss.com/docs/installation)]|
-|Typescript|<https://www.typescriptlang.org/>|`npm install -g typescript` |[[link](https://www.npmjs.com/package/typescript)], [[link](https://www.typescriptlang.org/download)]|
+|Gatsby|<https://www.gatsbyjs.com/>| ```npm install -g gatsby-cli``` | [[link](https://www.npmjs.com/package/gatsby)], [[link](https://www.gatsbyjs.com/docs/tutorial/getting-started/part-0/)] |
+|TailwindCss|<https://tailwindcss.com/>|```npm install -g tailwindcss```|[[link](https://www.npmjs.com/package/tailwindcss)], [[link](https://tailwindcss.com/docs/installation)]|
+|Typescript|<https://www.typescriptlang.org/>|```npm install -g typescript``` |[[link](https://www.npmjs.com/package/typescript)], [[link](https://www.typescriptlang.org/download)]|
 
 <br/>
 
@@ -118,8 +118,8 @@ To run the project its fairly simple, after installing the required dependencies
 
 |||
 |---|---|
-|Gatsby|`gatsby develop`|
-|TailwindCss|`npm run watch`|
+|Gatsby|```gatsby develop```|
+|TailwindCss|```npm run watch```|
 
 <br/>
 
