@@ -1,9 +1,5 @@
-
 [![Deploy Gatsby site to Pages](https://github.com/Stroustrups-Sentinel/readme/actions/workflows/gatsby.yml/badge.svg)](https://github.com/Stroustrups-Sentinel/readme/actions/workflows/gatsby.yml)&nbsp;
 [![Static Badge](https://img.shields.io/badge/visit_website-SWE_Portfolio-blue?logo=gatsby&labelColor=%231e4039&color=%23357266&link=https%3A%2F%2Fstroustrups-sentinel.github.io%2Freadme%2F)](https://stroustrups-sentinel.github.io/readme "my website / SWE portfolio")&nbsp;
-
-
-
 
 <p align="center">
  <a href="https://stroustrups-sentinel.github.io/readme">
@@ -11,6 +7,9 @@
   </a>
 </p>
 <hr/>
+
+<Details>
+      <Summary>Gatsby Minimal TypeScript Starter</Summary>
 
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
@@ -61,3 +60,38 @@ Gatsby Minimal TypeScript Starter
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 [<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+
+</Details>
+
+---
+
+## File Structure
+
+    readme/
+    ├── design/                           (design files & resources)
+    ├── public/
+    ├── src/
+    ├── .gitignore
+    ├── gatsby-config.ts
+    ├── LICENSE                           (license file | MPL 2.0)
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md                         (readme documentation | this file)
+    ├── tailwind.config.js                (tailwindCss config file)
+    └── tsconfig.json
+
+The other files not described are either [**gatsby**](https://www.gatsbyjs.com/) files. And it has its project structure properly explained [**here**](https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/).
+
+[<https://www.gatsbyjs.com/docs/reference/gatsby-project-structure/>]
+
+
+
+<!-- 
+---
+
+<Details>
+  <Summary>Whats with the logo ? </Summary>
+
+  As for the logo
+
+</Details> -->
