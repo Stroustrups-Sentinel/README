@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import '../../css/global.css'
-import { Crumb, getNextAndPrevIndexes } from "../../components/projectPage";
+import { Crumb, getNextAndPrevIndexes, getSiteUrl } from "../../components/projectPage";
 import ProjectPage from "../../components/projectPage";
 import projects from "../../json/projects.json"
 
@@ -10,7 +10,9 @@ const project = projects[projectIndex];
 
 const allImageUrls: string[] = [project.bannerUrl, ...project.imageUrls,];
 
-const pageCrumbs: Crumb[] = [{ title: "Projects", url: "/#projects" }];
+const siteUrl: string = getSiteUrl();
+
+const pageCrumbs: Crumb[] = [{ title: "Projects", url: siteUrl + "#projects" }];
 const currentPage: string = project.title;
 
 const pageIndexes = getNextAndPrevIndexes(projectIndex, projects.length);
@@ -32,8 +34,8 @@ const PortfolioPage: React.FC<PageProps> = () => {
                 navCrumbs={pageCrumbs}
                 currentPage={currentPage}
 
-                previousProject={{ title: projects[pageIndexes?.prev ?? 0].title, url: projects[pageIndexes?.prev ?? 0].moreUrl }}
-                nextProject={{ title: projects[pageIndexes?.next ?? 0].title, url: projects[pageIndexes?.next ?? 0].moreUrl }}
+                previousProject={{ title: projects[pageIndexes?.prev ?? 0].title, url: siteUrl + projects[pageIndexes?.prev ?? 0].moreUrl }}
+                nextProject={{ title: projects[pageIndexes?.next ?? 0].title, url: siteUrl + projects[pageIndexes?.next ?? 0].moreUrl }}
 
             ></ProjectPage>
         </>

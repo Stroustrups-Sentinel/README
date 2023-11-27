@@ -5,7 +5,7 @@ import type { Crumb, BreadcrumbProps } from "./breadcrumb";
 
 // import GatsbyConfig from "../../gatsby-config"
 
-function getSiteUrl(startingString:string = "/"): string {
+function getSiteUrl(startingString: string = "/"): string {
 
     let siteUrl: string = "https://stroustrups-sentinel.github.io/readme/";// (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
 
