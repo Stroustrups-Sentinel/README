@@ -27,6 +27,9 @@ interface ProjectPageProps {
     moreUrl: string;
     repositoryUrl: string;
 
+    navCrumbs: Crumb[],
+    currentPage: string,
+
 }
 
 interface TechnologyItem {
@@ -50,9 +53,9 @@ const generateTechnologies = (techsList: string[], techsJsonObject: TechnologyIt
 
 
 
-const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, experience, galleryImages, logoUrl, openUrl, repositoryUrl }: ProjectPageProps) => {
+const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, experience, galleryImages, logoUrl, openUrl, repositoryUrl, navCrumbs, currentPage }: ProjectPageProps) => {
     return (<div>
-        <Navbar ></Navbar>
+        <Navbar links={navCrumbs} currentPage={currentPage} ></Navbar>
         <div className="p-2 bg-pattern-te m-4 rounded-24 shadow-lg">
             <CenteredProjectTitle title={projectName} ></CenteredProjectTitle>
 
