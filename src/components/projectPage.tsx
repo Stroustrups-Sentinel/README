@@ -30,6 +30,9 @@ interface ProjectPageProps {
     navCrumbs: Crumb[],
     currentPage: string,
 
+    nextProject: Crumb,
+    previousProject: Crumb
+
 }
 
 interface TechnologyItem {
@@ -55,31 +58,31 @@ const getNextAndPrevIndexes = (currentIndex: number, itemsLength: number) => {
     const initialIndex: number = 0;
 
     if (currentIndex > itemsLength)
-        return;
+        return ;
     if (itemsLength == 1)
         return {
             prev: initialIndex,
             next: initialIndex
         };
-    else if (itemsLength == initialIndex)
+    else if ((itemsLength -1) == currentIndex)
         return {
-            prev: itemsLength - 1, //last item
-            next: currentIndex + 1
+            prev: (currentIndex - 1), //prev item
+            next: (initialIndex )
         }
     else if (itemsLength > initialIndex)
         return {
-            prev: currentIndex - 1,
-            next: ((currentIndex + 1) >= itemsLength) ? initialIndex : currentIndex + 1, // jump to the start when its at the last item
+            prev: ((currentIndex - 1) >= 0 ? (currentIndex - 1) : 0),
+            next: (((currentIndex + 1) >= itemsLength) ? initialIndex : currentIndex + 1), // jump to the start when its at the last item
         }
 
 };
 
 
-const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, experience, galleryImages, logoUrl, openUrl, repositoryUrl, navCrumbs, currentPage }: ProjectPageProps) => {
+const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, experience, galleryImages, logoUrl, openUrl, repositoryUrl, navCrumbs, currentPage, previousProject, nextProject }: ProjectPageProps) => {
     return (<div>
         <Navbar links={navCrumbs} currentPage={currentPage} ></Navbar>
         <div className="p-2 bg-pattern-te m-4 rounded-24 shadow-lg">
-            <CenteredProjectTitle title={projectName} ></CenteredProjectTitle>
+            <CenteredProjectTitle title={projectName} nextPage={nextProject} previousPage={previousProject} ></CenteredProjectTitle>
 
             <div className="flex flex-wrap justify-evenly">
                 <AvatarPortrait
@@ -127,7 +130,7 @@ const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, ex
                 </div>
                 <div className="mb-4"></div>
             </div>
-            <CenteredProjectTitle title="" ></CenteredProjectTitle>
+            <CenteredProjectTitle title="" nextPage={nextProject} previousPage={previousProject} ></CenteredProjectTitle>
         </div>
         <Footer></Footer>
 
