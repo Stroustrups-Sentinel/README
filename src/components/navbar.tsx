@@ -5,7 +5,8 @@ import type { Crumb, BreadcrumbProps } from "./breadcrumb";
 
 // import GatsbyConfig from "../../gatsby-config"
 
-let siteUrl: string = "https://stroustrups-sentinel.github.io/readme/";// (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
+const siteUrl = () =>{
+    let siteUrl: string = "https://stroustrups-sentinel.github.io/readme/";// (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
 
 // Check if window is defined (so if in the browser or in node.js).
 const isBrowser = typeof window !== "undefined"
@@ -13,7 +14,8 @@ const isBrowser = typeof window !== "undefined"
 if (isBrowser) {
     siteUrl = (window.location.hostname == "localhost" ? "/" : siteUrl);
 }
-
+    return siteUrl;
+}
 
 
 const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
@@ -23,7 +25,7 @@ const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
 
             <nav className="navbar-gradient border-gray-200 dark:bg-gray-900">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href={siteUrl} className="flex items-center">
+                    <a href={siteUrl()} className="flex items-center">
                         <img src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" className="h-8 mr-3 navbar-logo" alt="mcsamuel Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portfolio</span>
                     </a>
@@ -44,7 +46,7 @@ const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                         <ul className="font-site-sans flex items-center flex-col font-bold text-lg p-4 md:p-0 mt-4  md:flex-row md:space-x-8 md:mt-0 md:border-0">
                             <li>
-                                <Breadcrumb links={links} currentPage={currentPage} homeUrl={homeUrl ?? siteUrl}></Breadcrumb>
+                                <Breadcrumb links={links} currentPage={currentPage} homeUrl={homeUrl ?? siteUrl()}></Breadcrumb>
                             </li>
                             <li>
                                 <a href={siteUrl + "#projects"} className="block py-2 pl-3 pr-4 primary-text rounded-24 hover:text-gray-100  dark:text-gray-100 dark:hover:text-gray-900 hover:underline" aria-current="page">Projects</a>
@@ -73,4 +75,4 @@ const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
 
 
 export default Navbar;
-export { Crumb };
+export { Crumb, siteUrl };
