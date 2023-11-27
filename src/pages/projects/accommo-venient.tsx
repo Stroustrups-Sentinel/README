@@ -1,34 +1,40 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import '../../css/global.css'
-import type { Crumb } from "../../components/projectPage";
+import { Crumb, getNextAndPrevIndexes } from "../../components/projectPage";
 import ProjectPage from "../../components/projectPage";
 import projects from "../../json/projects.json"
 
-const project = projects[1];
+const projectIndex: number = 1;
+const project = projects[projectIndex];
 
-const allImageUrls:string[] = [project.bannerUrl,...project.imageUrls,];
+const allImageUrls: string[] = [project.bannerUrl, ...project.imageUrls,];
 
-const pageCrumbs:Crumb[] = [{title:"Projects",url:"/#projects"}];
-const currentPage:string = project.title;
+const pageCrumbs: Crumb[] = [{ title: "Projects", url: "/#projects" }];
+const currentPage: string = project.title;
+
+const pageIndexes = getNextAndPrevIndexes(projectIndex, projects.length);
 
 const PortfolioPage: React.FC<PageProps> = () => {
     return (
         <>
-            <ProjectPage 
-            projectName={project.name}
-            technologiesUsed={project.technologies}
-            description={project.description}
-            caseStudy={project.caseStudy}
-            experience={project.experience}
-            galleryImages={allImageUrls}
-            logoUrl={project.logoUrl}
-            moreUrl={project.moreUrl}
-            openUrl={project.openUrl}
-            repositoryUrl={project.repositoryUrl}
-            navCrumbs={pageCrumbs}
-            currentPage={currentPage}
-            
+            <ProjectPage
+                projectName={project.name}
+                technologiesUsed={project.technologies}
+                description={project.description}
+                caseStudy={project.caseStudy}
+                experience={project.experience}
+                galleryImages={allImageUrls}
+                logoUrl={project.logoUrl}
+                moreUrl={project.moreUrl}
+                openUrl={project.openUrl}
+                repositoryUrl={project.repositoryUrl}
+                navCrumbs={pageCrumbs}
+                currentPage={currentPage}
+
+                previousProject={{ title: projects[pageIndexes?.prev ?? 0].title, url: projects[pageIndexes?.prev ?? 0].moreUrl }}
+                nextProject={{ title: projects[pageIndexes?.next ?? 0].title, url: projects[pageIndexes?.next ?? 0].moreUrl }}
+
             ></ProjectPage>
         </>
     );
