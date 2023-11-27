@@ -1,14 +1,18 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import '../../css/global.css'
-import Navbar from "../../components/navbar";
-import CenteredTitle from "../../components/centeredTitle";
+import type { Crumb } from "../../components/projectPage";
 import ProjectPage from "../../components/projectPage";
 import projects from "../../json/projects.json"
 
 const project = projects[0];
 
 const allImageUrls:string[] = [project.bannerUrl,...project.imageUrls,];
+
+
+
+const pageCrumbs:Crumb[] = [{title:"Projects",url:"/#projects"}];
+const currentPage:string = project.title;
 
 const PortfolioPage: React.FC<PageProps> = () => {
     return (
@@ -24,6 +28,8 @@ const PortfolioPage: React.FC<PageProps> = () => {
             moreUrl={project.moreUrl}
             openUrl={project.openUrl}
             repositoryUrl={project.repositoryUrl}
+            navCrumbs={pageCrumbs}
+            currentPage={currentPage}
             
             ></ProjectPage>
         </>
