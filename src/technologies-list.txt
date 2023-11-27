@@ -18,6 +18,7 @@ inkscape
 java
 javascript
 jest
+jquery
 json
 kubernetes
 laravel
