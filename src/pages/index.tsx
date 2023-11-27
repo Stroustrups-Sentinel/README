@@ -244,7 +244,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className="cloud-white border-2 border-grey rounded-24 p-4 m-6 flex flex-wrap justify-evenly">
 
             <ContactCard name="LinkedIn" contactUrl="https://www.linkedin.com/in/mc-samuel-shoko-2483731b5" tag="lets connect on" logoUrl="https://api.iconify.design/logos:linkedin-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
-            <ContactCard name="Discord" contactUrl="https://discord.gg/GeneralSeven#6092" tag="find me on discord" logoUrl="https://api.iconify.design/logos:discord-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
+            <ContactCard name="Discord" contactUrl="https://discord.com/users/generalseven" tag="find me on discord" logoUrl="https://api.iconify.design/logos:discord-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
             <ContactCard name="Twitter" contactUrl="https://twitter.com/shokosamuel" tag="send a tweet" logoUrl="https://api.iconify.design/logos:twitter.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
             <ContactCard name="Gmail" contactUrl="mailto:mcsamuelshoko558@gmail.com" tag="send me an email" logoUrl="https://api.iconify.design/logos:google-gmail.svg" iconUrl="https://api.iconify.design/nimbus:mail.svg"></ContactCard>
             {/* <ContactCard name="PhoneNumber" contactUrl="" tag="contact me on" iconUrl="https://api.iconify.design/nimbus:mobile.svg"></ContactCard> */}
