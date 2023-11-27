@@ -93,7 +93,7 @@ The other files not described are either [**gatsby**](https://www.gatsbyjs.com/)
 
 - The project uses **Typescript**, although it needs **Nodejs** since on running **Gatsby** commands it will be of use.
 - For styling there is use of **TailwindCss** which depends on npm & nodejs.
-- luckily for **`npm`** projects you just need :
+- This project uses **`npm`**, which requires the following :
   1. installing Nodejs
   2. opening the terminal in the root folder which resides the `package.json` file
   3. running ```npm install``` to get the modules used by the project.
