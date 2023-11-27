@@ -100,6 +100,11 @@
         "websiteUrl": "https://jestjs.io/"
     },
     {
+        "name": "jquery",
+        "logoUrl": "https://api.iconify.design/devicon:jquery.svg",
+        "websiteUrl":"https://jquery.com/"    
+    },
+    {
         "name": "json",
         "logoUrl": "https://api.iconify.design/logos:json.svg",
         "websiteUrl": "https://www.json.org/json-en.html"
