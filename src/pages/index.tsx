@@ -70,7 +70,7 @@ const IndexPage: React.FC<PageProps> = () => {
               name={data.name ?? "--"}
               technologies={data.technologies ?? []}
               description={data.description ?? ""}
-              logoUrl="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"
+              logoUrl={data.logoUrl ?? "https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
               imgUrl={data.bannerUrl ?? "https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
               moreUrl={currentUrlLocation + data.moreUrl}
               openUrl={currentUrlLocation + data.openUrl}
