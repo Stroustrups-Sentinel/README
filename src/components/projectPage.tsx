@@ -50,7 +50,29 @@ const generateTechnologies = (techsList: string[], techsJsonObject: TechnologyIt
 
     );
 
+const getNextAndPrevIndexes = (currentIndex: number, itemsLength: number) => {
 
+    const initialIndex: number = 0;
+
+    if (currentIndex > itemsLength)
+        return;
+    if (itemsLength == 1)
+        return {
+            prev: initialIndex,
+            next: initialIndex
+        };
+    else if (itemsLength == initialIndex)
+        return {
+            prev: itemsLength - 1, //last item
+            next: currentIndex + 1
+        }
+    else if (itemsLength > initialIndex)
+        return {
+            prev: currentIndex - 1,
+            next: ((currentIndex + 1) >= itemsLength) ? initialIndex : currentIndex + 1, // jump to the start when its at the last item
+        }
+
+};
 
 
 const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, experience, galleryImages, logoUrl, openUrl, repositoryUrl, navCrumbs, currentPage }: ProjectPageProps) => {
@@ -113,4 +135,4 @@ const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, ex
 };
 
 export default ProjectPage;
-export { Crumb };
+export { Crumb, getNextAndPrevIndexes };
