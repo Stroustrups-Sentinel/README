@@ -2,7 +2,7 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import '../css/global.css'
 import Navbar from "./navbar";
-import type { Crumb } from "./navbar";
+import  { Crumb, getSiteUrl } from "./navbar";
 import CenteredProjectTitle from "./centredProjectTitle";
 import AvatarPortrait from "./avatarPortrait";
 import Button from "./button";
@@ -138,4 +138,4 @@ const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, ex
 };
 
 export default ProjectPage;
-export { Crumb, getNextAndPrevIndexes };
+export { Crumb, getNextAndPrevIndexes, getSiteUrl };
