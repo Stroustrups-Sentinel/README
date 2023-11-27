@@ -43,13 +43,13 @@
             "JavaScript",
             "Html"
         ],
-        "description":"An old, school group project. Its for college students, off-campus accommodation.",
+        "description":"An old, school group projects. Its for college students, off-campus accommodation.",
         "caseStudy":"Arguably one of my most painful project (growth pains) and best project in terms of experience, wow    and appreciation of development. This is where the love for php, web development, design, css and dynamic pages (using ajax) came from. We couldn't complete when it was time for submission due to scope creep and the sheer excitement of what we could do and how awesome it was, all the things we could do, all the functions we could add to make it cool. For me personally it was like discovering a new toy that could do all kinds of amazing stuff you had not given thought to",
         "experience":"Fast forward to 2023 and out of nostalgia this project is still on my mind and ive decided to         upload it and add it to the list of projects on my portfolio, showcasing where i came from and also a good feel and boost of self confidence. i am proud of this group project",
         "bannerUrl":"https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/accommo-venient/banner.png?raw=true",
         "logoUrl":"https://github.com/Stroustrups-Sentinel/Accommo-Venient/blob/main/resources/logo.png?raw=true",
         "openUrl":"https://accommo-venient.onrender.com",
-        "moreUrl":"",
+        "moreUrl":"projects/accommo-venient",
         "altText":"",
         "imageUrls":[
             "https://github.com/Stroustrups-Sentinel/readme/blob/main/src/images/projects/accommo-venient/image1.png?raw=true",
