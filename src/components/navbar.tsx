@@ -5,14 +5,14 @@ import type { Crumb, BreadcrumbProps } from "./breadcrumb";
 
 // import GatsbyConfig from "../../gatsby-config"
 
-function getSiteUrl():string{
+function getSiteUrl(startingString:string = "/"): string {
+
     let siteUrl: string = "https://stroustrups-sentinel.github.io/readme/";// (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
 
     // Check if window is defined (so if in the browser or in node.js).
     const isBrowser = typeof window !== "undefined"
-
     if (isBrowser) {
-        siteUrl = (window.location.hostname == "localhost" ? "/" : siteUrl);
+        siteUrl = (window.location.hostname == "localhost" ? startingString : siteUrl);
     }
     return (siteUrl);
 }
