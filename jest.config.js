@@ -1,3 +1,9 @@
+const { compilerOptions } = require("./tsconfig.json");
+const { pathsToModuleNameMapper } = require("ts-jest");
+const paths = pathsToModuleNameMapper(compilerOptions.paths, {
+    prefix: "<rootDir>/",
+});
+
 module.exports = {
     transform: {
         "^.+\\.[jt]sx?$": "<rootDir>/jest-preprocess.js",
@@ -19,8 +25,3 @@ module.exports = {
     },
     setupFiles: [`<rootDir>/loadershim.js`],
 };
-const { compilerOptions } = require("./tsconfig.json");
-const { pathsToModuleNameMapper } = require("ts-jest");
-const paths = pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix: "<rootDir>/",
-});
