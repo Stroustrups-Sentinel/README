@@ -5,7 +5,7 @@ import { Crumb, getNextAndPrevIndexes, getSiteUrl } from "../../components/proje
 import ProjectPage from "../../components/projectPage";
 import projects from "../../json/projects.json"
 
-const projectIndex: number = 0;
+const projectIndex: number = 1;
 const project = projects[projectIndex];
 
 const allImageUrls: string[] = [project.bannerUrl, ...project.imageUrls,];
@@ -15,7 +15,7 @@ const siteUrl: string = getSiteUrl();
 const pageCrumbs: Crumb[] = [{ title: "Projects", url: siteUrl + "#projects" }];
 const currentPage: string = project.title;
 
-const pageIndexes = getNextAndPrevIndexes(projectIndex, projects.length) ?? { prev: 0, next: 0 };
+const pageIndexes = getNextAndPrevIndexes(projectIndex, projects.length);
 
 const PortfolioPage: React.FC<PageProps> = () => {
     return (
@@ -34,7 +34,6 @@ const PortfolioPage: React.FC<PageProps> = () => {
                 navCrumbs={pageCrumbs}
                 currentPage={currentPage}
 
-
                 previousProject={{ title: projects[pageIndexes?.prev ?? 0].title, url: siteUrl + projects[pageIndexes?.prev ?? 0].moreUrl }}
                 nextProject={{ title: projects[pageIndexes?.next ?? 0].title, url: siteUrl + projects[pageIndexes?.next ?? 0].moreUrl }}
 
@@ -45,7 +44,7 @@ const PortfolioPage: React.FC<PageProps> = () => {
 
 export default PortfolioPage
 
-export const Head: HeadFC = () => <> <title>Project | {project.title}</title>
+export const Head: HeadFC = () => <> <title>Project | Accommo-Venient</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 

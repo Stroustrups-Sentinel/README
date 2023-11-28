@@ -2,7 +2,7 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import '../css/global.css'
 import Navbar from "./navbar";
-import type { Crumb } from "./navbar";
+import  { Crumb, getSiteUrl } from "./navbar";
 import CenteredProjectTitle from "./centredProjectTitle";
 import AvatarPortrait from "./avatarPortrait";
 import Button from "./button";
@@ -27,6 +27,12 @@ interface ProjectPageProps {
     moreUrl: string;
     repositoryUrl: string;
 
+    navCrumbs: Crumb[],
+    currentPage: string,
+
+    nextProject: Crumb,
+    previousProject: Crumb
+
 }
 
 interface TechnologyItem {
@@ -47,14 +53,36 @@ const generateTechnologies = (techsList: string[], techsJsonObject: TechnologyIt
 
     );
 
+const getNextAndPrevIndexes = (currentIndex: number, itemsLength: number) => {
+
+    const initialIndex: number = 0;
+
+    if (currentIndex > itemsLength)
+        return ;
+    if (itemsLength == 1)
+        return {
+            prev: initialIndex,
+            next: initialIndex
+        };
+    else if ((itemsLength -1) == currentIndex)
+        return {
+            prev: (currentIndex - 1), //prev item
+            next: (initialIndex )
+        }
+    else if (itemsLength > initialIndex)
+        return {
+            prev: ((currentIndex - 1) >= 0 ? (currentIndex - 1) : 0),
+            next: (((currentIndex + 1) >= itemsLength) ? initialIndex : currentIndex + 1), // jump to the start when its at the last item
+        }
+
+};
 
 
-
-const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, experience, galleryImages, logoUrl, openUrl, repositoryUrl }: ProjectPageProps) => {
+const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, experience, galleryImages, logoUrl, openUrl, repositoryUrl, navCrumbs, currentPage, previousProject, nextProject }: ProjectPageProps) => {
     return (<div>
-        <Navbar ></Navbar>
+        <Navbar links={navCrumbs} currentPage={currentPage} ></Navbar>
         <div className="p-2 bg-pattern-te m-4 rounded-24 shadow-lg">
-            <CenteredProjectTitle title={projectName} ></CenteredProjectTitle>
+            <CenteredProjectTitle title={projectName} nextPage={nextProject} previousPage={previousProject} ></CenteredProjectTitle>
 
             <div className="flex flex-wrap justify-evenly">
                 <AvatarPortrait
@@ -102,7 +130,7 @@ const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, ex
                 </div>
                 <div className="mb-4"></div>
             </div>
-            <CenteredProjectTitle title="" ></CenteredProjectTitle>
+            <CenteredProjectTitle title="" nextPage={nextProject} previousPage={previousProject} ></CenteredProjectTitle>
         </div>
         <Footer></Footer>
 
@@ -110,4 +138,4 @@ const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, ex
 };
 
 export default ProjectPage;
-export { Crumb };
+export { Crumb, getNextAndPrevIndexes, getSiteUrl };

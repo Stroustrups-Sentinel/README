@@ -5,16 +5,19 @@ import type { Crumb, BreadcrumbProps } from "./breadcrumb";
 
 // import GatsbyConfig from "../../gatsby-config"
 
-let siteUrl: string = "https://stroustrups-sentinel.github.io/readme/";// (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
+function getSiteUrl(startingString: string = "/"): string {
 
-// Check if window is defined (so if in the browser or in node.js).
-const isBrowser = typeof window !== "undefined"
+    let siteUrl: string = "https://stroustrups-sentinel.github.io/readme/";// (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
 
-if (isBrowser) {
-    siteUrl = (window.location.hostname == "localhost" ? "/" : siteUrl);
+    // Check if window is defined (so if in the browser or in node.js).
+    const isBrowser = typeof window !== "undefined"
+    if (isBrowser) {
+        siteUrl = (window.location.hostname == "localhost" ? startingString : siteUrl);
+    }
+    return (siteUrl);
 }
 
-
+const siteUrl: string = getSiteUrl();
 
 const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
     return (
@@ -73,4 +76,4 @@ const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
 
 
 export default Navbar;
-export { Crumb };
+export { Crumb, getSiteUrl };
