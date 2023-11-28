@@ -6,7 +6,9 @@ interface GalleryProps {
 
 const GalleryImage = (imageUrl: string) => {
     return (<div>
-        <img className="h-auto max-w-full border-2 border-grey" src={imageUrl} alt="" />
+        <a href="#!" className="hover:shadow-lg hover:border-green-400">
+            <img className="h-auto max-w-full border-2 border-grey " src={imageUrl} alt="" />
+        </a>
     </div>);
 }
 
