@@ -39,10 +39,10 @@ const SkillCard = ({ title, skillScore, skillTotal = 5, logo = "https://api.icon
     return (
         <div className="bg-black border-2 border-grey rounded-24 p-4 pt-2 m-2 flex">
             <div className="mr-2">
-                <img src={logo} alt="icon" className="icon-24 white-text" />
+                <img src={logo} alt="icon" className="icon-24 text-cloud-white" />
             </div>
             <div>
-                <div><span className="white-text font-site-sans">{title}</span></div>
+                <div><span className="text-cloud-white font-site-sans">{title}</span></div>
                 <RatingScore score={skillScore} total={skillTotal} />
             </div>
         </div>
