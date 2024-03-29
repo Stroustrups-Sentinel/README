@@ -34,7 +34,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <div>
         <Navbar></Navbar>
-        <div className="p-2 bg-pattern m-4 rounded-24 shadow-lg">
+        <div className="p-2 bg-pattern bg-cloud-white dark:bg-p-black dark:text-cloud-white">
 
           {/* <div className="bg-red-500 rounded-24 ">
             <CenteredTitle title={"THIS IS A WORK IN PROGRESS <!>"} ></CenteredTitle>
@@ -286,7 +286,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <> <title>Home | Mc Samuel Shoko</title>
+export const Head: HeadFC = () => <> <title>Mc Samuel Shoko | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
 
@@ -294,4 +294,6 @@ export const Head: HeadFC = () => <> <title>Home | Mc Samuel Shoko</title>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" />
   <link rel="icon" href="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/main/design/favicon.ico" />
+  {/* Flowbite js */}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </>
