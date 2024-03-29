@@ -13,6 +13,7 @@ import TechnologyIcon from "../components/technologyIcon"
 import SkillCard from "../components/skillCard"
 import ListItem from "../components/listItem"
 import ContactCard from "../components/contactCard"
+// import { randomUUID } from "crypto"
 // import GatsbyConfig from "../../gatsby-config"
 
 // -------------------------------------------------
@@ -54,9 +55,9 @@ const IndexPage: React.FC<PageProps> = () => {
                 <Paragraph text="Junior software engineer eager to learn and grow. Fascinated by backend and full-stack development, seeking opportunities to expand my skills and knowledge." />
               </div>
               <div className="mt-10"></div>
-              <Button text="Download Resume" link={"https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"} size={"large"} />
+              <Button text="Download Resume" isExternalLink={true} link={"https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"} size={"large"} />
               <div className="mt-4"></div>
-              <Button text="Github profile" link={"https://github.com/Stroustrups-Sentinel"} size={"large"} background="black" />
+              <Button text="Github profile" isExternalLink={true} link={"https://github.com/Stroustrups-Sentinel"} size={"large"} background="black" />
 
             </div>
           </div>
@@ -65,6 +66,7 @@ const IndexPage: React.FC<PageProps> = () => {
           {/* <pre>{JSON.stringify(projectsData)}</pre> */}
           <div className="flex flex-wrap justify-evenly">
             {projectsData.map((data) => <ProjectCard
+              // key={randomUUID()}
               platform={data.platform ?? "--"}
               type={data.type ?? "--"}
               name={data.name ?? "--"}
@@ -228,7 +230,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 </ul>
               </div>
               <div className="m-2">
-                <Button text="Download Resume" link="https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"></Button>
+                <Button text="Download Resume" isExternalLink={true} link="https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"></Button>
               </div>
             </div>
 
