@@ -23,53 +23,35 @@
     font-family: 'Roboto Mono', monospace;
 }
 
-.bg-primary {
-    background-color: #357266;
-}
-
-.bg-dark-primary {
-    background-color: #1e4039;
-}
-
-.bg-light-primary {
-    background-color: #53b3a0;
-}
-
-.bg-accent {
-    background-color: #53dd6c;
-}
-
-.black-bg {
-    background-color: #040f0f;
-}
-
-.primary-text {
-    color: #040f0f;
-}
-
-.white-text {
-    color: #f4f4f9;
-}
-
-.cloud-white {
-    background-color: #f4f4f9;
-}
-
-.lime-text {
-    color: #53dd6c;
-}
-.dark-green-text {
-    color: #1e4039;
-}
-
-.border-grey {
-    border-color: #cac4d0;
-}
-
 .navbar-gradient {
-    background: linear-gradient(90deg, #357266 0%, #53dd6c 100%);
-    background-blend-mode: normal;
+    background: linear-gradient(270deg, #357266, #53dd6c, #53b3a0, #1e4039);
+    background-size: 800% 800%;
 
+    -webkit-animation: gradient-animation 10s ease infinite;
+    -moz-animation: gradient-animation 10s ease infinite;
+    -o-animation: gradient-animation 10s ease infinite;
+    animation: gradient-animation 10s ease infinite;
+}
+
+@-webkit-keyframes gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradient-animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
 }
 
 #navbar {
@@ -174,14 +156,16 @@
 .max-w-800 {
     max-width: 800px;
 }
-.max-w-360{
+
+.max-w-360 {
     max-width: 360px;
 }
 
 .w-24 {
     width: 24rem;
 }
-.height-480{
+
+.height-480 {
     height: 480px;
     object-fit: cover;
 }
