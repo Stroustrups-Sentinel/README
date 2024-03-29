@@ -1,8 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import '../css/global.css'
-import Navbar from "./navbar";
-import  { Crumb, getSiteUrl } from "./navbar";
+import '../css/global.css';
+import  Navbar, { Crumb, getSiteUrl, } from "./navbar";
 import CenteredProjectTitle from "./centredProjectTitle";
 import AvatarPortrait from "./avatarPortrait";
 import Button from "./button";
@@ -81,15 +80,13 @@ const getNextAndPrevIndexes = (currentIndex: number, itemsLength: number) => {
 const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, experience, galleryImages, logoUrl, openUrl, repositoryUrl, navCrumbs, currentPage, previousProject, nextProject }: ProjectPageProps) => {
     return (<div>
         <Navbar links={navCrumbs} currentPage={currentPage} ></Navbar>
-        <div className="p-2 bg-pattern-te m-4 rounded-24 shadow-lg">
+        <div className="p-2 bg-pattern-te bg-cloud-white dark:bg-p-black dark:text-cloud-white">
             <CenteredProjectTitle title={projectName} nextPage={nextProject} previousPage={previousProject} ></CenteredProjectTitle>
 
             <div className="flex flex-wrap justify-evenly">
-                <AvatarPortrait
-                    imageUrl={logoUrl}
-                    orientation="square"
-                    border={false}
-                />
+                <div className="flex place-content-center p-2 rounded-24">
+                <img className="w-64" src={logoUrl} alt="project logo" />
+                </div>
                 <div className="">
                     <div className="mt-4"></div>
                     <div className="text-xl">
@@ -97,9 +94,9 @@ const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, ex
                     </div>
                     <div className="mt-10"></div>
 
-                    <Button text="Github repository" link={repositoryUrl} size={"large"} background="black" />
+                    <Button text="Github repository" isExternalLink={true} link={repositoryUrl} size={"large"} background="black" />
                     <div className="mt-4"></div>
-                    <Button text="open" link={openUrl} size={"large"} />
+                    <Button text="open" isExternalLink={true} link={openUrl} size={"large"} />
 
                 </div>
             </div>
@@ -112,7 +109,7 @@ const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, ex
             <div className="mx-4 my-16 flex flex-wrap justify-center px-4">
                 {generateTechnologies(technologiesUsed, technologies)}
             </div>
-            <div className="cloud-white border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6 w-fit mx-auto">
+            <div className="bg-cloud-white dark:bg-p-black dark:text-cloud-white border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6 w-fit mx-auto">
                 <div className="flex flex-wrap justify-evenly">
                     <Paragraph text={caseStudy}></Paragraph>
                     <Paragraph text={experience}></Paragraph>
