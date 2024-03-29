@@ -82,7 +82,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
           <CenteredTitle title="SKILLS" topChevron={true} id="skills"></CenteredTitle>
           <div className="flex flex-wrap justify-evenly">
-            <div className="cloud-white border-2 border-grey rounded-24 py-2 px-4 mb-6">
+            <div className="bg-cloud-white dark:bg-p-black border-2 border-grey rounded-24 py-2 px-4 mb-6">
               {/* MAIN CARDS */}
 
 
@@ -108,7 +108,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
             </div>
             <div className="">
-              <div className="cloud-white border-2 border-grey rounded-24 py-4 max-w-800">
+              <div className="bg-cloud-white dark:bg-p-black border-2 border-grey rounded-24 py-4 max-w-800">
                 <span className="p-2 px-4 font-site-mono text-xl">
                   Technologies
                 </span>
@@ -205,7 +205,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 </div>
               </div>
               <div className="mb-6"></div>
-              <div className="cloud-white border-2 border-grey rounded-24 font-site-sans p-4 py-12 flex flex-wrap ">
+              <div className="bg-cloud-white dark:bg-p-black border-2 border-grey rounded-24 font-site-sans p-4 py-12 flex flex-wrap ">
                 <Paragraph text="As a passionate junior software engineer, I'm always seeking new challenges to strengthen my abilities. Fascinated by backend and full-stack work, I find motivation in breaking down complicated issues and working on tasks outside my current scope. Currently, I'm focused on skills like DevOps, testing and anything pushing my progress further."></Paragraph>
                 <Paragraph text="Whether through code projects or other experiences, I believe adventures inspire continual learning. As I build my portfolio, I welcome opportunities within the tech community to aid my development. My goal is ongoing self-improvement through diverse work, network growth, and perpetually pursuing greater technical hurdles."></Paragraph>
               </div>
@@ -214,7 +214,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
           <CenteredTitle title="RESUME" topChevron={true} id="resume"></CenteredTitle>
           <div className="flex flex-wrap justify-evenly">
-            <div className="cloud-white border-2 border-grey rounded-24 p-4 mb-6 job-xp-card flex flex-col flex-wrap justify-between" >
+            <div className="bg-cloud-white dark:bg-p-black border-2 border-grey rounded-24 p-4 mb-6 job-xp-card flex flex-col flex-wrap justify-between" >
               <div className="flex flex-wrap-reverse">
                 <ul>
                   <li>
@@ -243,7 +243,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </div>
 
           <CenteredTitle title="CONTACT" topChevron={true} id="contact"></CenteredTitle>
-          <div className="cloud-white border-2 border-grey rounded-24 p-4 m-6 flex flex-wrap justify-evenly">
+          <div className="bg-cloud-white dark:bg-p-black border-2 border-grey rounded-24 p-4 m-6 flex flex-wrap justify-evenly">
 
             <ContactCard name="LinkedIn" contactUrl="https://www.linkedin.com/in/mc-samuel-shoko-2483731b5" tag="lets connect on" logoUrl="https://api.iconify.design/logos:linkedin-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
             <ContactCard name="Discord" contactUrl="https://discord.com/users/generalseven" tag="find me on discord" logoUrl="https://api.iconify.design/logos:discord-icon.svg" iconUrl="https://api.iconify.design/nimbus:chat-dots.svg"></ContactCard>
@@ -260,7 +260,7 @@ const IndexPage: React.FC<PageProps> = () => {
                 height="469px"
               />
             </div>
-            <div className="cloud-white border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6">
+            <div className="bg-cloud-white dark:bg-p-black border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6">
               <div className="flex flex-wrap justify-evenly">
                 <Paragraph text="When I'm not coding, I expand my knowledge and interests in various ways. I listen to podcasts on finance, self-help, graphic design, communication, and other topics that spark my curiosity. I also relax by listening to music, watching humorous videos and memes, or playing games to unwind and manage stress. Additionally, I stay up-to-date with the latest tech industry insights and trends by watching conference talks and listening to developer podcasts, where I can learn from experienced professionals and gain valuable tips and advice."></Paragraph>
                 <Paragraph text="As a junior engineer, sustainability, efficiency, and integrity guide me. I focus on reusable, maintainable code, optimize processes, and prioritize accountability. Learning from seniors, I aim to adopt best practices. Continuous learning strengthens my skills, and I strive for long-term growth. My goal is to deliver quality solutions, and I welcome opportunities to enhance my abilities."></Paragraph>
