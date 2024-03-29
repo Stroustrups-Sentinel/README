@@ -16,8 +16,8 @@ const ContactCard = ({ name, tag, logoUrl,contactUrl = "https://raw.githubuserco
             <img src={iconUrl} alt="icon" className="icon-24 white-text" />
         </div>
         <div className="my-auto mr-2">
-            <div><span className="white-text font-site-sans text-base">{name}</span></div>
-            <div><span className="white-text font-site-sans text-sm">{tag}</span></div>
+            <div><span className="text-cloud-white font-site-sans text-base">{name}</span></div>
+            <div><span className="text-cloud-white font-site-sans text-sm">{tag}</span></div>
         </div>
         <div className="flex items-center justify-center">
             <img className="icon-80 mx-auto block" src={logoUrl} alt="logo" />
