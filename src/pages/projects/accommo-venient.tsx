@@ -5,8 +5,8 @@ import { Crumb, getNextAndPrevIndexes, getSiteUrl } from "../../components/proje
 import ProjectPage from "../../components/projectPage";
 import projects from "../../json/projects.json"
 
-const projectIndex: number = 2;
-const project = projects[projectIndex];
+const projectIndex: number = 1; //number from the bottom of the list
+const project = projects[projects.length - projectIndex];
 
 const allImageUrls: string[] = [project.bannerUrl, ...project.imageUrls,];
 
