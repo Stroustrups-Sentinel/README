@@ -22,7 +22,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
               it appears we have hit a wall
 
               <br />
-              {process.env.NODE_ENV === " -development" ? (
+              {process.env.NODE_ENV === "development" ? (
                 <>
                   <br />
                   Try creating a page in <code className="font-medium text-yellow-500">src/pages/</code>.
