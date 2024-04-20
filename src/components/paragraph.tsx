@@ -7,7 +7,7 @@ interface ParagraphProps{
 const Paragraph = ({text}: ParagraphProps) => {
     return (
         <>
-            <p className="font-site-serif font-normal p-1" style={{width:"24rem"}}>{text}</p>
+            <p className="font-site-serif font-normal p-1" style={{maxWidth:"24rem"}}>{text}</p>
         </>
     );
 }
