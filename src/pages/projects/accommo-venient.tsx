@@ -1,12 +1,12 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import '../../css/global.css'
-import { Crumb, getNextAndPrevIndexes, getSiteUrl } from "../../components/projectPage";
-import ProjectPage from "../../components/projectPage";
+import ProjectPage, { Crumb, getNextAndPrevIndexes, getSiteUrl } from "../../components/projectPage";
 import projects from "../../json/projects.json"
 
-const projectIndex: number = 1; //number from the bottom of the list
-const project = projects[projects.length - projectIndex];
+const projectIndex: number = 1; //number from the bottom of the list in the `projects.json` file
+const projectPosition: number = projects.length - projectIndex;
+const project = projects[projectPosition];
 
 const allImageUrls: string[] = [project.bannerUrl, ...project.imageUrls,];
 
@@ -15,12 +15,11 @@ const siteUrl: string = getSiteUrl();
 const pageCrumbs: Crumb[] = [{ title: "Projects", url: siteUrl + "#projects" }];
 const currentPage: string = project.title;
 
-const pageIndexes = getNextAndPrevIndexes(projectIndex, projects.length);
+const pageIndexes = getNextAndPrevIndexes(projectPosition, projects.length);
 
 const PortfolioPage: React.FC<PageProps> = () => {
     return (
-        <>
-            <ProjectPage
+        <ProjectPage
                 projectName={project.name}
                 technologiesUsed={project.technologies}
                 description={project.description}
@@ -38,7 +37,6 @@ const PortfolioPage: React.FC<PageProps> = () => {
                 nextProject={{ title: projects[pageIndexes?.next ?? 0].title, url: siteUrl + projects[pageIndexes?.next ?? 0].moreUrl }}
 
             ></ProjectPage>
-        </>
     );
 }
 
