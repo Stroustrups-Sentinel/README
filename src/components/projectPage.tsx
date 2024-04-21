@@ -1,9 +1,7 @@
 import * as React from "react"
-import type { HeadFC, PageProps } from "gatsby"
 import '../css/global.css';
-import  Navbar, { Crumb, getSiteUrl, } from "./navbar";
+import Navbar, { Crumb, getSiteUrl, } from "./navbar";
 import CenteredProjectTitle from "./centredProjectTitle";
-import AvatarPortrait from "./avatarPortrait";
 import Button from "./button";
 import Paragraph from "./paragraph";
 import Footer from "./footer";
@@ -56,19 +54,24 @@ const getNextAndPrevIndexes = (currentIndex: number, itemsLength: number) => {
 
     const initialIndex: number = 0;
 
-    if (currentIndex > itemsLength)
-        return ;
+    if (currentIndex > itemsLength) //unusual error
+        return;
     if (itemsLength == 1)
         return {
             prev: initialIndex,
             next: initialIndex
         };
-    else if ((itemsLength -1) == currentIndex)
+    else if (currentIndex == 0) // end of list
+        return {
+            prev: (itemsLength - 1), //last item
+            next: (currentIndex + 1)
+        }
+    else if ((itemsLength - 1) == currentIndex) // end of list
         return {
             prev: (currentIndex - 1), //prev item
-            next: (initialIndex )
+            next: (initialIndex)
         }
-    else if (itemsLength > initialIndex)
+    else if (itemsLength > initialIndex) // anywhere else in the middle
         return {
             prev: ((currentIndex - 1) >= 0 ? (currentIndex - 1) : 0),
             next: (((currentIndex + 1) >= itemsLength) ? initialIndex : currentIndex + 1), // jump to the start when its at the last item
@@ -85,7 +88,7 @@ const ProjectPage = ({ projectName, technologiesUsed, description, caseStudy, ex
 
             <div className="flex flex-wrap justify-evenly">
                 <div className="flex place-content-center p-2 rounded-24">
-                <img className="w-64" src={logoUrl} alt="project logo" />
+                    <img className="w-64" src={logoUrl} alt="project logo" />
                 </div>
                 <div className="">
                     <div className="mt-4"></div>
