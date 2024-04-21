@@ -1,26 +1,43 @@
-import * as React from "react"
+import * as React from "react";
 import TechnologyIcon from "./technologyIcon";
 import Button from "./button";
 
-import GatsbyConfig from "../../gatsby-config"
+import {getSiteUrl } from "../components/projectPage";
 
-const siteUrl:string =  (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack
+const siteUrl: string = getSiteUrl();
 
 const Footer = () => {
     return (
-        <div className="bg-black text-white flex flex-wrap justify-evenly py-6 items-center">
-            <div className="">
-                <TechnologyIcon src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" alt="site logo" link={siteUrl}></TechnologyIcon>
-                <a href="//www.dmca.com/Protection/Status.aspx?ID=1b30f853-da27-44ce-9785-2f53fded92ae" title="DMCA.com Protection Status" className="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-2x1-02.png?ID=1b30f853-da27-44ce-9785-2f53fded92ae"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+        <footer className="bg-black text-white ">
+            <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <div className="sm:flex sm:items-center sm:justify-between">
+                    <TechnologyIcon
+                        src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"
+                        alt="site logo"
+                        link={siteUrl}
+                    ></TechnologyIcon>
+
+                    <ul className="flex flex-wrap items-center mb-6  sm:mb-0 ">
+                        <li>
+                            <div className="font-medium font-site-mono">
+                                <p>Made with love ❤️ & passion 🔥 = ❤️‍🔥</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span className="mx-4"></span>
+                        </li>
+                        <li>
+                            <Button text="Back to Top" link="#"></Button>
+                        </li>
+                    </ul>
+                </div>
+                <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <span className="blockfont-medium font-site-mono sm:text-center ">
+                    © 2024 . All Rights Reserved.
+                </span>
             </div>
-            <div className="flex justify-center">
-                <span>copyright © 2023 All rights reserved</span>
-            </div>
-            <div className="">
-                <Button text="Back to Top" link="#"></Button>
-            </div>
-        </div>
+        </footer>
     );
-}
+};
 
 export default Footer;
