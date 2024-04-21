@@ -263,12 +263,13 @@ const IndexPage: React.FC<PageProps> = () => {
             <div className="bg-cloud-white dark:bg-p-black border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6">
               <div className="flex flex-wrap justify-evenly">
                 <Paragraph text="When I'm not coding, I expand my knowledge and interests in various ways. I listen to podcasts on finance, self-help, graphic design, communication, and other topics that spark my curiosity. I also relax by listening to music, watching humorous videos and memes, or playing games to unwind and manage stress. Additionally, I stay up-to-date with the latest tech industry insights and trends by watching conference talks and listening to developer podcasts, where I can learn from experienced professionals and gain valuable tips and advice."></Paragraph>
-                <Paragraph text="As a junior engineer, sustainability, efficiency, and integrity guide me. I focus on reusable, maintainable code, optimize processes, and prioritize accountability. Learning from seniors, I aim to adopt best practices. Continuous learning strengthens my skills, and I strive for long-term growth. My goal is to deliver quality solutions, and I welcome opportunities to enhance my abilities."></Paragraph>
+                <Paragraph text="As an engineer, pragmatic sustainability, efficiency, and integrity guide me. I focus on reusable, maintainable code, optimize processes, and prioritize accountability. Learning from seniors, I aim to adopt best practices. Continuous learning strengthens my skills, and I strive for long-term growth. My goal is to deliver quality solutions, and I welcome opportunities to enhance my abilities."></Paragraph>
               </div>
               <div className="mb-16"></div>
               <div className="flex flex-wrap">
                 <TechnologyIcon invertColor={true} src="https://api.iconify.design/logos:github-icon.svg" link="https://github.com/Stroustrups-Sentinel" alt="Github profile"></TechnologyIcon>
                 <TechnologyIcon invertColor={true} src="https://api.iconify.design/logos:wakatime.svg" link="https://wakatime.com/@ef9df9b6-cb1a-4e73-9d42-35b93e0014d0" alt="Wakatime profile"></TechnologyIcon>
+                <TechnologyIcon src="https://api.iconify.design/logos:microsoft-icon.svg" link="https://learn.microsoft.com/en-us/users/mcsamuelshoko-2509/" alt="Microsoft Learn profile"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:dribbble-icon.svg" link="https://dribbble.com/McSamuel" alt="Dribble profile"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:figma.svg" link="https://www.figma.com/" alt="Figma profile"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/devicon:behance.svg" link="https://www.behance.net/mcsamuelshoko" alt="Behance profile"></TechnologyIcon>
