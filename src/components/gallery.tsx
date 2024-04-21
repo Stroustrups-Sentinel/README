@@ -1,4 +1,6 @@
 import * as React from "react"
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 interface GalleryProps {
     imageUrls: string[]
@@ -6,9 +8,11 @@ interface GalleryProps {
 
 const GalleryImage = (imageUrl: string) => {
     return (<div>
-        <a href="#!" className="hover:shadow-lg hover:border-green-400">
+        {/* <a href="#!" className="hover:shadow-lg hover:border-green-400"> */}
+        <Zoom>
             <img className="h-auto max-w-full border-2 border-grey " src={imageUrl} alt="" />
-        </a>
+        </Zoom>
+        {/* </a> */}
     </div>);
 }
 
