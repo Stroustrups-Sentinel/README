@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <TechnologyIcon
                         src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"
-                        alt="site logo"
+                        alt="home"
                         link={siteUrl}
                     ></TechnologyIcon>
 
@@ -31,7 +31,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 navbar-gradient p-1" />
                 <span className="blockfont-medium font-site-mono sm:text-center ">
                     © 2024 . All Rights Reserved.
                 </span>
