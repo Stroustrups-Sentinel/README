@@ -31,7 +31,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 navbar-gradient pt-1" />
+                <hr className="my-6 sm:mx-auto border-transparent lg:my-8 navbar-gradient pt-1" />
                 <span className="blockfont-medium font-site-mono sm:text-center ">
                     © 2024 . All Rights Reserved.
                 </span>
