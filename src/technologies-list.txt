@@ -3,6 +3,7 @@ bootstrap
 css
 c++
 csharp
+daisyui
 dart
 django
 docker
@@ -34,5 +35,6 @@ sass
 spring
 sqlserver
 tailwindCss
+tinymce
 thymeleaf
 typescript
