@@ -41,7 +41,8 @@
       "Postgresql",
       "Mongodb",
       "DaisyUI",
-      "TailwindCss"
+      "TailwindCss",
+      "tinymce"
     ],
     "description": "Teachers portal for the ministry of education, from job search to retirement.",
     "caseStudy": "The \"Teachers Portal for the Ministry of Education\" project presented a complex undertaking, addressing the needs of teachers throughout their careers. With Java Spring Boot, Postgres, Thymeleaf, and MongoDB, we built a centralized platform that facilitated job searches, professional development, and retirement planning. Our integration efforts encompassed various data sources, ensuring real-time updates and data consistency. By leveraging Thymeleaf's templating capabilities, we delivered an intuitive user experience. The incorporation of MongoDB enabled powerful insights into teacher performance and educational quality. Through this project, I deepened my understanding of the education sector while honing my technical skills in backend development, database management, and agile practices.",
