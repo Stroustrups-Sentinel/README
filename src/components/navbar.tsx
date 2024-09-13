@@ -7,7 +7,7 @@ import type { Crumb, BreadcrumbProps } from "./breadcrumb";
 
 function getSiteUrl(startingString: string = "/"): string {
 
-    let siteUrl: string = "https://stroustrups-sentinel.github.io/readme/";// (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
+    let siteUrl: string = "https://mcsamuelshoko.github.io/readme/";// (GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";//TODO: if possible, do something about this hack too.
 
     // Check if window is defined (so if in the browser or in node.js).
     const isBrowser = typeof window !== "undefined"
@@ -28,7 +28,7 @@ const Navbar = ({ links, currentPage, homeUrl }: BreadcrumbProps) => {
             <nav className="">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href={siteUrl} className="flex items-center">
-                        <img src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" className="h-8 mr-3 navbar-logo" alt="mcsamuel Logo" />
+                        <img src="https://raw.githubusercontent.com/mcsamuelshoko/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" className="h-8 mr-3 navbar-logo" alt="mcsamuel Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-cloud-white dark:hover:text-lime hover:underline">Portfolio</span>
                     </a>
                     <div className="flex md:order-2">

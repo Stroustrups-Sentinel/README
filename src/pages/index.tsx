@@ -17,7 +17,7 @@ import ContactCard from "../components/contactCard"
 // import GatsbyConfig from "../../gatsby-config"
 
 // -------------------------------------------------
-const siteUrl: string = "https://stroustrups-sentinel.github.io/readme/";//(GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";
+const siteUrl: string = "https://mcsamuelshoko.github.io/readme/";//(GatsbyConfig.siteMetadata ? GatsbyConfig.siteMetadata.siteUrl : "") + "";
 let currentUrlLocation: string = siteUrl;
 
 // Check if window is defined (so if in the browser or in node.js).
@@ -46,7 +46,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
           <div className="flex flex-wrap justify-evenly">
             <AvatarPortrait
-              imageUrl={"https://github.com/Stroustrups-Sentinel/readme/blob/develop/src/images/my-avatar.png?raw=true"}
+              imageUrl={"https://github.com/mcsamuelshoko/readme/blob/develop/src/images/my-avatar.png?raw=true"}
               orientation="square"
             />
             <div className="">
@@ -57,7 +57,7 @@ const IndexPage: React.FC<PageProps> = () => {
               <div className="mt-10"></div>
               <Button text="Download Resume" isExternalLink={true} link={"https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"} size={"large"} />
               <div className="mt-4"></div>
-              <Button text="Github profile" isExternalLink={true} link={"https://github.com/Stroustrups-Sentinel"} size={"large"} background="black" />
+              <Button text="Github profile" isExternalLink={true} link={"https://github.com/mcsamuelshoko"} size={"large"} background="black" />
 
             </div>
           </div>
@@ -72,8 +72,8 @@ const IndexPage: React.FC<PageProps> = () => {
               name={data.name ?? "--"}
               technologies={data.technologies ?? []}
               description={data.description ?? ""}
-              logoUrl={data.logoUrl ?? "https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
-              imgUrl={data.bannerUrl ?? "https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
+              logoUrl={data.logoUrl ?? "https://raw.githubusercontent.com/mcsamuelshoko/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
+              imgUrl={data.bannerUrl ?? "https://raw.githubusercontent.com/mcsamuelshoko/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg"}
               moreUrl={currentUrlLocation + data.moreUrl}
               openUrl={data.openUrl ?? ""}
             />)}
@@ -236,7 +236,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
             <div>
               <AvatarPortrait
-                imageUrl={"https://github.com/Stroustrups-Sentinel/readme/blob/develop/src/images/graduation.jpg?raw=true"}
+                imageUrl={"https://github.com/mcsamuelshoko/readme/blob/develop/src/images/graduation.jpg?raw=true"}
                 height="469px"
               />
             </div>
@@ -256,7 +256,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className="flex flex-wrap justify-evenly mb-6">
             <div className="mb-6">
               <AvatarPortrait
-                imageUrl={"https://github.com/Stroustrups-Sentinel/readme/blob/develop/src/images/my-avatar-wearing-cap.png?raw=true"}
+                imageUrl={"https://github.com/mcsamuelshoko/readme/blob/develop/src/images/my-avatar-wearing-cap.png?raw=true"}
                 height="469px"
               />
             </div>
@@ -267,7 +267,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </div>
               <div className="mb-16"></div>
               <div className="flex flex-wrap">
-                <TechnologyIcon invertColor={true} src="https://api.iconify.design/logos:github-icon.svg" link="https://github.com/Stroustrups-Sentinel" alt="Github profile"></TechnologyIcon>
+                <TechnologyIcon invertColor={true} src="https://api.iconify.design/logos:github-icon.svg" link="https://github.com/mcsamuelshoko" alt="Github profile"></TechnologyIcon>
                 <TechnologyIcon invertColor={true} src="https://api.iconify.design/logos:wakatime.svg" link="https://wakatime.com/@ef9df9b6-cb1a-4e73-9d42-35b93e0014d0" alt="Wakatime profile"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:microsoft-icon.svg" link="https://learn.microsoft.com/en-us/users/mcsamuelshoko-2509/" alt="Microsoft Learn profile"></TechnologyIcon>
                 <TechnologyIcon src="https://api.iconify.design/logos:dribbble-icon.svg" link="https://dribbble.com/McSamuel" alt="Dribble profile"></TechnologyIcon>
@@ -296,7 +296,7 @@ export const Head: HeadFC = () => <> <title>Mc Samuel Shoko | Portfolio</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" />
-  <link rel="icon" href="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/main/design/favicon.ico" />
+  <link rel="icon" href="https://raw.githubusercontent.com/mcsamuelshoko/readme/main/design/favicon.ico" />
   {/* Flowbite js */}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </>

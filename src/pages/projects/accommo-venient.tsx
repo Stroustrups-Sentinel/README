@@ -49,5 +49,5 @@ export const Head: HeadFC = () => <> <title>Project | Accommo-Venient</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" />
-    <link rel="icon" href="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/main/design/favicon.ico" />
+    <link rel="icon" href="https://raw.githubusercontent.com/mcsamuelshoko/readme/main/design/favicon.ico" />
 </>
