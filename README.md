@@ -1,9 +1,9 @@
-[![Deploy Gatsby site to Pages](https://github.com/Stroustrups-Sentinel/readme/actions/workflows/gatsby.yml/badge.svg)](https://github.com/Stroustrups-Sentinel/readme/actions/workflows/gatsby.yml)&nbsp;
-[![Static Badge](https://img.shields.io/badge/visit_website-SWE_Portfolio-blue?logo=gatsby&labelColor=%231e4039&color=%23357266&link=https%3A%2F%2Fstroustrups-sentinel.github.io%2Freadme%2F)](https://stroustrups-sentinel.github.io/readme "my website / SWE portfolio")&nbsp;
+[![Deploy Gatsby site to Pages](https://github.com/mcsamuelshoko/readme/actions/workflows/gatsby.yml/badge.svg)](https://github.com/mcsamuelshoko/readme/actions/workflows/gatsby.yml)&nbsp;
+[![Static Badge](https://img.shields.io/badge/visit_website-SWE_Portfolio-blue?logo=gatsby&labelColor=%231e4039&color=%23357266&link=https%3A%2F%2Fmcsamuelshoko.github.io%2Freadme%2F)](https://mcsamuelshoko.github.io/readme "my website / SWE portfolio")&nbsp;
 
 <p align="center">
- <a href="https://stroustrups-sentinel.github.io/readme">
-    <img alt="Gatsby" src="https://raw.githubusercontent.com/Stroustrups-Sentinel/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" width="160" />
+ <a href="https://mcsamuelshoko.github.io/readme">
+    <img alt="Gatsby" src="https://raw.githubusercontent.com/mcsamuelshoko/readme/3dd46cdef054e046be507558bef9d0cbbafed4dc/design/maki-logo-perfectedx4800.svg" width="160" />
   </a>
 </p>
 <hr/>
