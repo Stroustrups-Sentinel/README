@@ -52,7 +52,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <div className="">
               <div className="mt-4"></div>
               <div className="text-xl">
-                <Paragraph text="Junior software engineer eager to learn and grow. Fascinated by backend and full-stack development, seeking opportunities to expand my skills and knowledge." />
+                <Paragraph text="Software Engineer, eager to learn and grow. Fascinated by backend and full-stack development, seeking opportunities to expand my skills and knowledge." />
               </div>
               <div className="mt-10"></div>
               <Button text="Download Resume" isExternalLink={true} link={"https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"} size={"large"} />
@@ -206,7 +206,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </div>
               <div className="mb-6"></div>
               <div className="bg-cloud-white dark:bg-p-black border-2 border-grey rounded-24 font-site-sans p-4 py-12 flex flex-wrap ">
-                <Paragraph text="As a passionate junior software engineer, I'm always seeking new challenges to strengthen my abilities. Fascinated by backend and full-stack work, I find motivation in breaking down complicated issues and working on tasks outside my current scope. Currently, I'm focused on skills like DevOps, testing and anything pushing my progress further."></Paragraph>
+                <Paragraph text="As a passionate Software Engineer, I'm always seeking new challenges to strengthen my abilities. Fascinated by backend and full-stack work, I find motivation in breaking down complicated issues and working on tasks outside my current scope. Currently, I'm focused on skills like DevOps, testing and anything pushing my progress further."></Paragraph>
                 <Paragraph text="Whether through code projects or other experiences, I believe adventures inspire continual learning. As I build my portfolio, I welcome opportunities within the tech community to aid my development. My goal is ongoing self-improvement through diverse work, network growth, and perpetually pursuing greater technical hurdles."></Paragraph>
               </div>
             </div>
