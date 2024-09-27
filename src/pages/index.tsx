@@ -52,7 +52,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <div className="">
               <div className="mt-4"></div>
               <div className="text-xl">
-                <Paragraph text="Software Engineer, eager to learn and grow. Fascinated by backend and full-stack development, seeking opportunities to expand my skills and knowledge." />
+                <Paragraph text="A software engineer with a strong interest in backend and full-stack development, actively seeking opportunities for growth and learning" />
               </div>
               <div className="mt-10"></div>
               <Button text="Download Resume" isExternalLink={true} link={"https://docs.google.com/document/d/1pyCX2P7chSFPGhTiqSFld0lutiR0GG_oWKL_DN3oMcc/edit?usp=sharing"} size={"large"} />
@@ -88,7 +88,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 
               <SkillCard title="Adaptability" skillScore={5} skillTotal={5} logo="https://api.iconify.design/nimbus:apps.svg?color=%23f4f4f9" ></SkillCard>
-              <SkillCard title="Algorithms & Data structures" skillScore={2} skillTotal={5} logo="https://api.iconify.design/nimbus:pyramid.svg?color=%23f4f4f9" ></SkillCard>
+              <SkillCard title="Algorithms & Data structures" skillScore={3} skillTotal={5} logo="https://api.iconify.design/nimbus:pyramid.svg?color=%23f4f4f9" ></SkillCard>
               <SkillCard title="Automation" skillScore={2} skillTotal={5} logo="https://api.iconify.design/nimbus:share.svg?color=%23f4f4f9" ></SkillCard>
               <SkillCard title="Coding best practices" skillScore={3} skillTotal={5} logo="https://api.iconify.design/nimbus:check-circle.svg?color=%23f4f4f9" ></SkillCard>
               <SkillCard title="Collaboration" skillScore={4} skillTotal={5} logo="https://api.iconify.design/nimbus:user-group.svg?color=%23f4f4f9" ></SkillCard>
@@ -194,6 +194,7 @@ const IndexPage: React.FC<PageProps> = () => {
                   <br />
                   Jest */}
                   <TechnologyIcon src="https://api.iconify.design/logos:jest.svg" link="https://jestjs.io/" alt="jest"></TechnologyIcon>
+                  <TechnologyIcon src="https://api.iconify.design/logos:storybook-icon.svg" link="https://storybook.js.org/" alt="storybook"></TechnologyIcon>
                 </div>
                 <hr className="border-grey" />
                 <div className="flex flex-wrap px-4">
@@ -206,8 +207,8 @@ const IndexPage: React.FC<PageProps> = () => {
               </div>
               <div className="mb-6"></div>
               <div className="bg-cloud-white dark:bg-p-black border-2 border-grey rounded-24 font-site-sans p-4 py-12 flex flex-wrap ">
-                <Paragraph text="As a passionate Software Engineer, I'm always seeking new challenges to strengthen my abilities. Fascinated by backend and full-stack work, I find motivation in breaking down complicated issues and working on tasks outside my current scope. Currently, I'm focused on skills like DevOps, testing and anything pushing my progress further."></Paragraph>
-                <Paragraph text="Whether through code projects or other experiences, I believe adventures inspire continual learning. As I build my portfolio, I welcome opportunities within the tech community to aid my development. My goal is ongoing self-improvement through diverse work, network growth, and perpetually pursuing greater technical hurdles."></Paragraph>
+                <Paragraph text="I'm a passionate Software Engineer who always looks for new challenges to improve my skills. I enjoy working on backend and full-stack projects, and I find motivation in solving complex problems and taking on new tasks. Right now, I'm focused on improving my skills in DevOps, testing, and anything else that helps me progress."></Paragraph>
+                <Paragraph text="I believe that new experiences and challenges help me learn and grow. I am looking for opportunities in the tech community to improve my skills and build my portfolio. My goal is to keep learning through different projects, expanding my network, and taking on more technical challenges."></Paragraph>
               </div>
             </div>
           </div>
@@ -256,14 +257,14 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className="flex flex-wrap justify-evenly mb-6">
             <div className="mb-6">
               <AvatarPortrait
-                imageUrl={"https://github.com/mcsamuelshoko/readme/blob/develop/src/images/my-avatar-wearing-cap.png?raw=true"}
+                imageUrl={"https://github.com/mcsamuelshoko/readme/blob/main/src/images/freelancer-profile.png?raw=true"}
                 height="469px"
               />
             </div>
             <div className="bg-cloud-white dark:bg-p-black border-2 border-grey rounded-24 p-4 flex flex-col flex-wrap justify-between mb-6">
               <div className="flex flex-wrap justify-evenly">
-                <Paragraph text="When I'm not coding, I expand my knowledge and interests in various ways. I listen to podcasts on finance, self-help, graphic design, communication, and other topics that spark my curiosity. I also relax by listening to music, watching humorous videos and memes, or playing games to unwind and manage stress. Additionally, I stay up-to-date with the latest tech industry insights and trends by watching conference talks and listening to developer podcasts, where I can learn from experienced professionals and gain valuable tips and advice."></Paragraph>
-                <Paragraph text="As an engineer, pragmatic sustainability, efficiency, and integrity guide me. I focus on reusable, maintainable code, optimizing processes, and prioritizing accountability. Learning from seniors, I aim to adopt best practices. Continuous learning strengthens my skills, and I strive for long-term growth. My goal is to deliver quality solutions, and I welcome opportunities to enhance my abilities making an impact."></Paragraph>
+                <Paragraph text="When I'm not immersed in the world of coding, I love to delve into various interests that expand my knowledge and spark my curiosity. I indulge in podcasts covering finance, self-help, graphic design, communication, and other captivating topics. For relaxation, I unwind with music, humorous videos, and games to effectively manage stress. Furthermore, I stay ahead of the curve in the tech industry by immersing myself in conference talks and developer podcasts, learning invaluable insights and tips from seasoned professionals."></Paragraph>
+                <Paragraph text="As an engineer, my approach is grounded in pragmatic sustainability, efficiency, and integrity. I am committed to developing reusable, maintainable code, streamlining processes, and fostering a culture of accountability. Drawing wisdom from seasoned professionals, I am dedicated to adopting and implementing best practices. I continuously seek opportunities for learning and skill development to drive long-term personal and professional growth. My primary objective is to consistently deliver high-quality solutions, and I actively seek out opportunities to further enhance my capabilities and create a meaningful impact."></Paragraph>
               </div>
               <div className="mb-16"></div>
               <div className="flex flex-wrap">
